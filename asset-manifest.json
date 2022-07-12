@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/projetSEG3525/static/css/main.f60e36cc.css",
-    "main.js": "/projetSEG3525/static/js/main.4b724b21.js",
+    "main.js": "/projetSEG3525/static/js/main.afe70b61.js",
     "static/media/ccmSuperTracker.jpg": "/projetSEG3525/static/media/ccmSuperTracker.e6d08b87dd0890cb0983.jpg",
     "index.html": "/projetSEG3525/index.html",
     "main.f60e36cc.css.map": "/projetSEG3525/static/css/main.f60e36cc.css.map",
-    "main.4b724b21.js.map": "/projetSEG3525/static/js/main.4b724b21.js.map"
+    "main.afe70b61.js.map": "/projetSEG3525/static/js/main.afe70b61.js.map"
   },
   "entrypoints": [
     "static/css/main.f60e36cc.css",
-    "static/js/main.4b724b21.js"
+    "static/js/main.afe70b61.js"
   ]
 }
