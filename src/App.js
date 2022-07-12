@@ -4,6 +4,11 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './index.css';
 import Shop from './Shop';
 import Sport from './Sport';
+global.jQuery = require('jquery');
+require('bootstrap');
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 function App() {
   return (
