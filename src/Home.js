@@ -1,11 +1,7 @@
 import { useState } from 'react';
 import './index.css';
 import ccmSuperTracker from "./images/index/ccmSuperTracker.jpg"
-global.jQuery = require('jquery');
-require('bootstrap');
-import $ from 'jquery';
-import Popper from 'popper.js';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 const Home = () => {
     const [deals, setDeals] = useState([
         {name:"item1", oldPrice:"55", newPrice:"50", sport:"soccer", item:"cleats", img: ccmSuperTracker, id:"1"},

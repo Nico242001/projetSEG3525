@@ -1,10 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-global.jQuery = require('jquery');
-require('bootstrap');
-import $ from 'jquery';
-import Popper from 'popper.js';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-// import 'bootstrap/dist/js/bootstrap.bundle.min';
 // import $ from 'jquery';
 // import Popper from 'popper.js';
 // import React from 'react';
