@@ -2,7 +2,7 @@
   "name": "projet2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nico242001.github.io/projetSEG3525/index",
+  "homepage": "https://nico242001.github.io/projetSEG3525/",
   "dependencies": {
     "@popperjs/core": "^2.11.5",
     "@testing-library/jest-dom": "^5.16.4",
