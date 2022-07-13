@@ -22,7 +22,8 @@ html, #root, body{
   background-color: #f8f9fa;
 }
 .navbar-react {
-  position: fixed;
+  position: sticky; top: 0;
+  /* position: fixed; */
   overflow: hidden;
   background-color: #5680E9;
 }
