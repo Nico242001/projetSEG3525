@@ -5,7 +5,7 @@ import {FaYoutube} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-    return ( 
+    return (<div className="container stick"> 
         <nav className="navbar-react">
             <h1 className="title"><Link to="/" >Joe's Sporting Goods</Link></h1>
             <div className="links-react">
@@ -42,6 +42,7 @@ const Navbar = () => {
                 <FaShoppingCart className='icon'/>
             </div>
         </nav>
+        </div>
      );
 }
  

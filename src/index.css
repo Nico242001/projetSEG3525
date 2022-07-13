@@ -21,8 +21,11 @@ html, #root, body{
   height: 100%;
   background-color: #f8f9fa;
 }
+.stick{
+position: sticky; top: 0;
+}
 .navbar-react {
-  position: sticky; top: 0;
+  
   /* position: fixed; */
   overflow: hidden;
   background-color: #5680E9;
