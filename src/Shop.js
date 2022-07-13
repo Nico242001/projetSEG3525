@@ -3,7 +3,7 @@ import hockey from "./images/shop/hockey.jpg"
 import basketball from "./images/shop/basketball.jpg"
 import soccerCard from "./images/shop/soccerCard.jpg"
 import hockeyCard from "./images/shop/hockeyCard.jpg"
-import basketballCard from "./images/shop/basketballCard.jpg"
+// import basketballCard from "./images/shop/basketballCard.jpg"
 import sale from "./images/shop/sale.jpg"
 import { useState } from 'react';
 // import {useEffect, useState, useRef} from 'react';
@@ -11,7 +11,7 @@ import { useState } from 'react';
 const Shop = () => {
     const [sports, setSports] = useState([
         {name:"Soccer", img: soccerCard, id:"1"},
-        {name:"Basketball", img: basketballCard, id:"2"},
+        {name:"Basketball", img: hockeyCard, id:"2"},
         {name:"Hockey", img: hockeyCard, id:"3"}
     ])
    
