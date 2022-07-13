@@ -2,7 +2,7 @@ import soccer from "./images/shop/soccer.jpg"
 import hockey from "./images/shop/hockey.jpg"
 import basketball from "./images/shop/basketball.jpg"
 import sale from "./images/shop/sale.jpg"
-import {useEffect, useState, useRef} from 'react';
+// import {useEffect, useState, useRef} from 'react';
 
 const Shop = () => {
     // const [imgHeight, getHeight] = useState(0);
