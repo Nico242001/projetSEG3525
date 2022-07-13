@@ -13,7 +13,7 @@ const Shop = () => {
                         <br/>
                         <h4 className='fit mx-auto'>The all new Speed of Light Adidas X boots are finally out! Dont wait, get them now before we are all sold out!</h4>
                         <br/>
-                        <button onClick={(e) =>{clickArg("hey", e)}} className="btn btn-secondary mx-auto">Buy Now!</button></div>
+                        <button className="btn btn-secondary mx-auto">Buy Now!</button></div>
                 </div>
                 <div className="col padding" min-width="50%" max-width="50%">
                        <img src={soccer} alt="" min-width="100%" />
