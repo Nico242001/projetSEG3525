@@ -19,7 +19,7 @@ const Home = () => {
     return (
         <div className="home bg-light">
             <div className="row" min-width="100%">
-                <div className="col bg-dark ml-auto d-flex align-items-center mt-md-0 height bottomBorder padding " min-width="40%" max-width="40%">
+                <div className="col bg-dark ml-auto d-flex align-items-center mt-md-0 height bottomBorder padding " min-width="50%" max-width="50%">
                     <div className="container text-center text-white">
                         <h2 className='fit mx-auto'>All New Adidas Cleats!!!</h2>
                         <br/>

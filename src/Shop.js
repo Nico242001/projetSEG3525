@@ -1,12 +1,25 @@
+import soccer from "./images/shop/soccer.jpg"
+import hockey from "./images/shop/hockey.jpg"
+import basketball from "./images/shop/basketball.png"
+import sale from "./images/shop/sale.jpg"
+
 const Shop = () => {
     return ( 
        <div className="shop">
+        <div className="row" min-width="100%">
+                <div className="col bg-dark ml-auto d-flex align-items-center mt-md-0 height bottomBorder padding " min-width="50%" max-width="50%">
+                    <div className="container text-center text-white">
+                        <h2 className='fit mx-auto'>All New Adidas Cleats!!!</h2>
+                        <br/>
+                        <h4 className='fit mx-auto'>The all new Speed of Light Adidas X boots are finally out! Dont wait, get them now before we are all sold out!</h4>
+                        <br/>
+                        <button onClick={(e) =>{clickArg("hey", e)}} className="btn btn-secondary mx-auto">Buy Now!</button></div>
+                </div>
+                <div className="col padding" min-width="50%" max-width="50%">
+                       <img src={soccer} alt="" min-width="100%" />
+                </div>
+            </div>
         
-<div className="container-fluid pt-4">
-    <h2 className="text-center px-4 py-2 mx-auto border border-3 border-dark bg-light"
-      >Select the Sport or Category you wish to buy from!</h2>
-</div>
-
 <div className="container text-center mt-3">
 
     <div className="row mx-auto">
