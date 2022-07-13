@@ -11,8 +11,8 @@ import { useState } from 'react';
 const Shop = () => {
     const [sports, setSports] = useState([
         {name:"Soccer", img: soccerCard, id:"1"},
-        {name:"Basketball", img: hockeyCard, id:"2"},
-        {name:"Hockey", img: basketballCard, id:"3"},
+        {name:"Basketball", img: basketballCard, id:"2"},
+        {name:"Hockey", img: hockeyCard, id:"3"}
     ])
    
     return ( 
