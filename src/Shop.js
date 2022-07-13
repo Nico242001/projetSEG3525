@@ -12,7 +12,7 @@ const Shop = () => {
     const [sports, setSports] = useState([
         {name:"Soccer", img: soccerCard, id:"1"},
         {name:"Basketball", img: hockeyCard, id:"2"},
-        {name:"Hockey", img: basketball, id:"3"},
+        {name:"Hockey", img: basketballCard, id:"3"},
     ])
    
     return ( 
