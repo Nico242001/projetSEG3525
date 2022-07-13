@@ -6,6 +6,7 @@ import hockeyCard from "./images/shop/hockeyCard.jpg"
 // import basketballCard from "./images/shop/basketballCard.jpg"
 import sale from "./images/shop/sale.jpg"
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 // import {useEffect, useState, useRef} from 'react';
 
 const Shop = () => {
