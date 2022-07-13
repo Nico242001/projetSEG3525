@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import './index.css';
 import ccmSuperTracker from "./images/index/ccmSuperTracker.jpg"
+import starlancer from "./images/index/starlancer.jpg"
 
 const Home = () => {
     const [deals, setDeals] = useState([
-        {name:"item1", oldPrice:"55", newPrice:"50", sport:"soccer", item:"cleats", img: ccmSuperTracker, id:"1"},
-        {name:"item2", oldPrice:"60", newPrice:"55", sport:"hockey", item:"sticks", img:ccmSuperTracker, id:"2"},
-        {name:"item3", oldPrice:"65", newPrice:"55", sport:"soccer", item:"balls", img:ccmSuperTracker, id:"3"},
-        {name:"item4", oldPrice:"65", newPrice:"55", sport:"soccer", item:"balls", img:ccmSuperTracker, id:"4"}
+        {name:"item1", oldPrice:"100", newPrice:"80", sport:"soccer", item:"cleats", img: ccmSuperTracker, id:"1"},
+        {name:"item2", oldPrice:"50", newPrice:"30", sport:"hockey", item:"sticks", img:starlancer, id:"2"},
+        {name:"item3", oldPrice:"65", newPrice:"55", sport:"soccer", item:"balls", img:ccmSuperTracker, id:"3"}
     ])
     const clickBuy = (e) =>{
         console.log("go view item", e);
@@ -34,7 +34,7 @@ const Home = () => {
             <h2 className="fit mx-auto mt-4">ITEMS FOR SALE!</h2>
             
             <div className="row my-4" min-width="100%">
-                {deals.map((deal) => (<div className='p-2 col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12' key={deal.id}>
+                {deals.map((deal) => (<div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12' key={deal.id}>
              
                <div className="card card-width bg-dark text-white mx-auto">
                     <img src={deal.img}  className="card-img-top img" alt=""/>

@@ -33,7 +33,7 @@ const Shop = () => {
 
         <div className="row my-4" min-width="100%">
                 {sports.map((sport) => (
-                <div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12' key={sport.id}>
+                <div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12' key={sport.id}>
                     <div className="card card-width bg-dark text-white mx-auto">
                         <img src={sport.img}  className="card-img-top img" alt=""/>
                         <div className="card-body text-center">
