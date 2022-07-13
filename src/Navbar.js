@@ -5,7 +5,7 @@ import {FaYoutube} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-    return (<div className="container stick"> 
+    return (<div className="container-fluid stick"> 
         <nav className="navbar-react">
             <h1 className="title"><Link to="/" >Joe's Sporting Goods</Link></h1>
             <div className="links-react">
