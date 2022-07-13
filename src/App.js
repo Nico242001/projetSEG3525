@@ -19,6 +19,15 @@ function App() {
           <Route exact path="/shop">
             <Shop/>
           </Route>
+          {/* <Route exact path="/soccer">
+
+          </Route>
+          <Route exact path="/hockey">
+            
+          </Route>
+          <Route exact path="/basketball">
+            
+          </Route> */}
           {/* <Route exact path="/sport/:sport">
             <Sport/>
           </Route> */}
