@@ -5,8 +5,8 @@ import starlancer from "./images/index/starlancer.jpg"
 
 const Home = () => {
     const [deals, setDeals] = useState([
-        {name:"item1", oldPrice:"100", newPrice:"80", sport:"soccer", item:"cleats", img: ccmSuperTracker, id:"1"},
-        {name:"item2", oldPrice:"50", newPrice:"30", sport:"hockey", item:"sticks", img:starlancer, id:"2"},
+        {name:"Super Tracker", oldPrice:"100", newPrice:"80", sport:"soccer", item:"cleats", img: ccmSuperTracker, id:"1"},
+        {name:"Starlancer", oldPrice:"50", newPrice:"30", sport:"hockey", item:"sticks", img:starlancer, id:"2"},
         {name:"item3", oldPrice:"65", newPrice:"55", sport:"soccer", item:"balls", img:ccmSuperTracker, id:"3"}
     ])
     const clickBuy = (e) =>{
@@ -36,7 +36,7 @@ const Home = () => {
             <div className="row my-4" min-width="100%">
                 {deals.map((deal) => (<div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12' key={deal.id}>
              
-               <div className="card card-width bg-dark text-white mx-auto">
+               <div className="card card-home bg-dark text-white mx-auto">
                     <img src={deal.img}  className="card-img-top img" alt=""/>
                     <div className="card-body text-center">
                         <h5 className="card-title">{deal.name}</h5>

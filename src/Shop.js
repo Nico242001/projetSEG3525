@@ -7,7 +7,6 @@ import hockeyCard from "./images/shop/hockeyCard.jpg"
 import sale from "./images/shop/sale.jpg"
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
-// import {useEffect, useState, useRef} from 'react';
 
 const Shop = () => {
     const [sports, setSports] = useState([
@@ -25,6 +24,7 @@ const Shop = () => {
             <div className="col bg-dark ml-auto d-flex align-items-center mt-md-0 top-border padding " min-width="50%" max-width="50%">
                 <div className="container text-center text-white">
                     <h2 className='fit mx-auto'>Shop Big Sales Now!</h2>
+                    <Link className="btn btn-secondary" to="/">Shop Now</Link>
                 </div>
             </div>
         </div>
@@ -38,8 +38,7 @@ const Shop = () => {
                         <img src={sport.img}  className="card-img-top img" alt=""/>
                         <div className="card-body text-center">
                             <h5 className="card-title">{sport.name}</h5>
-                            <Link className="btn btn-secondary" to={"/"+sport.name}>Shop</Link>
-                            {/* <a href="#" className="btn btn-secondary">Buy</a> */}
+                            <Link className="btn btn-secondary" to={"/sport/"+sport.name}>Shop</Link>
                         </div>
                     </div>
                 </div>))}

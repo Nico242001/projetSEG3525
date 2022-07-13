@@ -1,6 +1,6 @@
 import Navbar from './Navbar';
 import Home from './Home';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, useParams } from 'react-router-dom';
 import './index.css';
 import Shop from './Shop';
 import Sport from './Sport';
@@ -18,6 +18,9 @@ function App() {
           </Route>
           <Route exact path="/shop">
             <Shop/>
+          </Route>
+          <Route exact path="/sport/:sport">
+            <Sport/>
           </Route>
           {/* <Route exact path="/soccer">
 

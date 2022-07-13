@@ -129,6 +129,9 @@ position: sticky; top: 0;
 .card-width{
   width: 270px;
 }
+.card-home{
+  width: 220px;
+}
 .img{
   width: 100%;
   height: 175px;
