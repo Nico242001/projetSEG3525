@@ -133,6 +133,9 @@ html, #root, body{
   width: 100%;
 }
 
+.btm-border{
+  border-bottom: 5px solid white;
+}
 @media only screen and (max-width: 800px) {
   .height{
     height: 300px;
