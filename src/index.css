@@ -141,6 +141,11 @@ position: sticky; top: 0;
 .btm-border{
   border-bottom: 5px solid white;
 }
+.top-border{
+  
+    border-top: 5px solid white;
+ 
+}
 @media only screen and (max-width: 800px) {
   .height{
     height: 300px;
