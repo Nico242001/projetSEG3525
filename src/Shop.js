@@ -21,11 +21,11 @@ const Shop = () => {
                     </div>
                 </div>
                 <div className="col padding" min-width="50%" max-width="50%">
-                       <img id="soccer" src={sale} className="max-width"alt="" min-width="100%" />
+                       <img id="soccer" src={sale} className="height-image max-width"alt="" min-width="100%" />
                 </div>
             </div>
 
-            
+
             {/* <div className="row btm-border" min-width="100%">
             <div className="col padding" min-width="50%" max-width="50%">
                        <img id="basketball" src={basketball} className="max-width"alt="" min-width="100%" />

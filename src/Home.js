@@ -28,7 +28,7 @@ const Home = () => {
                         <button onClick={(e) =>{clickArg("hey", e)}} className="btn btn-secondary mx-auto">Buy Now!</button></div>
                 </div>
                 <div className="col padding" min-width="50%" max-width="50%">
-                        <iframe className='widthFull height' src="https://www.youtube.com/embed/VJHEKcKqvOI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                        <iframe className='widthFull height-video' src="https://www.youtube.com/embed/VJHEKcKqvOI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </div>
             </div>
             <h2 className="fit mx-auto mt-4">ITEMS FOR SALE!</h2>
