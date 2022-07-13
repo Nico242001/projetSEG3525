@@ -147,7 +147,7 @@ position: sticky; top: 0;
  
 }
 @media only screen and (max-width: 800px) {
-  .height-image{
+  .height-video{
     height: 300px;
   }
   .height-image{
@@ -156,10 +156,10 @@ position: sticky; top: 0;
 }
 
 @media only screen and (min-width:800px) and (max-width: 1000px) {
-  .height-image{
+  .height-video{
     height: 400px;
   }
-  .height-video{
+  .height-image{
     height: 175px;
   }
 }
