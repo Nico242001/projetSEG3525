@@ -16,7 +16,7 @@ const Shop = () => {
                         <button className="btn btn-secondary mx-auto">Buy Now!</button></div>
                 </div>
                 <div className="col padding" min-width="50%" max-width="50%">
-                       <img src={soccer} alt="" min-width="100%" />
+                       <img src={soccer} className="max-width"alt="" min-width="100%" />
                 </div>
             </div>
         
