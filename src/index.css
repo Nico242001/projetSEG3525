@@ -54,6 +54,7 @@ position: sticky; top: 0;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  
 }
 
 .dropdown-react:hover .dropbtn-react, .links-react a:hover {
