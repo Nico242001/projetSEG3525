@@ -17,7 +17,7 @@ const Sport = () => {
     if(sport === "Hockey"){
         items = [{id:"1", name:"Sticks", param:"Sticks", img:stick}, {id:"2", name:"Skates", param:"Skates", img:skate}, {id:"3", name:"Helmets", param:"Helmets", img:helmet}]
         name ="Hockey"
-    } if(sport === "Soccer"){
+    } else if(sport === "Soccer"){
         items = [{id:"1", name:"Soccer Balls", param:"SoccerBalls", img:soccerball}, {id:"2", name:"Cleats", param:"Cleats", img:cleats}, {id:"3", name:"Shin Guards", param:"ShinGuards", img:shinguards}]
         name ="Soccer"
     }else{
