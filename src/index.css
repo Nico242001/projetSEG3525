@@ -149,7 +149,7 @@ position: sticky; top: 0;
     border-top: 5px solid white;
 }
 .z-index-0{
-  z-index: 0;
+  z-index: -1;
 }
 @media only screen and (max-width: 800px) {
   .height-video{
