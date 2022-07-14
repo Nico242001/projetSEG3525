@@ -28,7 +28,7 @@ const Sport = () => {
     return ( 
         <>
         <h1>Select the {name} equipement you wish to buy!</h1>
-        <div className="row my-4 z-index-0" min-width="100%">
+        <div className="row my-4 " min-width="100%">
         {items.map((item) => (
                 <div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12' key={item.id}>
                     <div className="card card-width bg-dark text-white mx-auto">

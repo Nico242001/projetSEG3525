@@ -15,6 +15,7 @@ code {
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 html, #root, body{
   height: 100%;
+  z-index: 1;
 }
 
 .App{
@@ -54,10 +55,10 @@ position: sticky; top: 0;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-  z-index: 10;
+  /* z-index: 10; */
 }
 
-.dropdown-react:click .dropbtn-react, .links-react a:hover {
+.dropdown-react:hover .dropbtn-react, .links-react a:hover {
   background-color: #212529;
 }
 
@@ -85,7 +86,6 @@ position: sticky; top: 0;
 
 .dropdown-react:hover .dropdown-content-react {
   display: block;
-  z-index: 10;
 }
 
 .icon{
