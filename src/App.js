@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch, useParams } from 'react-router-
 import './index.css';
 import Shop from './Shop';
 import Sport from './Sport';
+import Items from './Items';
 
 
 function App() {
