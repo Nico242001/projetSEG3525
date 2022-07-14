@@ -85,6 +85,7 @@ position: sticky; top: 0;
 
 .dropdown-react:hover .dropdown-content-react {
   display: block;
+  z-index: 1;
 }
 
 .icon{
