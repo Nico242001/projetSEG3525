@@ -30,12 +30,12 @@ const Sport = () => {
         <h1>Select the {name} equipement you wish to buy!</h1>
         <div className="row my-4 z-index-0" min-width="100%">
         {items.map((item) => (
-                <div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 z-index-0' key={item.id}>
-                    <div className="card card-width bg-dark text-white mx-auto z-index-0">
-                        <img src={item.img}  className="card-img-top img z-index-0" alt=""/>
-                        <div className="card-body text-center z-index-0">
-                            <h5 className="card-title z-index-0">{item.name}</h5>
-                            <Link className="btn btn-secondary z-index-0" to={"/items/"+item.param}>Shop</Link>
+                <div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12' key={item.id}>
+                    <div className="card card-width bg-dark text-white mx-auto">
+                        <img src={item.img}  className="card-img-top img " alt=""/>
+                        <div className="card-body text-center ">
+                            <h5 className="card-title ">{item.name}</h5>
+                            <Link className="btn btn-secondary " to={"/items/"+item.param}>Shop</Link>
                         </div>
                     </div>  
                 </div>))}
