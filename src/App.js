@@ -22,18 +22,9 @@ function App() {
           <Route exact path="/sport/:sport">
             <Sport/>
           </Route>
-          {/* <Route exact path="/soccer">
-
+          <Route exact path="/items/:items">
+            <Items/>
           </Route>
-          <Route exact path="/hockey">
-            
-          </Route>
-          <Route exact path="/basketball">
-            
-          </Route> */}
-          {/* <Route exact path="/sport/:sport">
-            <Sport/>
-          </Route> */}
         </Switch>
       </div>
     </div>
