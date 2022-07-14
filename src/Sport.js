@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useParams } from "react-router-dom";
 import stick from "./images/sport/stick.jpg"
 import skate from "./images/sport/skate.jpg"
@@ -9,6 +8,7 @@ import shinguards from "./images/sport/shinguards.jpg"
 import basketball from "./images/sport/basketball.jpg"
 import shoe from "./images/sport/shoes.jpg"
 import shirt from "./images/sport/shirt.jpg"
+import { Link } from 'react-router-dom'
 
 const Sport = () => {
     let name;
