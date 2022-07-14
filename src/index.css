@@ -57,7 +57,7 @@ position: sticky; top: 0;
   z-index: 10;
 }
 
-.dropdown-react:hover .dropbtn-react, .links-react a:hover {
+.dropdown-react:click .dropbtn-react, .links-react a:hover {
   background-color: #212529;
 }
 
