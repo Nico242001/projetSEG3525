@@ -5,7 +5,7 @@ const Items = () => {
   // const [data,setData]=useState([]);
   // const getData=()=>{
     // fetch('items.json').then(response => response.json()).then(json => console.log(json))
-    console.log(ListItems.soccer.balls);
+    console.log(ListItems.soccer[0]);
   // }
 
   // console.log(ListItems.soccer.balls)
