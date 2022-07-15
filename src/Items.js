@@ -2,12 +2,10 @@
 import React, { useState } from 'react';
 
 const Items = () => {
-  const [data,setData]=useState([]);
-  const getData=()=>{
-    fetch('items.json').then(function(response){
-      console.log(response)
-    })
-  }
+  // const [data,setData]=useState([]);
+  // const getData=()=>{
+    fetch('items.json').then(response => response.json()).then(json => console.log(json))
+  // }
 
   // console.log(ListItems.soccer.balls)
 
