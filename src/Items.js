@@ -1,10 +1,15 @@
-
+import Items from './items.json'
 
 const Items = () => {
-   
+   var jsonValue = JSON.parse(Items);
+   var list = jsonValue.soccer.balls;
+
    
     return ( 
-       <div>items</div>
+       
+       <div className="items">
+        <h1>{list[1].name}</h1>
+       </div>
      );
 }
  

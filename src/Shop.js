@@ -13,7 +13,7 @@ const Shop = () => {
     ])
    
     return ( 
-       <div className="shop">
+       <div className="shop bg-light">
         <div className="row " min-width="100%">
             <div className="col padding" min-width="50%" max-width="50%">
                 <img id="soccer" src={sale} className="height-image max-width"alt="" min-width="100%" />
