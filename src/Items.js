@@ -9,8 +9,9 @@ const Items = () => {
   // let itemName;
   let count;
   const {item} = useParams();
+  console.log ("item", item);
   let list;
-  if (item === "SoccerBalls"){
+  if (item == "SoccerBalls"){
     name = "Soccer Balls"
     sport = "Soccer";
     list = ListItems.Soccerballs;
