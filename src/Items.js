@@ -1,4 +1,4 @@
-import ListItems from './items.json' assert {type: 'json'}
+import ListItems from './items.json'
 
 const Items = () => {
   let list = ListItems.soccer.balls;
