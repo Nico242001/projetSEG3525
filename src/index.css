@@ -126,6 +126,9 @@ position: sticky; top: 0;
 .card-home{
   width: 220px;
 }
+.sport-card-height{
+  height: 300px;
+}
 .img{
   width: 100%;
   height: 175px;
