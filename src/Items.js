@@ -110,20 +110,15 @@ const Items = () => {
             <div className="col-sm-10">
                 <div  className="container max-width">
                     <div id="itemContainer" className="row">
-                      if (brandBoolean) {
-                        <h2>Brand</h2>
-                        
-                      } 
-                      if (sizeBoolean) {
-                        
-                        <h2>size</h2>
-                      }</div>
+                      {brandBoolean ? ( <div> Hey </div>):""}
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     
-</div>
+// </div>
      );
 }
  
