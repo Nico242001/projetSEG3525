@@ -1,7 +1,7 @@
-import Items from './items.json'
+import ListItems from './items.json'
 
 const Items = () => {
-   var jsonValue = JSON.parse(Items);
+   var jsonValue = JSON.parse(ListItems);
    var list = jsonValue.soccer.balls;
 
    
