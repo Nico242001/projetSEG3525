@@ -2,8 +2,7 @@
     "sale":[
 
     ],
-    "soccer":[{
-        "balls":[
+        "Soccerballs":[
             {
                 "id": 4,
                 "name": "Adidas Brazuca",
@@ -107,8 +106,5 @@
         ],
         "cleats":[],
         "shinguards":[]
-    
-        
-        }]
 
 }
