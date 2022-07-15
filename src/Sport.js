@@ -15,13 +15,13 @@ const Sport = () => {
     let items = [];
     const {sport} = useParams();
     if(sport === "Hockey"){
-        items = [{id:"1", name:"Sticks", param:"Sticks/true", img:stick}, {id:"2", name:"Skates", param:"Skates/true", img:skate}, {id:"3", name:"Helmets", param:"Helmets/true", img:helmet}]
+        items = [{id:"1", name:"Sticks", param:"Sticks", img:stick}, {id:"2", name:"Skates", param:"Skates", img:skate}, {id:"3", name:"Helmets", param:"Helmets", img:helmet}]
         name ="Hockey"
     } else if(sport === "Soccer"){
-        items = [{id:"1", name:"Soccer Balls", param:"SoccerBalls/true", img:soccerball}, {id:"2", name:"Cleats", param:"Cleats/true", img:cleats}, {id:"3", name:"Shin Guards/true", param:"ShinGuards/true", img:shinguards}]
+        items = [{id:"1", name:"Soccer Balls", param:"SoccerBalls", img:soccerball}, {id:"2", name:"Cleats", param:"Cleats/true", img:cleats}, {id:"3", name:"Shin Guards", param:"ShinGuards", img:shinguards}]
         name ="Soccer"
     }else{
-        items = [{id:"1", name:"Basketballs", param:"Basketballs/true", img:basketball}, {id:"2", name:"Shoes", param:"Shoes/true", img:shoe}, {id:"3", name:"Shirts", param:"Shirts/false", img:shirt}]
+        items = [{id:"1", name:"Basketballs", param:"Basketballs", img:basketball}, {id:"2", name:"Shoes", param:"Shoes", img:shoe}, {id:"3", name:"Shirts", param:"Shirts", img:shirt}]
         name = "Basketball"
     }
 

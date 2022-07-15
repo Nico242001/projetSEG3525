@@ -18,7 +18,8 @@ function hockey(){
   sport = "Hockey";
 }
 const Items = () => {
-  const{brandBoolean} = useParams();
+  
+  let brandBoolean =true;
   const {item} = useParams();
   console.log ("item", item);
   let list;
@@ -78,6 +79,7 @@ const Items = () => {
     sport = "Basketball";
     name = "Basketball Shirts";
     list = ListItems.shirts;
+    brandBoolean = false;
   }
    
     return ( 
@@ -86,7 +88,7 @@ const Items = () => {
          <div className="container-fluid pt-4">
             <div className="container border border-3 border-dark bg-light">
               <div>
-                <h5><Link to="./">Home</Link> / <Link to="/shop">Shop</Link> / <Link to={"/sport/"+sport}>{sport}</Link> / <Link to={"/items/"+item+"/"+brandBoolean}>{itemName}</Link></h5>
+                <h5><Link to="./">Home</Link> / <Link to="/shop">Shop</Link> / <Link to={"/sport/"+sport}>{sport}</Link> / <Link to={"/items/"+item}>{itemName}</Link></h5>
               </div>
             <div className="row mx-auto">
               <div className="col p-0">
@@ -105,9 +107,9 @@ const Items = () => {
             <div className="col-sm-2"> <div id="filterContainer" className="container float-start border border-3 border-dark bg-light mr-4 max-width fit">
                 <h3>Filter</h3>
                 <div id="itemContainer" className="row">
-                      {brandBoolean === "true" && ( brand.map((brandName) => (
+                      {brandBoolean ? ( brand.map((brandName) => (
                         <div>{brandName}</div>
-                      ) ))}
+                      ) )):""}
                     </div>
             </div></div>
             <div className="col-sm-10">
