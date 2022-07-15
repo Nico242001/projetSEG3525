@@ -106,19 +106,20 @@ const Items = () => {
         <div className="row">
             <div className="col-sm-2"> <div id="filterContainer" className="container float-start border border-3 border-dark bg-light mr-4 max-width fit">
                 <h3>Filter</h3>
+                <div id="itemContainer" className="row">
+                      {brandBoolean ? ( brand.map((brandName) => (
+                        <div>{brandName}</div>
+                      ) )):""}
+                    </div>
             </div></div>
             <div className="col-sm-10">
                 <div  className="container max-width">
-                    <div id="itemContainer" className="row">
-                      {brandBoolean ? ( <div> Hey </div>):""}
-                    </div>
+                   
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-// </div>
      );
 }
  
