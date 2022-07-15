@@ -23,7 +23,7 @@ function App() {
           <Route exact path="/sport/:sport">
             <Sport/>
           </Route>
-          <Route exact path="/items/:item">
+          <Route exact path="/items/:item/:size/:brand">
             <Items/>
           </Route>
           
