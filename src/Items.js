@@ -1,4 +1,5 @@
 // import {ListItems} from './items.json'
+import React, { useState } from 'react';
 
 const Items = () => {
   const [data,setData]=useState([]);
@@ -8,7 +9,7 @@ const Items = () => {
     })
   }
 
-  console.log(ListItems.soccer.balls)
+  // console.log(ListItems.soccer.balls)
 
    
     return ( 
