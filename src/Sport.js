@@ -31,7 +31,7 @@ const Sport = () => {
             {items.map((item) => (
                 <div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12' key={item.id}>
                     <div className="card card-width bg-dark text-white mx-auto card-static sport-card-height">
-                        <img src={item.img} className="card-img-top img " alt="" />
+                        <img src={item.img} className="card-img-top sport-img-height" alt="" />
                         <div className="card-body text-center ">
                             <h5 className="card-title ">{item.name}</h5>
                             <Link className="btn btn-secondary " to={"/items/" + item.param}>Shop</Link>
