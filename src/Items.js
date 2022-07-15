@@ -1,8 +1,8 @@
 import ListItems from './items.json'
 
 const Items = () => {
-  let list = ListItems.soccer.balls;
-  console.log(list);
+  let list = require(ListItems);
+  console.log(list.soccer.balls);
   //  var jsonValue = JSON.parse(ListItems);
   //  var list = jsonValue.soccer.balls;
 
@@ -10,7 +10,7 @@ const Items = () => {
     return ( 
        
        <div className="items">
-        <h1>{list[1].name}</h1>
+        {/* <h1>{list[1].name}</h1> */}
        </div>
      );
 }
