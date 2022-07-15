@@ -81,6 +81,7 @@ const Items = () => {
     list = ListItems.shirts;
     brandBoolean = false;
   }
+  console.log(list);
    
     return ( 
        
