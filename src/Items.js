@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 const Items = () => {
   let sport;
   let name;
-  let itemName;
+  // let itemName;
   let count;
   const {item} = useParams();
   let list;
@@ -47,8 +47,9 @@ const Items = () => {
     name = "Basketball Shirts"
     list = ListItems.shirts;
   }
-  
+  console.log("name",name);
     console.log(list);
+    
 
    
     return ( 
