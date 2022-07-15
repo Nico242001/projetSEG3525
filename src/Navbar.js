@@ -13,25 +13,25 @@ const Navbar = () => {
                 <div className="dropdown-react">
                     <button className="dropbtn-react">Soccer</button>
                     <div className="dropdown-content-react">
-                        <Link to="/items/SoccerBalls/true">Balls</Link>
-                        <Link to="/items/Cleats/true">Cleats</Link>
-                        <Link to="/items/ShinGuards/true">Shin Guards</Link>
+                        <Link to="/items/SoccerBalls">Balls</Link>
+                        <Link to="/items/Cleats">Cleats</Link>
+                        <Link to="/items/ShinGuards">Shin Guards</Link>
                     </div>
                 </div>
                 <div className="dropdown-react">
                     <button className="dropbtn-react">Hockey</button>
                     <div className="dropdown-content-react">
-                        <Link to="/items/Sticks/true">Sticks</Link>
-                        <Link to="/items/Skates/true">Skates</Link>
-                        <Link to="/items/Helmets/true">Helmets</Link>
+                        <Link to="/items/Sticks">Sticks</Link>
+                        <Link to="/items/Skates">Skates</Link>
+                        <Link to="/items/Helmets">Helmets</Link>
                     </div>
                 </div>
                 <div className="dropdown-react">
                     <button className="dropbtn-react">BasketBall</button>
                     <div className="dropdown-content-react">
-                        <Link to="/items/Basketballs/true">Balls</Link>
-                        <Link to="/items/Shoes/true">Shoes</Link>
-                        <Link to="/items/Shirts/false">Shirts</Link>
+                        <Link to="/items/Basketballs">Balls</Link>
+                        <Link to="/items/Shoes">Shoes</Link>
+                        <Link to="/items/Shirts">Shirts</Link>
                     </div>
                 </div>
             </div>
