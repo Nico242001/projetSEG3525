@@ -30,7 +30,7 @@ const Sport = () => {
         <div className="sport bg-light"><h1 className="fit mx-auto my-3">Select the {name} equipement you wish to buy!</h1><div className="row my-4 " min-width="100%">
             {items.map((item) => (
                 <div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12' key={item.id}>
-                    <div className="card card-width bg-dark text-white mx-auto card-static">
+                    <div className="card card-width bg-dark text-white mx-auto card-static sport-card-height">
                         <img src={item.img} className="card-img-top img " alt="" />
                         <div className="card-body text-center ">
                             <h5 className="card-title ">{item.name}</h5>
