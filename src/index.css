@@ -26,7 +26,6 @@ html, #root, body{
 position: sticky; top: 0;
 }
 .navbar-react {
-  
   /* position: fixed; */
   overflow: hidden;
   background-color: #5680E9;
@@ -55,7 +54,6 @@ position: sticky; top: 0;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-  /* z-index: 10; */
 }
 
 .dropdown-react:hover .dropbtn-react, .links-react a:hover {
@@ -68,7 +66,7 @@ position: sticky; top: 0;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 10;
+  z-index: 1;
 }
 
 .dropdown-content-react a {
@@ -99,24 +97,19 @@ position: sticky; top: 0;
 .icon:hover{
   cursor:pointer;
 }
-
 .title {
   margin: 0;
 }
 .right-side{
   float: right;
 }
-
 .fit{
   max-width: fit-content;
 }
-
-
 .header{
   margin-bottom: 5px;
   margin-top: 5px;
 }
-
 .line{
   text-decoration: line-through;
 }
@@ -141,15 +134,15 @@ position: sticky; top: 0;
 .max-width{
   width: 100%;
 }
+.card-static{
+  position: static;
+}
 
 .btm-border{
   border-bottom: 5px solid white;
 }
 .top-border{
     border-top: 5px solid white;
-}
-#nav-bar{
-  z-index: 2;
 }
 @media only screen and (max-width: 800px) {
   .height-video{
