@@ -1,14 +1,15 @@
-import soccerCard from "./images/shop/soccerCard.jpg"
-import hockeyCard from "./images/shop/hockeyCard.jpg"
+import soccer from "./images/shop/soccerCard.jpg"
+import hockey from "./images/shop/hockeyCard.jpg"
+import basketball from "./images/shop/basketballCard.jpg"
 import sale from "./images/shop/sale.jpg"
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 
 const Shop = () => {
     const [sports, setSports] = useState([
-        {name:"Soccer", img: soccerCard, id:"1"},
-        {name:"Basketball", img: hockeyCard, id:"2"},
-        {name:"Hockey", img: hockeyCard, id:"3"}
+        {name:"Soccer", img: soccer, id:"1"},
+        {name:"Basketball", img: basketball, id:"2"},
+        {name:"Hockey", img: hockey, id:"3"}
     ])
    
     return ( 
@@ -30,7 +31,7 @@ const Shop = () => {
         <div className="row my-4" min-width="100%">
                 {sports.map((sport) => (
                 <div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12' key={sport.id}>
-                    <div className="card-static card card-width bg-dark text-white mx-auto">
+                    <div className="card card-width bg-dark text-white mx-auto card-static">
                         <img src={sport.img}  className="card-img-top img" alt=""/>
                         <div className="card-body text-center">
                             <h5 className="card-title">{sport.name}</h5>
