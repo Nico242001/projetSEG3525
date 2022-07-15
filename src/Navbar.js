@@ -13,25 +13,25 @@ const Navbar = () => {
                 <div className="dropdown-react">
                     <button className="dropbtn-react">Soccer</button>
                     <div className="dropdown-content-react">
-                        <Link to="/">Balls</Link>
-                        <Link to="/">Cleats</Link>
-                        <Link to="/">Shin Guards</Link>
+                        <Link to="items/SoccerBalls">Balls</Link>
+                        <Link to="items/Cleats">Cleats</Link>
+                        <Link to="items/ShinGuards">Shin Guards</Link>
                     </div>
                 </div>
                 <div className="dropdown-react">
                     <button className="dropbtn-react">Hockey</button>
                     <div className="dropdown-content-react">
-                        <Link to="/">Sticks</Link>
-                        <Link to="/">Skates</Link>
-                        <Link to="/">Helmets</Link>
+                        <Link to="items/Sticks">Sticks</Link>
+                        <Link to="items/Skates">Skates</Link>
+                        <Link to="items/Helmets">Helmets</Link>
                     </div>
                 </div>
                 <div className="dropdown-react">
                     <button className="dropbtn-react">BasketBall</button>
                     <div className="dropdown-content-react">
-                        <Link to="/">Balls</Link>
-                        <Link to="/">Shoes</Link>
-                        <Link to="/">Shirts</Link>
+                        <Link to="items/Basketballs">Balls</Link>
+                        <Link to="items/Shoes">Shoes</Link>
+                        <Link to="items/Shirts">Shirts</Link>
                     </div>
                 </div>
             </div>

@@ -1,9 +1,53 @@
 import ListItems from './items.json'
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 const Items = () => {
+  let sport;
+  let name;
+  let itemName;
+  let count;
+  const {item} = useParams();
+  let list;
+  if (item === "SoccerBalls"){
+    name = "Soccer Balls"
+    sport = "Soccer";
+    list = ListItems.Soccerballs;
+  } else if(item === "Cleats"){
+    sport = "Soccer";
+    name = "Soccer Cleats";
+    list = ListItems.cleats
+  } else if(item === "ShinGuards"){
+    sport = "Soccer";
+    name = "Soccer Shin Guards"
+    list = ListItems.shinguards
+  } else if(item === "Sticks"){
+    sport = "Hockey";
+    name = "Hockey Sticks"
+    list = ListItems.sticks;
+  } else if(item === "Skates"){
+    sport = "Hockey";
+    name= "Hockey Skates";
+    list = ListItems.skates;
+  } else if(item ==="Helmets"){
+    sport = "Hockey";
+    name = "Hockey Helmets";
+    list = ListItems.helmets;
+  } else if(item ==="Basketballs"){
+    sport = "Basketball";
+    name ="Basketballs"
+    list = ListItems.basketballs;
+  } else if(item ==="Shoes"){
+    sport = "Basketball";
+    name ="Basketball Shoes"
+    list = ListItems.shoes;
+  } else if(item === "Shirts"){
+    sport = "Basketball";
+    name = "Basketball Shirts"
+    list = ListItems.shirts;
+  }
   
-    console.log(ListItems.soccer);
+    console.log(list);
 
    
     return ( 
@@ -12,15 +56,15 @@ const Items = () => {
          <div className="container-fluid pt-4">
             <div className="container border border-3 border-dark bg-light">
               <div>
-                <h5><a>Home</a> / <a href="">Shop</a> / <a href="">Sport</a> / <a href="">equipement</a></h5>
+                <h5><Link to="./">Home</Link> / <Link to="/shop">Shop</Link> / <Link to={"sport/"+{sport}}>{sport}</Link> / <Link to={"items/"+{item}}>{item}</Link></h5>
               </div>
             <div className="row mx-auto">
               <div className="col p-0">
-                 <h2 className="text-left py-2 max-width fit">Sport equipement</h2> 
+                 <h2 className="text-left py-2 max-width fit">{name}</h2> 
              </div>
              <div className="col p-0"> 
                 <div className="ml-auto">
-                  <h2 id="sportNameEquipement" class="align-self-end py-2 max-width fit">Sport equipement</h2> 
+                  <h2 class="align-self-end py-2 max-width fit">{count} Items</h2> 
                 </div>
               </div>
             </div>
