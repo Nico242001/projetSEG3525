@@ -1,10 +1,13 @@
-import {ListItems} from './items.json' assert{type:"json"}
+// import {ListItems} from './items.json'
 
 const Items = () => {
-  // let list = require(ListItems);
-  // console.log(list.soccer.balls);
-  //  var jsonValue = JSON.parse(ListItems);
-  //  var list = jsonValue.soccer.balls;
+  const [data,setData]=useState([]);
+  const getData=()=>{
+    fetch('items.json').then(function(response){
+      console.log(response)
+    })
+  }
+
   console.log(ListItems.soccer.balls)
 
    
