@@ -59,11 +59,11 @@ const Items = () => {
          <div className="container-fluid pt-4">
             <div className="container border border-3 border-dark bg-light">
               <div>
-                <h5><Link to="./">Home</Link> / <Link to="/shop">Shop</Link> / <Link to={"sport/"+{sport}}>{sport}</Link> / <Link to={"items/"+{item}}>{item}</Link></h5>
+                <h5><Link to="./">Home</Link> / <Link to="/shop">Shop</Link> / <Link to={"/sport/"+{sport}}>{sport}</Link> / <Link to={"/items/"+{item}}>{item}</Link></h5>
               </div>
             <div className="row mx-auto">
               <div className="col p-0">
-                 <h2 className="text-left py-2 max-width fit">{name}</h2> 
+                 <h2 className="text-left py-2 fit mr-0">{name}</h2> 
              </div>
              <div className="col p-0"> 
                 <div className="ml-auto">
