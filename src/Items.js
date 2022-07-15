@@ -3,55 +3,84 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from "react-router-dom";
 
+let sport;
+let name;
+let itemName;
+let count;
+let brand;
+let size;
+let brandBoolean = true;
+let sizeBoolean = true;
+function soccer(){
+  brand = ["Adidas", "Nike", "Puma"];
+  sport = "Soccer";
+}
+function hockey(){
+  brand = ["Bauer", "CCM","Warrior"];
+  sport = "Hockey";
+}
 const Items = () => {
-  let sport;
-  let name;
-  // let itemName;
-  let count;
   const {item} = useParams();
   console.log ("item", item);
   let list;
-  if (item == "SoccerBalls"){
+  if (item === "SoccerBalls"){
+    soccer();
+    itemName = "Balls";
     name = "Soccer Balls"
-    sport = "Soccer";
+    size=["1", "2", "3", "4", "5"];
     list = ListItems.Soccerballs;
   } else if(item === "Cleats"){
-    sport = "Soccer";
+    soccer();
+    itemName = "Cleats";
     name = "Soccer Cleats";
-    list = ListItems.cleats
+    size=["6", "7", "8", "9", "10", "11", "12"];
+    list = ListItems.cleats;
   } else if(item === "ShinGuards"){
-    sport = "Soccer";
-    name = "Soccer Shin Guards"
-    list = ListItems.shinguards
+    soccer();
+    itemName = "Shin Guards";
+    size=["Small", "Medium", "Large"];
+    name = "Soccer Shin Guards";
+    list = ListItems.shinguards;
   } else if(item === "Sticks"){
-    sport = "Hockey";
-    name = "Hockey Sticks"
+    hockey();
+    name = "Hockey Sticks";
+    size=["Small", "Medium", "Large"];
+    itemName = "Sticks";
     list = ListItems.sticks;
   } else if(item === "Skates"){
-    sport = "Hockey";
+    hockey();
+    itemName = "Skates";
+    size=["6", "7", "8", "9", "10", "11", "12"];
     name= "Hockey Skates";
     list = ListItems.skates;
   } else if(item ==="Helmets"){
-    sport = "Hockey";
+    hockey();
+    size=["Small", "Medium", "Large"];
+    itemName = "Helmets";
     name = "Hockey Helmets";
     list = ListItems.helmets;
   } else if(item ==="Basketballs"){
+    brand = ["Nike", "Spalding", "Wilson"];
+    size=["27.5", "28.5", "29.5"];
+    itemName = "Balls";
     sport = "Basketball";
-    name ="Basketballs"
+    name ="Basketballs";
     list = ListItems.basketballs;
   } else if(item ==="Shoes"){
+    brand = ["Adidas", "Nike", "Puma"];
+    size=["6", "7", "8", "9", "10", "11", "12"];
+    itemName = "Shoes";
     sport = "Basketball";
-    name ="Basketball Shoes"
+    name ="Basketball Shoes";
     list = ListItems.shoes;
   } else if(item === "Shirts"){
+    size=["Small", "Medium", "Large"];
+    itemName = "Shirts";
     sport = "Basketball";
-    name = "Basketball Shirts"
+    name = "Basketball Shirts";
     list = ListItems.shirts;
+    brandBoolean = false;
   }
-  console.log("name",name);
-    console.log(list);
-    
-
    
     return ( 
        
@@ -59,7 +88,7 @@ const Items = () => {
          <div className="container-fluid pt-4">
             <div className="container border border-3 border-dark bg-light">
               <div>
-                <h5><Link to="./">Home</Link> / <Link to="/shop">Shop</Link> / <Link to={"/sport/"+sport}>{sport}</Link> / <Link to={"/items/"+item}>{item}</Link></h5>
+                <h5><Link to="./">Home</Link> / <Link to="/shop">Shop</Link> / <Link to={"/sport/"+sport}>{sport}</Link> / <Link to={"/items/"+item}>{itemName}</Link></h5>
               </div>
             <div className="row mx-auto">
               <div className="col p-0">
@@ -73,25 +102,28 @@ const Items = () => {
             </div>
           </div>
         </div>
-
-   
-       
-{/*
-    <div class="container my-4 p-0">
-        <div class="row">
-            <div class="col-sm-2"> <div id="filterContainer" class="container float-start border border-3 border-dark bg-light mr-4" style="min-width: fit-content;width:100%; height: 400px;">
+    <div className="container my-4 p-0">
+        <div className="row">
+            <div className="col-sm-2"> <div id="filterContainer" className="container float-start border border-3 border-dark bg-light mr-4 max-width fit">
                 <h3>Filter</h3>
             </div></div>
-            <div class="col-sm-10">
-                <div  class="container" style="width:100%;max-width:100%;">
-                    <div id="itemContainer" class="row"> </div>
+            <div className="col-sm-10">
+                <div  className="container max-width">
+                    <div id="itemContainer" className="row">
+                      if (brandBoolean) {
+                        <h2>Brand</h2>
+                        
+                      } 
+                      if (sizeBoolean) {
+                        
+                        <h2>size</h2>
+                      }</div>
                 </div>
             </div>
         </div>
     </div>
     
-</div> */}
-       </div>
+</div>
      );
 }
  
