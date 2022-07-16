@@ -9,7 +9,7 @@ let itemName;
 let brand;
 let size;
 let list;
-// let count;
+let count;
 let saleList = [];
 let brandBoolean =true;
 function soccer(){
