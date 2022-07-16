@@ -103,7 +103,7 @@ const Items = () => {
   // const [countSale, setCountSale] = useState(saleList.length);
   const [finalList, setFinalList] = useState(list);
   const [finalSaleList, setFinalSaleList] = useState(saleList);
-  count = countList +countSale;
+  // count = countList +countSale;
   const [clicked, setclicked] = useState(0);
   const [sizes, setSizes] = useState([]);
   const [brands, setBrands] = useState([]);
@@ -187,7 +187,7 @@ const Items = () => {
       setFinalList(listFinal);
     }
     if(finalSaleList.length != (saleFinal.length) ){
-      setFinalSaleList(sale);
+      setFinalSaleList(saleFinal);
     }
     // count = finalSaleList + countSale;
     // console.log("final");
