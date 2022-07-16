@@ -125,7 +125,7 @@ const Items = () => {
                     ) )):""}
                     <h4>Size</h4>
                     {size.map((itemSize) => (
-                      <><input type="checkbox"  onClick={(e) =>{checkClickedSize(e)}} id={itemSize} value={itemSize}></input>
+                      <><input type="checkbox"  onClick={(e) =>{checkClicked(e, {brandName})}} id={itemSize} value={itemSize}></input>
                       <label for={itemSize}> {itemSize}</label></>
                ))}
                 </div>
