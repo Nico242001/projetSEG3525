@@ -20,12 +20,6 @@ function hockey(){
 
 
 const Items = () => {
- const[click, setclick] = useState([
-  "click"
- ])
- const checkClicked = () =>{
-  setclick("click");
- }
   let brandBoolean =true;
   const {item} = useParams();
   let list;
@@ -87,7 +81,12 @@ const Items = () => {
     list = ListItems.shirts;
     brandBoolean = false;
   }
-  
+  const [clicked, setclicked] = useState("clicked");
+  // const [sizes, setSizes] = useState([]);
+  const checkClicked = (e, brand) =>{
+    const newclick = "clicked"
+    setclicked(newclick);
+}
   useEffect(()=>{
     console.log(document.getElementById("Nike").checked);
   })
@@ -121,12 +120,12 @@ const Items = () => {
                   {brandBoolean ? ( 
                     brand.map((brandName) => (
                       
-                    <><div ><input type="checkbox" onClick={ checkClicked()} id={brandName} value={brandName}></input>
+                    <><div ><input type="checkbox" onClick={(e) =>{checkClicked(e, {brandName})}} id={brandName} value={brandName}></input>
                     <label for={brandName}> {brandName}</label></div></>
                     ) )):""}
                     <h4>Size</h4>
                     {size.map((itemSize) => (
-                      <><input type="checkbox"  onClick={ checkClicked()} id={itemSize} value={itemSize}></input>
+                      <><input type="checkbox"  onClick={(e) =>{checkClickedSize(e)}} id={itemSize} value={itemSize}></input>
                       <label for={itemSize}> {itemSize}</label></>
                ))}
                 </div>
