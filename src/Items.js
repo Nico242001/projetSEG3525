@@ -9,6 +9,8 @@ let itemName;
 let count;
 let brand;
 let size;
+let list;
+let brandBoolean =true;
 function soccer(){
   brand = ["Adidas", "Nike", "Puma"];
   sport = "Soccer";
@@ -17,13 +19,8 @@ function hockey(){
   brand = ["Bauer", "CCM","Warrior"];
   sport = "Hockey";
 }
-
-
-const Items = () => {
-  let brandBoolean =true;
-  const {item} = useParams();
-  let list;
-  let listCards;
+function onLoad(item){
+  console.log(item);
   if (item === "SoccerBalls"){
     soccer();
     itemName = "Balls";
@@ -82,6 +79,11 @@ const Items = () => {
     list = ListItems.shirts;
     brandBoolean = false;
   }
+}
+
+
+const Items = () => {
+  const {item} = useParams();  
   const [clicked, setclicked] = useState(0);
   const [sizes, setSizes] = useState([]);
   const [brands, setBrands] = useState([]);
@@ -90,6 +92,7 @@ const Items = () => {
     setclicked(newclick);
 }
   useEffect(()=>{
+    onLoad(item);
     let brandChecked = [];
     let sizeChecked = [];
     if(brandBoolean){
