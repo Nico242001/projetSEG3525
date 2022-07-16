@@ -18,7 +18,7 @@ function hockey(){
   sport = "Hockey";
 }
 
-function checkbox(id){
+function checkboxBrand(id){
  if(document.getElementById(id).checked){
   console.log("true");
   brandChecklist.push(id);
@@ -29,6 +29,9 @@ function checkbox(id){
   }
   console.log("false");
  }
+}
+function checkboxSize(id){
+
 }
 const Items = () => {
   // brandChecklist = [];
@@ -94,7 +97,6 @@ const Items = () => {
     list = ListItems.shirts;
     brandBoolean = false;
   }
-  console.log(list);
    
     return ( 
        
@@ -124,11 +126,17 @@ const Items = () => {
                   {brandBoolean ? ( <h4>Brand</h4>):""}
                   {brandBoolean ? ( 
                     brand.map((brandName) => (
-                    <><input type="checkbox" onChange={checkbox({brandName})}id={brandName} value={brandName}></input>
+                    <><input type="checkbox" onChange={checkboxBrand({brandName})}id={brandName} value={brandName}></input>
                     <label for={brandName}> {brandName}</label></>
                     ) )):""}
-                    </div>
-            </div></div>
+                    <h4>Size</h4>
+                    {size.map((itemSize) => (
+                      <><input type="checkbox" onChange={checkboxSize({itemSize})}id={itemSize} value={itemSize}></input>
+                      <label for={itemSize}> {itemSize}</label></>
+               ))}
+                </div>
+              </div>
+            </div>
             <div className="col-sm-10">
                 <div  className="container max-width">
                    
