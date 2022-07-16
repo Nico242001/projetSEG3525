@@ -126,6 +126,8 @@ const Items = () => {
           }
         })
       });
+    } else{
+      listCards = list;
     }
     console.log(listCards);
     let listFinal=[];    
@@ -135,6 +137,8 @@ const Items = () => {
           listFinal.push(element);
         }
       });
+    } else{
+      listFinal = listCards;
     }
     console.log(listFinal);
   })
