@@ -2,7 +2,7 @@ import ListItems from './items.json';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from "react-router-dom";
-let brandChecklist =[];
+
 let sport;
 let name;
 let itemName;
@@ -18,25 +18,7 @@ function hockey(){
   sport = "Hockey";
 }
 
-// const checkboxBrand = (id) => {
-//   let id = ""
-//  if(document.getElementById(id).checked){
-//   console.log("true");
-//   brandChecklist.push(id);
-//  } else{
-//   const index = brandChecklist.indexOf(id);
-//   if(index>-1){
-//     brandChecklist.splice(index,1);
-//   }
-//   console.log("false");
-//  }
-// }
-// const checkboxSize = (id) =>{
 
-// }
-useEffect(()=>{
-  console.log(document.getElementById("Nike").checked);
-})
 const Items = () => {
   // brandChecklist = [];
   let brandBoolean =true;
@@ -100,6 +82,10 @@ const Items = () => {
     list = ListItems.shirts;
     brandBoolean = false;
   }
+  
+  useEffect(()=>{
+    console.log(document.getElementById("Nike").checked);
+  })
    
     return ( 
        
