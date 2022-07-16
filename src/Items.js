@@ -21,6 +21,7 @@ function hockey(){
   sport = "Hockey";
 }
 function onLoad(item){
+  saleList=[];
   console.log(item);
   if (item === "SoccerBalls"){
     soccer();
@@ -187,7 +188,7 @@ const Items = () => {
     //   setCountSale(saleFinal.length);
     // }
     // count = saleFinal.length + listFinal.length;
-    console.log(countList,":",listFinal.length, " ", countSale,":",saleFinal.length);
+    console.log(countList,":",listFinal.length, " ", countSale,":",saleFinal);
   })
    
     return ( 
