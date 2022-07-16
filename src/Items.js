@@ -6,7 +6,6 @@ import { useParams } from "react-router-dom";
 let sport;
 let name;
 let itemName;
-let count;
 let brand;
 let size;
 let list;
@@ -84,7 +83,7 @@ function onLoad(item){
 const Items = () => {
   const {item} = useParams(); 
   onLoad(item);
-
+  const [count, setCount] = useState(list.length);
   const [clicked, setclicked] = useState(0);
   const [sizes, setSizes] = useState([]);
   const [brands, setBrands] = useState([]);
@@ -114,9 +113,7 @@ const Items = () => {
     if((brands.length !== brandChecked.length && (brands.every((val) => brandChecked.includes(val))))){
       setBrands(brandChecked);
     }
-    console.log(sizeChecked);
-    console.log(brandChecked);
-    console.log(list);
+  
     let listCards= [];
     if(sizeChecked.length>0){
       list.forEach(element => {
@@ -144,8 +141,11 @@ const Items = () => {
     } else{
       listFinal = listCards;
     }
+    if(count != listFinal.length){
+      setCount(listFinal.length);
+    }
     console.log(listFinal.length);
-    count = listFinal.length;
+    // count = listFinal.length;
   })
    
     return ( 
