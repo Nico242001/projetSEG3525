@@ -9,7 +9,7 @@ let itemName;
 let brand;
 let size;
 let list;
-let count;
+// let count;
 let saleList = [];
 let brandBoolean =true;
 function soccer(){
@@ -95,8 +95,8 @@ function onLoad(item){
 const Items = () => {
   const {item} = useParams(); 
   onLoad(item);
-  const [countList, setCountList] = useState(list.length);
-  const [countSale, setCountSale] = useState(saleList.length);
+  const [count, setCount] = useState(list.length+saleList.length);
+  // const [countSale, setCountSale] = useState(saleList.length);
   count = countList +countSale;
   const [clicked, setclicked] = useState(0);
   const [sizes, setSizes] = useState([]);
@@ -180,13 +180,13 @@ const Items = () => {
     } else{
       saleFinal = saleCards;
     }
-    if(countList != (listFinal.length) ){
-      setCountList(listFinal.length);
-    }
-    if(countSale != (saleFinal.length) ){
-      setCountSale(saleFinal.length);
-    }
-    count = countList+countSale;
+    // if(countList != (listFinal.length + saleFinal.length) ){
+    //   setCount(listFinal.length + saleFinal);
+    // }
+    // if(countSale != (saleFinal.length) ){
+    //   setCountSale(saleFinal.length);
+    // }
+    count = saleFinal.length + listFinal.length;
     console.log(count);
   })
    
