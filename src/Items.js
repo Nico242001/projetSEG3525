@@ -120,8 +120,10 @@ const Items = () => {
     let listCards= [];
     if(sizeChecked.length>0){
       list.forEach(element => {
-        sizeChecked.every(elemSize =>{
-          if(element.size.includes(elemSize)){
+        let bool = false
+        sizeChecked.forEach(elemSize =>{
+          if(element.size.includes(elemSize) && !bool){
+            console.log(element);
             listCards.push(element);
           }
         })
