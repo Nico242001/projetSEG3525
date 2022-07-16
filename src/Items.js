@@ -11,6 +11,8 @@ let size;
 let list;
 let count;
 let saleList = [];
+let listFinal = [];
+let saleFinal=[]; 
 let brandBoolean =true;
 function soccer(){
   brand = ["Adidas", "Nike", "Puma"];
@@ -106,6 +108,8 @@ const Items = () => {
     const newclick = clicked+1;
     setclicked(newclick);
 }
+listFinal = list;
+
   useEffect(()=>{
     onLoad(item);
     let brandChecked = [];
@@ -156,8 +160,8 @@ const Items = () => {
     } else{
       listCards = list;
     }
-    let listFinal=[];
-    let saleFinal=[];    
+    listFinal=[];
+    saleFinal=[];    
     if(brandChecked.length>0){
       listCards.forEach(element => {
         if(brandChecked.includes(element.brand)){
