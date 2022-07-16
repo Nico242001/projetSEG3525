@@ -81,10 +81,10 @@ function onLoad(item){
   }
 }
 
-
 const Items = () => {
   const {item} = useParams(); 
-  onLoad(item); 
+  onLoad(item);
+
   const [clicked, setclicked] = useState(0);
   const [sizes, setSizes] = useState([]);
   const [brands, setBrands] = useState([]);
@@ -144,7 +144,8 @@ const Items = () => {
     } else{
       listFinal = listCards;
     }
-    console.log(listFinal);
+    console.log(listFinal.length);
+    count = listFinal.length;
   })
    
     return ( 
@@ -153,7 +154,7 @@ const Items = () => {
          <div className="container-fluid pt-4">
             <div className="container border border-3 border-dark bg-light">
               <div>
-                <h5><Link to="./">Home</Link> / <Link to="/shop">Shop</Link> / <Link to={"/sport/"+sport}>{sport}</Link> / <Link to={"/items/"+item}>{itemName}</Link></h5>
+                <h5><Link to="/">Home</Link> / <Link to="/shop">Shop</Link> / <Link to={"/sport/"+sport}>{sport}</Link> / <Link to={"/items/"+item}>{itemName}</Link></h5>
               </div>
             <div className="row mx-auto">
               <div className="col p-0">
