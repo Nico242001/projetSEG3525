@@ -99,8 +99,10 @@ const Items = () => {
   const {item} = useParams(); 
   console.log("items");
   onLoad(item);
-  const [countList, setCountList] = useState(list.length);
-  const [countSale, setCountSale] = useState(saleList.length);
+  // const [countList, setCountList] = useState(list.length);
+  // const [countSale, setCountSale] = useState(saleList.length);
+  const [finalList, setFinalList] = useState(list);
+  const [finalSaleList, setFinalSaleList] = useState(saleList);
   count = countList +countSale;
   const [clicked, setclicked] = useState(0);
   const [sizes, setSizes] = useState([]);
@@ -109,7 +111,7 @@ const Items = () => {
     const newclick = clicked+1;
     setclicked(newclick);
 }
-listFinal = list;
+// listFinal = list;
 
   useEffect(()=>{
     onLoad(item);
@@ -181,14 +183,14 @@ listFinal = list;
     } else{
       saleFinal = saleCards;
     }
-    if(countList != (listFinal.length) ){
-      setCountList(listFinal.length);
+    if(finalList.length != (listFinal.length) ){
+      setFinalList(listFinal);
     }
-    if(countSale != (saleFinal.length) ){
-      setCountSale(saleFinal.length);
+    if(finalSaleList.length != (saleFinal.length) ){
+      setFinalSaleList(sale);
     }
-    count = countList + countSale;
-    console.log("final");
+    // count = finalSaleList + countSale;
+    // console.log("final");
   })
    
     return ( 
@@ -205,7 +207,7 @@ listFinal = list;
              </div>
              <div className="col p-0"> 
                 <div className="ml-auto">
-                  <h2 class="align-self-end py-2 max-width fit">{count} Items</h2> 
+                  <h2 class="align-self-end py-2 max-width fit">{finalSaleList.length+finalList.length} Items</h2> 
                 </div>
               </div>
             </div>
@@ -232,7 +234,7 @@ listFinal = list;
             </div>
             <div className="col-sm-10">
                 <div  className="row max-width">
-                {listFinal.map((element) => (<div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12' key={element.id}>
+                {finalList.map((element) => (<div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12' key={element.id}>
              
              <div className="card card-home bg-dark text-white mx-auto card-static">
                   <img src={element.img}  className="card-img-top img" alt=""/>
