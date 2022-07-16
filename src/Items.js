@@ -135,7 +135,6 @@ const Items = () => {
         let bool = false
         sizeChecked.forEach(elemSize =>{
           if(element.size.includes(elemSize) && !bool){
-            console.log(element);
             saleCards.push(element);
             bool = true;
           }
@@ -149,7 +148,6 @@ const Items = () => {
         let bool = false
         sizeChecked.forEach(elemSize =>{
           if(element.size.includes(elemSize) && !bool){
-            console.log(element);
             listCards.push(element);
             bool = true;
           }
@@ -158,13 +156,11 @@ const Items = () => {
     } else{
       listCards = list;
     }
-    console.log(listCards);
     let listFinal=[];
     let saleFinal=[];    
     if(brandChecked.length>0){
       listCards.forEach(element => {
         if(brandChecked.includes(element.brand)){
-          console.log(element.brand);
           listFinal.push(element);
         }
       });
@@ -174,7 +170,6 @@ const Items = () => {
     if(brandChecked.length>0){
       saleCards.forEach(element => {
         if(brandChecked.includes(element.brand)){
-          console.log(element.brand);
           saleFinal.push(element);
         }
       });
@@ -188,7 +183,6 @@ const Items = () => {
       setCountSale(saleFinal.length);
     }
     count = countList + countSale;
-    console.log(countList,":",listFinal.length, " ", countSale,":",saleFinal);
   })
    
     return ( 
@@ -232,7 +226,18 @@ const Items = () => {
             </div>
             <div className="col-sm-10">
                 <div  className="container max-width">
-                   
+                {listFinal.map((element) => (<div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12' key={element.id}>
+             
+             <div className="card card-home bg-dark text-white mx-auto">
+                  <img src={element.img}  className="card-img-top img" alt=""/>
+                  <div className="card-body text-center">
+                      <h5 className="card-title">{element.name}</h5>
+                      <p className="card-text">$ {element.price}</p>
+                      <a href="#" className="btn btn-secondary">Buy</a>
+                  </div>
+              </div>
+            
+          </div>))}
                     </div>
                 </div>
             </div>
