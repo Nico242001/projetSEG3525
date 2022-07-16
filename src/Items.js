@@ -187,7 +187,7 @@ const Items = () => {
     //   setCountSale(saleFinal.length);
     // }
     // count = saleFinal.length + listFinal.length;
-    console.log(countList, " ", countSale);
+    console.log(countList,":",listFinal.length, " ", countSale,":",saleFinal.length);
   })
    
     return ( 
