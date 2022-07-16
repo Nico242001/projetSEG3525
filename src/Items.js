@@ -20,7 +20,12 @@ function hockey(){
 
 
 const Items = () => {
-  // brandChecklist = [];
+ const[click, setclick] = useState([
+  "click"
+ ])
+ const checkClicked = () =>{
+  setclick("click");
+ }
   let brandBoolean =true;
   const {item} = useParams();
   let list;
@@ -116,12 +121,12 @@ const Items = () => {
                   {brandBoolean ? ( 
                     brand.map((brandName) => (
                       
-                    <><div ><input type="checkbox" id={brandName} value={brandName}></input>
+                    <><div ><input type="checkbox" onClick={ checkClicked()} id={brandName} value={brandName}></input>
                     <label for={brandName}> {brandName}</label></div></>
                     ) )):""}
                     <h4>Size</h4>
                     {size.map((itemSize) => (
-                      <><input type="checkbox"  id={itemSize} value={itemSize}></input>
+                      <><input type="checkbox"  onClick={ checkClicked()} id={itemSize} value={itemSize}></input>
                       <label for={itemSize}> {itemSize}</label></>
                ))}
                 </div>
