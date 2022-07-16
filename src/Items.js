@@ -18,7 +18,7 @@ function hockey(){
   sport = "Hockey";
 }
 
-function checkboxBrand(id){
+const checkboxBrand = (id) => {
  if(document.getElementById(id).checked){
   console.log("true");
   brandChecklist.push(id);
@@ -30,14 +30,13 @@ function checkboxBrand(id){
   console.log("false");
  }
 }
-function checkboxSize(id){
+const checkboxSize = (id) =>{
 
 }
 const Items = () => {
   // brandChecklist = [];
   let brandBoolean =true;
   const {item} = useParams();
-  console.log ("item", item);
   let list;
   if (item === "SoccerBalls"){
     soccer();
