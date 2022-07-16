@@ -133,7 +133,7 @@ const Items = () => {
     let listFinal=[];    
     if(brandChecked.length>0){
       listCards.forEach(element => {
-        if(sizeChecked.includes(element.brand)){
+        if(brandChecked.includes(element.brand)){
           console.log(element.brand);
           listFinal.push(element);
         }
