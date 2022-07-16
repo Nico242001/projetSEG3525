@@ -134,6 +134,7 @@ const Items = () => {
     if(brandChecked.length>0){
       listCards.forEach(element => {
         if(sizeChecked.includes(element.brand)){
+          console.log(element.brand);
           listFinal.push(element);
         }
       });
