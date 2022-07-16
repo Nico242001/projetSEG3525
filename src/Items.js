@@ -81,10 +81,10 @@ const Items = () => {
     list = ListItems.shirts;
     brandBoolean = false;
   }
-  const [clicked, setclicked] = useState("clicked");
+  const [clicked, setclicked] = useState(0);
   // const [sizes, setSizes] = useState([]);
   const checkClicked = (e, brand) =>{
-    const newclick = "clicked"
+    const newclick = clicked+1;
     setclicked(newclick);
 }
   useEffect(()=>{
@@ -119,13 +119,13 @@ const Items = () => {
                   {brandBoolean ? ( <h4>Brand</h4>):""}
                   {brandBoolean ? ( 
                     brand.map((brandName) => (
-                    <><div ><input type="checkbox" onClick={(e) =>{checkClicked(e, {brandName})}} id={brandName} value={brandName}></input>
+                    <><div><input type="checkbox" onClick={(e) =>{checkClicked(e, {brandName})}} id={brandName} value={brandName}></input>
                     <label for={brandName}> {brandName}</label></div></>
                     ) )):""}
                     <h4>Size</h4>
                     {size.map((itemSize) => (
-                      <><input type="checkbox"  onClick={(e) =>{checkClicked(e, {itemSize})}} id={itemSize} value={itemSize}></input>
-                      <label for={itemSize}> {itemSize}</label></>
+                      <><div><input type="checkbox"  onClick={(e) =>{checkClicked(e, {itemSize})}} id={itemSize} value={itemSize}></input>
+                      <label for={itemSize}> {itemSize}</label></div></>
                ))}
                 </div>
               </div>
