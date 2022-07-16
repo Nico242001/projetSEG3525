@@ -9,6 +9,7 @@ let itemName;
 let brand;
 let size;
 let list;
+let saleList;
 let brandBoolean =true;
 function soccer(){
   brand = ["Adidas", "Nike", "Puma"];
@@ -26,6 +27,11 @@ function onLoad(item){
     name = "Soccer Balls"
     size=["1", "2", "3", "4", "5"];
     list = ListItems.Soccerballs;
+    ListItems.sale.forEach(element =>{
+      if(element.item === "SoccerBalls"){
+        saleList.push(element);
+      }
+    })
   } else if(item === "Cleats"){
     soccer();
     itemName = "Cleats";
@@ -50,6 +56,11 @@ function onLoad(item){
     size=["6", "7", "8", "9", "10", "11", "12"];
     name= "Hockey Skates";
     list = ListItems.skates;
+    ListItems.sale.forEach(element =>{
+      if(element.item === "Skates"){
+        saleList.push(element);
+      }
+    })
   } else if(item ==="Helmets"){
     hockey();
     size=["Small", "Medium", "Large"];
@@ -113,8 +124,22 @@ const Items = () => {
     if((brands.length !== brandChecked.length && (brands.every((val) => brandChecked.includes(val))))){
       setBrands(brandChecked);
     }
-  
+    let saleCards=[];
     let listCards= [];
+    if(sizeChecked.length>0){
+      saleList.forEach(element => {
+        let bool = false
+        sizeChecked.forEach(elemSize =>{
+          if(element.size.includes(elemSize) && !bool){
+            console.log(element);
+            saleCards.push(element);
+            bool = true;
+          }
+        })
+      });
+    } else{
+      saleCards = saleList;
+    }
     if(sizeChecked.length>0){
       list.forEach(element => {
         let bool = false
@@ -130,7 +155,8 @@ const Items = () => {
       listCards = list;
     }
     console.log(listCards);
-    let listFinal=[];    
+    let listFinal=[];
+    let saleFinal=[];    
     if(brandChecked.length>0){
       listCards.forEach(element => {
         if(brandChecked.includes(element.brand)){
@@ -141,8 +167,18 @@ const Items = () => {
     } else{
       listFinal = listCards;
     }
-    if(count != listFinal.length){
-      setCount(listFinal.length);
+    if(brandChecked.length>0){
+      saleCards.forEach(element => {
+        if(brandChecked.includes(element.brand)){
+          console.log(element.brand);
+          saleFinal.push(element);
+        }
+      });
+    } else{
+      saleFinal = saleCards;
+    }
+    if(count != (listFinal.length + saleFinal.length)){
+      setCount(listFinal.length + saleFinal.length);
     }
     console.log(listFinal.length);
     // count = listFinal.length;
