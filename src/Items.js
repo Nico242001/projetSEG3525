@@ -191,7 +191,7 @@ listFinal = list;
    
     return ( 
        
-       <div className="items">
+       <div className="items bg-light">
          <div className="container-fluid pt-4">
             <div className="container border border-3 border-dark bg-light">
               <div>
@@ -232,7 +232,7 @@ listFinal = list;
                 <div  className="row max-width">
                 {listFinal.map((element) => (<div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12' key={element.id}>
              
-             <div className="card card-home bg-dark text-white mx-auto">
+             <div className="card card-home bg-dark text-white mx-auto card-static">
                   <img src={element.img}  className="card-img-top img" alt=""/>
                   <div className="card-body text-center">
                       <h5 className="card-title">{element.name}</h5>
