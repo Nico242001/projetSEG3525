@@ -82,13 +82,31 @@ const Items = () => {
     brandBoolean = false;
   }
   const [clicked, setclicked] = useState(0);
-  // const [sizes, setSizes] = useState([]);
+  const [sizes, setSizes] = useState([]);
+  const [brands, setBrands] = useState([]);
   const checkClicked = (e, brand) =>{
     const newclick = clicked+1;
     setclicked(newclick);
 }
   useEffect(()=>{
-    console.log(document.getElementById("Nike").checked);
+    let brandChecked = [];
+    let sizeChecked = [];
+    if(brandBoolean){
+      for(let i = 0; i<brand.length; i++){
+        if(document.getElementById(brand[i]).checked){
+          brandChecked.push(brand[i]);
+        }
+      }
+    }
+    for(let i = 0; i<size.length;i++){
+      if(document.getElementById(size[i]).checked){
+        sizeChecked.push(size[i]);
+      }
+    }
+    setSizes(sizeChecked);
+    setBrands(brandChecked);
+    console.log(sizeChecked);
+    console.log(brandChecked);    
   })
    
     return ( 
