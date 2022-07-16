@@ -123,6 +123,7 @@ const Items = () => {
         })
       });
     }
+    console.log(listCards);
     let listFinal=[];    
     if(brandChecked.length>0){
       listCards.forEach(element => {
