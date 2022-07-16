@@ -24,7 +24,6 @@ function hockey(){
 }
 function onLoad(item){
   saleList=[];
-  console.log(item);
   if (item === "SoccerBalls"){
     soccer();
     itemName = "Balls";
@@ -93,10 +92,12 @@ function onLoad(item){
     list = ListItems.shirts;
     brandBoolean = false;
   }
+  console.log("on");
 }
 
 const Items = () => {
   const {item} = useParams(); 
+  console.log("items");
   onLoad(item);
   const [countList, setCountList] = useState(list.length);
   const [countSale, setCountSale] = useState(saleList.length);
@@ -187,6 +188,7 @@ listFinal = list;
       setCountSale(saleFinal.length);
     }
     count = countList + countSale;
+    console.log("final");
   })
    
     return ( 
