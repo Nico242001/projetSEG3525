@@ -181,13 +181,13 @@ const Items = () => {
     } else{
       saleFinal = saleCards;
     }
-    // if(countList != (listFinal.length + saleFinal.length) ){
-    //   setCount(listFinal.length + saleFinal);
-    // }
-    // if(countSale != (saleFinal.length) ){
-    //   setCountSale(saleFinal.length);
-    // }
-    // count = saleFinal.length + listFinal.length;
+    if(countList != (listFinal.length) ){
+      setCountList(listFinal.length);
+    }
+    if(countSale != (saleFinal.length) ){
+      setCountSale(saleFinal.length);
+    }
+    count = countList + countSale;
     console.log(countList,":",listFinal.length, " ", countSale,":",saleFinal);
   })
    
