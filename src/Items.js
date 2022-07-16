@@ -108,9 +108,13 @@ const Items = () => {
             <div className="col-sm-2"> <div id="filterContainer" className="container float-start border border-3 border-dark bg-light mr-4 max-width fit">
                 <h3>Filter</h3>
                 <div id="itemContainer" className="row">
-                      {brandBoolean ? ( brand.map((brandName) => (
-                        <div>{brandName}</div>
-                      ) )):""}
+                
+                  {brandBoolean ? ( <h4>Brand</h4>):""}
+                  {brandBoolean ? ( 
+                    brand.map((brandName) => (
+                    <><input type="checkbox" id={brandName} value={brandName}></input>
+                    <label for={brandName}> {brandName}</label></>
+                    ) )):""}
                     </div>
             </div></div>
             <div className="col-sm-10">
