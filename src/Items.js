@@ -112,6 +112,7 @@ const Items = () => {
     }
     console.log(sizeChecked);
     console.log(brandChecked);
+    console.log(list);
     let listCards= [];
     if(sizeChecked.length>0){
       list.forEach(element => {
