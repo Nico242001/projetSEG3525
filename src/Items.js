@@ -1,5 +1,5 @@
 import ListItems from './items.json';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from "react-router-dom";
 let brandChecklist =[];
@@ -18,21 +18,25 @@ function hockey(){
   sport = "Hockey";
 }
 
-const checkboxBrand = (id) => {
- if(document.getElementById(id).checked){
-  console.log("true");
-  brandChecklist.push(id);
- } else{
-  const index = brandChecklist.indexOf(id);
-  if(index>-1){
-    brandChecklist.splice(index,1);
-  }
-  console.log("false");
- }
-}
-const checkboxSize = (id) =>{
+// const checkboxBrand = (id) => {
+//   let id = ""
+//  if(document.getElementById(id).checked){
+//   console.log("true");
+//   brandChecklist.push(id);
+//  } else{
+//   const index = brandChecklist.indexOf(id);
+//   if(index>-1){
+//     brandChecklist.splice(index,1);
+//   }
+//   console.log("false");
+//  }
+// }
+// const checkboxSize = (id) =>{
 
-}
+// }
+useEffect(()=>{
+  console.log(document.getElementById("Nike").checked);
+})
 const Items = () => {
   // brandChecklist = [];
   let brandBoolean =true;
@@ -125,12 +129,13 @@ const Items = () => {
                   {brandBoolean ? ( <h4>Brand</h4>):""}
                   {brandBoolean ? ( 
                     brand.map((brandName) => (
-                    <><input type="checkbox" onClick={checkboxBrand({brandName})}id={brandName} value={brandName}></input>
-                    <label for={brandName}> {brandName}</label></>
+                      
+                    <><div ><input type="checkbox" id={brandName} value={brandName}></input>
+                    <label for={brandName}> {brandName}</label></div></>
                     ) )):""}
                     <h4>Size</h4>
                     {size.map((itemSize) => (
-                      <><input type="checkbox" onClick={checkboxSize({itemSize})}id={itemSize} value={itemSize}></input>
+                      <><input type="checkbox"  id={itemSize} value={itemSize}></input>
                       <label for={itemSize}> {itemSize}</label></>
                ))}
                 </div>
@@ -148,3 +153,6 @@ const Items = () => {
 }
  
 export default Items;
+
+// onClick={checkboxBrand({brandName})}
+// onClick={checkboxSize({itemSize})}
