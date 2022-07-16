@@ -103,10 +103,10 @@ const Items = () => {
         sizeChecked.push(size[i]);
       }
     }
-    if(!(sizes.length !== sizeChecked.length && (sizes.every((val) => sizeChecked.includes(val))))){
+    if((sizes.length !== sizeChecked.length && (sizes.every((val) => sizeChecked.includes(val))))){
       setSizes(sizeChecked);
     }
-    if(!(brands.length !== brandChecked.length && (brands.every((val) => brandChecked.includes(val))))){
+    if((brands.length !== brandChecked.length && (brands.every((val) => brandChecked.includes(val))))){
       setBrands(brandChecked);
     }
     console.log(sizeChecked);
