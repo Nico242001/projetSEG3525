@@ -181,15 +181,13 @@ const Items = () => {
       saleFinal = saleCards;
     }
     if(countList != (listFinal.length) ){
-      setCount(listFinal.length);
+      setCountList(listFinal.length);
     }
     if(countSale != (saleFinal.length) ){
-      setCount(saleFinal.length);
+      setCountSale(saleFinal.length);
     }
     count = countList+countSale;
-  
     console.log(count);
-    // count = listFinal.length;
   })
    
     return ( 
