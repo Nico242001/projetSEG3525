@@ -125,12 +125,12 @@ const Items = () => {
                   {brandBoolean ? ( <h4>Brand</h4>):""}
                   {brandBoolean ? ( 
                     brand.map((brandName) => (
-                    <><input type="checkbox" onChange={checkboxBrand({brandName})}id={brandName} value={brandName}></input>
+                    <><input type="checkbox" onClick={checkboxBrand({brandName})}id={brandName} value={brandName}></input>
                     <label for={brandName}> {brandName}</label></>
                     ) )):""}
                     <h4>Size</h4>
                     {size.map((itemSize) => (
-                      <><input type="checkbox" onChange={checkboxSize({itemSize})}id={itemSize} value={itemSize}></input>
+                      <><input type="checkbox" onClick={checkboxSize({itemSize})}id={itemSize} value={itemSize}></input>
                       <label for={itemSize}> {itemSize}</label></>
                ))}
                 </div>
