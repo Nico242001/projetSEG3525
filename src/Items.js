@@ -125,6 +125,7 @@ const Items = () => {
           if(element.size.includes(elemSize) && !bool){
             console.log(element);
             listCards.push(element);
+            bool = true;
           }
         })
       });
