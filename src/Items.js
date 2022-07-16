@@ -23,6 +23,7 @@ const Items = () => {
   let brandBoolean =true;
   const {item} = useParams();
   let list;
+  let listCards;
   if (item === "SoccerBalls"){
     soccer();
     itemName = "Balls";
@@ -110,7 +111,26 @@ const Items = () => {
       setBrands(brandChecked);
     }
     console.log(sizeChecked);
-    console.log(brandChecked);    
+    console.log(brandChecked);
+    let listCards= [];
+    if(sizeChecked.length>0){
+      list.forEach(element => {
+        sizeChecked.every(elemSize =>{
+          if(element.size.includes(elemSize)){
+            listCards.push(element);
+          }
+        })
+      });
+    }
+    let listFinal=[];    
+    if(brandChecked.length>0){
+      listCards.forEach(element => {
+        if(sizeChecked.includes(element.brand)){
+          listFinal.push(element);
+        }
+      });
+    }
+    console.log(listFinal);
   })
    
     return ( 
@@ -164,6 +184,3 @@ const Items = () => {
 }
  
 export default Items;
-
-// onClick={checkboxBrand({brandName})}
-// onClick={checkboxSize({itemSize})}
