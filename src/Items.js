@@ -95,8 +95,8 @@ function onLoad(item){
 const Items = () => {
   const {item} = useParams(); 
   onLoad(item);
-  const [count, setCount] = useState(list.length+saleList.length);
-  // const [countSale, setCountSale] = useState(saleList.length);
+  const [countList, setCountList] = useState(list.length);
+  const [countSale, setCountSale] = useState(saleList.length);
   count = countList +countSale;
   const [clicked, setclicked] = useState(0);
   const [sizes, setSizes] = useState([]);
@@ -186,8 +186,8 @@ const Items = () => {
     // if(countSale != (saleFinal.length) ){
     //   setCountSale(saleFinal.length);
     // }
-    count = saleFinal.length + listFinal.length;
-    console.log(count);
+    // count = saleFinal.length + listFinal.length;
+    console.log(countList, " ", countSale);
   })
    
     return ( 
