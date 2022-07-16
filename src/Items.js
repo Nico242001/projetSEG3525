@@ -10,7 +10,7 @@ let brand;
 let size;
 let list;
 let count;
-let saleList;
+let saleList = [];
 let brandBoolean =true;
 function soccer(){
   brand = ["Adidas", "Nike", "Puma"];
