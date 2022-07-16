@@ -83,7 +83,8 @@ function onLoad(item){
 
 
 const Items = () => {
-  const {item} = useParams();  
+  const {item} = useParams(); 
+  onLoad(item); 
   const [clicked, setclicked] = useState(0);
   const [sizes, setSizes] = useState([]);
   const [brands, setBrands] = useState([]);
