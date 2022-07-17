@@ -63,7 +63,6 @@ function onLoad(item) {
         saleList.push(element);
       }
     })
-    console.log("push", saleList);
   } else if (item === "Helmets") {
     hockey();
     size = ["Small", "Medium", "Large"];
@@ -92,7 +91,6 @@ function onLoad(item) {
     list = ListItems.shirts;
     brandBoolean = false;
   }
-  console.log("sale on", saleList);
 }
 
 const Items = () => {
@@ -121,10 +119,7 @@ const Items = () => {
       }
       setParamHistory(item);
     }
-    console.log("item", item);
     onLoad(item);
-    console.log("list", list);
-    console.log("sale", saleList)
     let brandChecked = [];
     let sizeChecked = [];
     if (brandBoolean) {
@@ -199,10 +194,8 @@ const Items = () => {
       for(let i = 0; i<finalList.length;i++){
         let bool = true;
         for (let n = 0; n < listFinal.length; n++) {
-          console.log(listFinal[n].name, finalList[n].name)
           if (listFinal[n].name == finalList[i].name) {
             bool = false;
-            console.log("in");
           }
         }
         if (bool) {
@@ -218,10 +211,8 @@ const Items = () => {
       for (let i = 0; i < finalSaleList.length; i++) {
         let bool = true;
         for (let n = 0; n < saleFinal.length; n++) {
-          console.log(saleFinal[n].name, finalSaleList[n].name)
           if (saleFinal[n].name == finalSaleList[i].name) {
             bool = false;
-            console.log("in");
           }
         }
         if (bool) {
@@ -230,8 +221,6 @@ const Items = () => {
 
       }
     }
-    console.log("final", finalSaleList, saleList);
-
   })
 
   return (

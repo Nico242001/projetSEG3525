@@ -8,26 +8,23 @@ let idInt;
 const Item = () => {
     const {id} = useParams();
     idInt = parseInt(id);
-    console.log(typeof id);
-    console.log(typeof idInt);
-    
-    // if(3<id<=33){
-    //     sport = "Soccer"
-    //     if(3<id<=13){
-    //         item = "Balls"
-    //         obj = ListItems.Soccerballs[id]
+    if(3<idInt<=33){
+        sport = "Soccer"
+        if(3<idInt<=13){
+            item = "Balls"
+            obj = ListItems.Soccerballs[id]
 
-    //     } else if(13<id<=23){
-    //         item = "Cleats"
-    //     } else{
-    //         item = "Shin Guards"
-    //     }
-    // }
-    // else if(33<id<=63){
-    //     sport = "Hockey"
-    // } else if(63<id<=93){
-    //     sport = "soccer"
-    // }
+        } else if(13<idInt<=23){
+            item = "Cleats"
+        } else{
+            item = "Shin Guards"
+        }
+    }
+    else if(33<idInt<=63){
+        sport = "Hockey"
+    } else if(63<idInt<=93){
+        sport = "soccer"
+    }
 
     return (
     <div className="item bg-light">
