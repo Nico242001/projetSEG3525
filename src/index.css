@@ -129,6 +129,10 @@ position: sticky; top: 0;
 .sport-img-height{
   height: 250px;
 }
+.sport-card-img{
+  width: 100%;
+  height:200px;
+}
 .sport-card-height{
   height: 350px;
 }
