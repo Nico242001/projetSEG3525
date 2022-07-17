@@ -42,7 +42,7 @@ const Item = () => {
                 </div>
             </div>
         </div>
-        <div className="container m-4 p-0">
+        {/* <div className="container m-4 p-0">
         <div id="itemDescription" className="container float-start text-center border border-3 border-dark bg-light" style="max-width:60%;">
             <img id="image" src="soccer.jpg" width="35%"/>
             <br/>
@@ -80,7 +80,7 @@ const Item = () => {
                 <br/>
             </div>
         </div>
-    </div>
+    </div> */}
         </div>
     );
 }
