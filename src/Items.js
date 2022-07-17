@@ -205,6 +205,19 @@ const Items = () => {
     // }
     if(finalSaleList.length != (saleFinal.length) ){
       setFinalSaleList(saleFinal);}
+      else{
+        for(let i =0; i<finalSaleList.length;i++ ){
+          let bool = true;
+          for(let n= 0; n<saleFinal.length; i++){
+            if(saleFinal[n].name != finalSaleList[i].name ){
+              bool =false;
+            }
+          }
+          if(bool){
+            setFinalSaleList(saleFinal);
+          }
+        }
+      }
     // } else{
     //   for(let i = 0; i<finalSaleList.length; i++){
     //     if(!(finalSaleList.some(e => e.name === saleFinal[i].name))){
