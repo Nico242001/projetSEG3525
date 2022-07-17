@@ -23,7 +23,7 @@
                 "param": "Brazuca",
                 "price": "70.00",
                 "description": "test",
-                "image": "./images/soccer/balls/brazuca.jpg",
+                "image": "https://github.com/Nico242001/projetSEG3525/blob/main/src/images/soccer/balls/brazuca.jpg",
                 "size": [
                     "4",
                     "5"
