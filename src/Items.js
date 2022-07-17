@@ -110,7 +110,7 @@ const Items = () => {
   const {item} = useParams();
   const [paramHistory, setParamHistory]= useState([item]);
   console.log(item);
-  itemParam = item; 
+
   onLoad(item);
   const [finalList, setFinalList] = useState(list);
   const [finalSaleList, setFinalSaleList] = useState(saleList);
