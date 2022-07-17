@@ -208,6 +208,7 @@ const Items = () => {
       else{
         for(let i =0; i<finalSaleList.length;i++ ){
           console.log(finalSaleList.length, finalSaleList);
+          console.log(saleFinal.length, saleFinal);
           // let bool = true;
           // for(let n= 0; n<saleFinal.length; i++){
             // console.log(i, n);
