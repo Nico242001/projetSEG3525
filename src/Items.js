@@ -98,11 +98,15 @@ const Items = () => {
   const {item} = useParams();
   const [paramHistory, setParamHistory] = useState(item);
   onLoad();
+  console.log("list", list);
+  console.log("sale", saleList);
   const [finalList, setFinalList] = useState(list);
   const [finalSaleList, setFinalSaleList] = useState(saleList);
   const [clicked, setclicked] = useState(0);
   const [sizes, setSizes] = useState([]);
   const [brands, setBrands] = useState([]);
+  console.log("finallist", finalList);
+  console.log("finalsale", finalSaleList);
 
   const checkClicked = (e, brand) =>{
     const newclick = clicked+1;
