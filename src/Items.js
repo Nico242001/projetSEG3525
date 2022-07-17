@@ -212,7 +212,7 @@ const Items = () => {
     //     }
     //   }
     // }
-    console.log("final", finalSaleList);
+    console.log("final", finalSaleList, saleList);
     
   })
    
