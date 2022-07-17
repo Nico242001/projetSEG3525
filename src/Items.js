@@ -110,6 +110,7 @@ const Items = () => {
 }
 
   useEffect(()=>{
+    console.log("use");
     onLoad(item);
     let brandChecked = [];
     let sizeChecked = [];
