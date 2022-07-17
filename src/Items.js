@@ -2,7 +2,7 @@ import ListItems from './items.json';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from "react-router-dom";
-import {Link} from 'react-router-dom'
+
 
 let sport;
 let name;
