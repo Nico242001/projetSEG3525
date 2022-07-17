@@ -207,6 +207,7 @@ const Items = () => {
       setFinalSaleList(saleFinal);}
       else{
         for(let i =0; i<finalSaleList.length;i++ ){
+          console.log(finalSaleList.length, finalSaleList);
           let bool = true;
           for(let n= 0; n<saleFinal.length; i++){
             console.log("test", saleFinal[n]);
