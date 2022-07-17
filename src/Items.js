@@ -29,11 +29,11 @@ function onLoad(item){
     name = "Soccer Balls"
     size=["1", "2", "3", "4", "5"];
     list = ListItems.Soccerballs;
-    ListItems.sale.forEach(element =>{
-      if(element.item === "SoccerBalls"){
-        saleList.push(element);
-      }
-    })
+    // ListItems.sale.forEach(element =>{
+    //   if(element.item === "SoccerBalls"){
+    //     saleList.push(element);
+    //   }
+    // })
   } else if(item === "Cleats"){
     soccer();
     itemName = "Cleats";
