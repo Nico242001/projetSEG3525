@@ -9,7 +9,6 @@ let itemName;
 let brand;
 let size;
 let list;
-let paramHistory = [];
 let saleList = [];
 let listFinal = [];
 let saleFinal=[]; 
@@ -29,7 +28,6 @@ function onLoad(item){
     itemName = "Balls";
     name = "Soccer Balls"
     size=["1", "2", "3", "4", "5"];
-    console.log(ListItems.Soccerballs);
     list = ListItems.Soccerballs;
     ListItems.sale.forEach(element =>{
       if(element.item === "SoccerBalls"){
@@ -93,28 +91,23 @@ function onLoad(item){
     list = ListItems.shirts;
     brandBoolean = false;
   }
-  console.log("on", list);
 }
 
 const Items = () => {
   const {item} = useParams();
   const [paramHistory, setParamHistory] = useState(item);
   onLoad(item);
-  console.log("list", list);
-  console.log("sale", saleList);
   const [finalList, setFinalList] = useState(list);
   const [finalSaleList, setFinalSaleList] = useState(saleList);
   const [clicked, setclicked] = useState(0);
   const [sizes, setSizes] = useState([]);
   const [brands, setBrands] = useState([]);
-  console.log("finallist", finalList);
-  console.log("finalsale", finalSaleList);
+
 
   const checkClicked = (e, brand) =>{
     const newclick = clicked+1;
     setclicked(newclick);
 }
-console.log("items" , paramHistory);
 
   useEffect(()=>{
  
@@ -123,8 +116,9 @@ console.log("items" , paramHistory);
     for (var i = 0, len = elements.length; i < len; i++) {
       elements[i].checked = false;
     }
-setParamHistory(item);
-  }
+      setParamHistory(item);
+    }
+    console.log("item", item);
     onLoad(item);
     console.log("list", list);
     console.log("sale", saleList)
