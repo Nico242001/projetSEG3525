@@ -209,15 +209,15 @@ const Items = () => {
         for(let i =0; i<finalSaleList.length;i++ ){
           let bool = true;
           for(let n= 0; n<saleFinal.length; i++){
-            console("test", saleFinal[n]);
-            console("test1", finalSaleList[i]);
+            console.log("test", saleFinal[n]);
+            console.log("test1", finalSaleList[i]);
             // if(saleFinal[n].name != finalSaleList[i].name ){
             //   bool =false;
             // }
           }
-          if(bool){
-            setFinalSaleList(saleFinal);
-          }
+          // if(bool){
+          //   setFinalSaleList(saleFinal);
+          // }
         }
       }
     // } else{
