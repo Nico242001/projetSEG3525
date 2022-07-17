@@ -213,7 +213,7 @@ const Items = () => {
         let bool = true;
         for (let n = 0; n < saleFinal.length; n++) {
           console.log(saleFinal[n].name, finalSaleList[n].name)
-          if (saleFinal[n].name != finalSaleList[i].name) {
+          if (saleFinal[n].name == finalSaleList[i].name) {
             bool = false;
             console.log("in");
           }
