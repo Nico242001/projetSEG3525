@@ -196,21 +196,27 @@ const Items = () => {
     }
     if (finalList.length != (listFinal.length)) {
       setFinalList(listFinal);
+    } else{
+      for(let i = 0; i<finalList.length;i++){
+        let bool = true;
+        for (let n = 0; n < listFinal.length; n++) {
+          console.log(listFinal[n].name, finalList[n].name)
+          if (listFinal[n].name == finalList[i].name) {
+            bool = false;
+            console.log("in");
+          }
+        }
+        if (bool) {
+          setFinalList(listFinal);
+        }
+      }
     }
-    // else{
-    //   for(let i = 0; i<finalList.length; i++){
-    //     if(!(finalList.some(e => e.name === listFinal[i].name))){
-    //       setFinalList(listFinal);
-    //     }
-    //   }
-    // }
+
     if (finalSaleList.length != (saleFinal.length)) {
       setFinalSaleList(saleFinal);
     }
     else {
       for (let i = 0; i < finalSaleList.length; i++) {
-        console.log(finalSaleList.length, finalSaleList);
-        console.log(saleFinal.length, saleFinal);
         let bool = true;
         for (let n = 0; n < saleFinal.length; n++) {
           console.log(saleFinal[n].name, finalSaleList[n].name)
