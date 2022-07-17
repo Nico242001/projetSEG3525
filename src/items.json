@@ -23,7 +23,7 @@
                 "param": "Brazuca",
                 "price": "70.00",
                 "description": "test",
-                "image": "../public/images/soccer/balls/brazuca.jpg",
+                "image": "/imagesPublic/soccer/balls/brazuca.jpg",
                 "size": [
                     "4",
                     "5"
