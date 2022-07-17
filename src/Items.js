@@ -14,26 +14,123 @@ let saleList = [];
 let listFinal = [];
 let saleFinal=[]; 
 let brandBoolean =true;
-function soccer(item){
-  brand = ["Adidas", "Nike", "Puma"];
-  if(paramHistory[paramHistory.length-1] != item ){
-    setBrandCheck(brand);
-  }
-  // brand = ["Adidas", "Nike", "Puma"];
-  sport = "Soccer";
+// function soccer(item){
+//   brand = ["Adidas", "Nike", "Puma"];
+//   if(paramHistory[paramHistory.length-1] != item ){
+//     setBrandCheck(brand);
+//   }
+//   // brand = ["Adidas", "Nike", "Puma"];
+//   sport = "Soccer";
+// }
+// function hockey(item){
+//   brand = ["Bauer", "CCM","Warrior"];
+//   if(paramHistory[paramHistory.length-1] != item ){
+//     setBrandCheck( brand);
+//   }
+//   // brand = ["Bauer", "CCM","Warrior"];
+//   sport = "Hockey";
+// }
+// function onLoad(item){
+//   saleList=[];
+//   if (item === "SoccerBalls"){
+//     soccer(item);
+//     itemName = "Balls";
+//     name = "Soccer Balls"
+//     size=["1", "2", "3", "4", "5"];
+//     list = ListItems.Soccerballs;
+//     ListItems.sale.forEach(element =>{
+//       if(element.item === "SoccerBalls"){
+//         saleList.push(element);
+//       }
+//     })
+//   } else if(item === "Cleats"){
+//     soccer(item);
+//     itemName = "Cleats";
+//     name = "Soccer Cleats";
+//     size=["6", "7", "8", "9", "10", "11", "12"];
+//     list = ListItems.cleats;
+//   } else if(item === "ShinGuards"){
+//     soccer(item);
+//     itemName = "Shin Guards";
+//     size=["Small", "Medium", "Large"];
+//     name = "Soccer Shin Guards";
+//     list = ListItems.shinguards;
+//   } else if(item === "Sticks"){
+//     hockey(item);
+//     name = "Hockey Sticks";
+//     size=["Small", "Medium", "Large"];
+//     itemName = "Sticks";
+//     list = ListItems.sticks;
+//   } else if(item === "Skates"){
+//     hockey(item);
+//     itemName = "Skates";
+//     size=["6", "7", "8", "9", "10", "11", "12"];
+//     name= "Hockey Skates";
+//     list = ListItems.skates;
+//     ListItems.sale.forEach(element =>{
+//       if(element.item === "Skates"){
+//         saleList.push(element);
+//       }
+//     })
+//   } else if(item ==="Helmets"){
+//     hockey(item);
+//     size=["Small", "Medium", "Large"];
+//     itemName = "Helmets";
+//     name = "Hockey Helmets";
+//     list = ListItems.helmets;
+//   } else if(item ==="Basketballs"){
+//     if(paramHistory[paramHistory.length-1] != item ){
+//       brand = ["Nike", "Spalding", "Wilson"];
+//     }
+//     // brand = ["Nike", "Spalding", "Wilson"];
+//     size=["27.5", "28.5", "29.5"];
+//     itemName = "Balls";
+//     sport = "Basketball";
+//     name ="Basketballs";
+//     list = ListItems.basketballs;
+//   } else if(item ==="Shoes"){
+//     if(paramHistory[paramHistory.length-1] != item ){
+//       brand = ["Adidas", "Nike", "Puma"];
+//     }
+//     // brand = ["Adidas", "Nike", "Puma"];
+//     size=["6", "7", "8", "9", "10", "11", "12"];
+//     itemName = "Shoes";
+//     sport = "Basketball";
+//     name ="Basketball Shoes";
+//     list = ListItems.shoes;
+//   } else if(item === "Shirts"){
+//     size=["Small", "Medium", "Large"];
+//     itemName = "Shirts";
+//     sport = "Basketball";
+//     name = "Basketball Shirts";
+//     list = ListItems.shirts;
+//     brandBoolean = false;
+//   }
+// }
+
+const Items = () => {
+  const {item} = useParams();
+  const [paramHistory, setParamHistory]= useState([item]);
+  console.log(item);
+
+  onLoad();
+  const [finalList, setFinalList] = useState(list);
+  const [finalSaleList, setFinalSaleList] = useState(saleList);
+  const [clicked, setclicked] = useState(0);
+  const [sizes, setSizes] = useState([]);
+  const [brands, setBrands] = useState([]);
+  const [brandCheck, setBrandCheck] = useState(brand);
+  const [sizeCheck, setSizeCheck] = useState(size);
+  const checkClicked = (e, brand) =>{
+    const newclick = clicked+1;
+    setclicked(newclick);
 }
-function hockey(item){
-  brand = ["Bauer", "CCM","Warrior"];
-  if(paramHistory[paramHistory.length-1] != item ){
-    setBrandCheck( brand);
-  }
-  // brand = ["Bauer", "CCM","Warrior"];
-  sport = "Hockey";
-}
-function onLoad(item){
+console.log("items" , paramHistory);
+
+onload(()=>{
   saleList=[];
   if (item === "SoccerBalls"){
-    soccer(item);
+    soccer();
     itemName = "Balls";
     name = "Soccer Balls"
     size=["1", "2", "3", "4", "5"];
@@ -44,25 +141,25 @@ function onLoad(item){
       }
     })
   } else if(item === "Cleats"){
-    soccer(item);
+    soccer();
     itemName = "Cleats";
     name = "Soccer Cleats";
     size=["6", "7", "8", "9", "10", "11", "12"];
     list = ListItems.cleats;
   } else if(item === "ShinGuards"){
-    soccer(item);
+    soccer();
     itemName = "Shin Guards";
     size=["Small", "Medium", "Large"];
     name = "Soccer Shin Guards";
     list = ListItems.shinguards;
   } else if(item === "Sticks"){
-    hockey(item);
+    hockey();
     name = "Hockey Sticks";
     size=["Small", "Medium", "Large"];
     itemName = "Sticks";
     list = ListItems.sticks;
   } else if(item === "Skates"){
-    hockey(item);
+    hockey();
     itemName = "Skates";
     size=["6", "7", "8", "9", "10", "11", "12"];
     name= "Hockey Skates";
@@ -73,7 +170,7 @@ function onLoad(item){
       }
     })
   } else if(item ==="Helmets"){
-    hockey(item);
+    hockey();
     size=["Small", "Medium", "Large"];
     itemName = "Helmets";
     name = "Hockey Helmets";
@@ -106,31 +203,27 @@ function onLoad(item){
     list = ListItems.shirts;
     brandBoolean = false;
   }
-}
-
-const Items = () => {
-  const {item} = useParams();
-  const [paramHistory, setParamHistory]= useState([item]);
-  console.log(item);
-
-  onLoad(item);
-  const [finalList, setFinalList] = useState(list);
-  const [finalSaleList, setFinalSaleList] = useState(saleList);
-  const [clicked, setclicked] = useState(0);
-  const [sizes, setSizes] = useState([]);
-  const [brands, setBrands] = useState([]);
-  const [brandCheck, setBrandCheck] = useState(brand);
-  const [sizeCheck, setSizeCheck] = useState(size);
-  const checkClicked = (e, brand) =>{
-    const newclick = clicked+1;
-    setclicked(newclick);
-}
-console.log("items" , paramHistory);
-
+})
+soccer(()=>{
+  brand = ["Adidas", "Nike", "Puma"];
+  if(paramHistory[paramHistory.length-1] != item ){
+    setBrandCheck(brand);
+  }
+  // brand = ["Adidas", "Nike", "Puma"];
+  sport = "Soccer";
+})
+hockey(()=>{
+  brand = ["Bauer", "CCM","Warrior"];
+  if(paramHistory[paramHistory.length-1] != item ){
+    setBrandCheck( brand);
+  }
+  // brand = ["Bauer", "CCM","Warrior"];
+  sport = "Hockey";
+})
   useEffect(()=>{
  
     console.log("use" , paramHistory);
-    onLoad(item);
+    onLoad();
     let brandChecked = [];
     let sizeChecked = [];
     if(brandBoolean){
