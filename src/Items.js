@@ -92,26 +92,22 @@ function onLoad(item){
     list = ListItems.shirts;
     brandBoolean = false;
   }
-  console.log("on");
 }
 
 const Items = () => {
   const {item} = useParams(); 
-  console.log("items");
   onLoad(item);
-  // const [countList, setCountList] = useState(list.length);
-  // const [countSale, setCountSale] = useState(saleList.length);
   const [finalList, setFinalList] = useState(list);
   const [finalSaleList, setFinalSaleList] = useState(saleList);
-  // count = countList +countSale;
   const [clicked, setclicked] = useState(0);
   const [sizes, setSizes] = useState([]);
   const [brands, setBrands] = useState([]);
+  const [brandCheck, setBrandCheck] = useState(brand);
+  const [sizeCheck, setSizeCheck] = useState(size);
   const checkClicked = (e, brand) =>{
     const newclick = clicked+1;
     setclicked(newclick);
 }
-// listFinal = list;
 
   useEffect(()=>{
     onLoad(item);
@@ -189,8 +185,6 @@ const Items = () => {
     if(finalSaleList.length != (saleFinal.length) ){
       setFinalSaleList(saleFinal);
     }
-    // count = finalSaleList + countSale;
-    // console.log("final");
   })
    
     return ( 
@@ -246,6 +240,18 @@ const Items = () => {
               </div>
             
           </div>))}
+          {finalSaleList.map((element) => (<div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12' key={element.id}>
+             
+               <div className="card card-home bg-dark text-white mx-auto">
+                    <img src={element.img}  className="card-img-top img" alt=""/>
+                    <div className="card-body text-center">
+                        <h5 className="card-title">{element.name}</h5>
+                        <p className="card-text"><span>$ {element.oldPrice}</span> $ {element.price}</p>
+                        <a href="#" className="btn btn-secondary">Buy</a>
+                    </div>
+                </div>
+              
+            </div>))}
                     </div>
                 </div>
             </div>
