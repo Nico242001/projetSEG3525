@@ -22,7 +22,7 @@ function hockey(){
   brand = ["Bauer", "CCM","Warrior"];
   sport = "Hockey";
 }
-function onLoad(){
+function onLoad(item){
   saleList=[];
   if (item === "SoccerBalls"){
     soccer();
@@ -99,7 +99,7 @@ function onLoad(){
 const Items = () => {
   const {item} = useParams();
   const [paramHistory, setParamHistory] = useState(item);
-  onLoad();
+  onLoad(item);
   console.log("list", list);
   console.log("sale", saleList);
   const [finalList, setFinalList] = useState(list);
@@ -125,7 +125,7 @@ console.log("items" , paramHistory);
     }
 setParamHistory(item);
   }
-    onLoad();
+    onLoad(item);
     console.log("list", list);
     console.log("sale", saleList)
     let brandChecked = [];
