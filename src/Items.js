@@ -208,16 +208,16 @@ const Items = () => {
       else{
         for(let i =0; i<finalSaleList.length;i++ ){
           console.log(finalSaleList.length, finalSaleList);
-          let bool = true;
-          for(let n= 0; n<saleFinal.length; i++){
-            console.log(i, n);
-            console.log("test", saleFinal[n]);
-            console.log("test1", finalSaleList[i]);
+          // let bool = true;
+          // for(let n= 0; n<saleFinal.length; i++){
+            // console.log(i, n);
+            // console.log("test", saleFinal[n]);
+            // console.log("test1", finalSaleList[i]);
             // if(saleFinal[n].name != finalSaleList[i].name ){
             //   bool =false;
             // }
-          }
-          console.log("out");
+          // }
+          // console.log("out");
           // if(bool){
           //   setFinalSaleList(saleFinal);
           // }
