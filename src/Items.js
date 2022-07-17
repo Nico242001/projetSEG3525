@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from "react-router-dom";
 
-
 let sport;
 let name;
 let itemName;
@@ -295,7 +294,7 @@ const Items = () => {
                   <img src={element.image} className="card-img-top sport-card-img" alt="" />
                   <div className="card-body text-center">
                     <h5 className="card-title">{element.name}</h5>
-                    <p className="card-text"><span>$ {element.oldPrice}</span> $ {element.price}</p>
+                    <p className="card-text"><span><s>$ {element.oldPrice}</s></span> $ {element.price}</p>
                     <Link className="btn btn-secondary" to={"/item/"+element.id}>Buy</Link>
                   </div>
                 </div>

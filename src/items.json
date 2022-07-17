@@ -275,136 +275,121 @@
         }],
         "shinguards": [  {
             "id": "24",
-            "name": "Adidas Brazuca",
-            "param": "Brazuca",
-            "price": "70.00",
+            "name": "Adidas Predator",
+            "param": "Predator",
+            "price": "35.00",
             "description": "test",
-            "image": "/images/soccer/balls/brazuca.jpg",
+            "image": "/images/soccer/shin/predator.jpg",
             "size": [
-                "4",
-                "5"
+                "Small","Medium","Large"
             ],
             "brand": "Addidas"
         },
         {
             "id": "25",
-            "name": "Adidas Tango",
-            "param": "Tango",
+            "name": "Adidas Tiro",
+            "param": "Tiro",
             "price": "25.00",
             "description": "test",
-            "image": "/images/soccer/balls/tango.jpg",
+            "image": "/images/soccer/shin/tiro.jpg",
             "size": [
-                "1",
-                "2",
-                "3"
+                "Small"
             ],
             "brand": "Adidas"
         },
         {
             "id": "26",
-            "name": " Adidas Tiro Pro",
-            "param": "Tiro",
-            "price": "40.00",
+            "name": "Adidas X League",
+            "param": "XLeague",
+            "price": "30.00",
             "description": "test",
-            "image": "/images/soccer/balls/tiro.jpg",
+            "image": "/images/soccer/shin/xleague.jpg",
             "size": [
-                "1",
-                "2",
-                "3",
-                "4",
-                "5"
+               "Medium","Large"
             ],
             "brand": "Adidas"
         },
         {
             "id": "27",
-            "name": "Nike Strike",
-            "param": "Strike",
+            "name": "Adidas X Match",
+            "param": "Match",
             "price": "35.00",
             "description": "test",
-            "image": "/images/soccer/balls/strike.jpg",
+            "image": "/images/soccer/shin/xmatch.jpg",
             "size": [
-                "3",
-                "4",
-                "5"
+                "Small","Medium"
             ],
-            "brand": "Nike"
+            "brand": "Adidas"
         },
         {
             "id": "28",
-            "name": "Nike Rainbow",
-            "param": "Rainbow",
-            "price": "40.00",
+            "name": "Nike Charge",
+            "param": "Charge",
+            "price": "20.00",
             "description": "test",
-            "image": "/images/soccer/balls/rainbow.jpg",
+            "image": "/images/soccer/shin/charge.jpg",
             "size": [
-                "5"
+                "Small","Medium","Large"
             ],
             "brand": "Nike"
         },
         {
             "id": "29",
-            "name": "Adidas Messi Club",
-            "param": "MessiClub",
-            "price": "50.00",
+            "name": "Nike J",
+            "param": "J",
+            "price": "30.00",
             "description": "test",
-            "image": "/images/soccer/balls/messiClub.jpg",
+            "image": "/images/soccer/shin/j.jpg",
             "size": [
-                "4",
-                "5"
+               "Medium","Large"
             ],
-            "brand": "Adidas"
+            "brand": "Nike"
         },
         {
             "id": "30",
-            "name": "Adidas Euro Uniforia",
-            "param": "Uniforia",
-            "price": "55.00",
+            "name": "Nike Mercurial Light",
+            "param": "MercurialLight",
+            "price": "45.00",
             "description": "test",
-            "image": "/images/soccer/balls/uniforia.jpg",
+            "image": "/images/soccer/shin/mercurial.jpg",
             "size": [
-                "3",
-                "4",
-                "5"
+                "Large"
             ],
-            "brand": "Adidas"
+            "brand": "Nike"
         },
         {
             "id": "31",
-            "name": "Puma Shock",
-            "param": "Shock",
+            "name": "Puma King",
+            "param": "King",
             "price": "30.00",
             "description": "test",
-            "image": "/images/soccer/balls/shock.jpg",
+            "image": "/images/soccer/shin/king.jpg",
             "size": [
-                "3",
-                "4"
+                "Medium","Large","Small"
             ],
             "brand": "Puma"
         },
         {
             "id": "32",
-            "name": "Puma One Chrome",
+            "name": "Puma Pro",
             "param": "OneChrome",
             "price": "37.00",
             "description": "test",
-            "image": "/images/soccer/balls/one.jpg",
+            "image": "/images/soccer/shin/pro.jpg",
             "size": [
-                "1"
+                "Large"
             ],
             "brand": "Puma"
         },
         {
             "id": "33",
-            "name": "Puma Prestige",
-            "param": "Prestige",
+            "name": "Puma Future",
+            "param": "Future",
             "price": "25.00",
             "description": "test",
-            "image": "/images/soccer/balls/prestige.jpg",
+            "image": "/images/soccer/shin/future.jpg",
             "size": [
-                "3",
-                "4",
-                "5"
+                "Small","Medium"
             ],
             "brand": "Puma"
         }],

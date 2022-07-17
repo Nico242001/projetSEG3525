@@ -38,7 +38,7 @@ const Home = () => {
                     <img src={deal.img}  className="card-img-top img" alt=""/>
                     <div className="card-body text-center">
                         <h5 className="card-title">{deal.name}</h5>
-                        <p className="card-text"><span>{deal.oldPrice}</span> {deal.newPrice}</p>
+                        <p className="card-text"><span><s>$ {deal.oldPrice}</s></span> $ {deal.newPrice}</p>
                         <a href="#" className="btn btn-secondary">Buy</a>
                     </div>
                 </div>
