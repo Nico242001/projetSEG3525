@@ -1,13 +1,13 @@
 import { useParams } from "react-router-dom";
-import stick from "./images/sport/stick.jpg";
-import skates from "./images/sport/skates.jpg";
-import helmet from "./images/sport/helmet.jpg";
-import soccerball from "./images/sport/soccerball.jpg";
-import cleats from "./images/sport/cleats.jpg";
-import shinguards from "./images/sport/shinguards.jpg";
-import basketball from "./images/sport/basketball.jpg";
-import shoe from "./images/sport/shoes.jpg";
-import shirt from "./images/sport/shirt.jpg";
+import stick from "/images/sport/stick.jpg";
+import skates from "/images/sport/skates.jpg";
+import helmet from "/images/sport/helmet.jpg";
+import soccerball from "/images/sport/soccerball.jpg";
+import cleats from "/images/sport/cleats.jpg";
+import shinguards from "/images/sport/shinguards.jpg";
+import basketball from "/images/sport/basketball.jpg";
+import shoe from "/images/sport/shoes.jpg";
+import shirt from "/images/sport/shirt.jpg";
 import { Link } from 'react-router-dom';
 
 const Sport = () => {
