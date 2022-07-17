@@ -5,6 +5,7 @@ import './index.css';
 import Shop from './Shop';
 import Sport from './Sport';
 import Items from './Items';
+import Item from './Item';
 
 
 function App() {
