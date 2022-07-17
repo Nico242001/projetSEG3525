@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import stick from "./images/sport/stick.jpg"
-import skate from "./images/sport/skate.jpg"
+import skate from "./images/sport/skates.jpg"
 import helmet from "./images/sport/helmet.jpg"
 import soccerball from "./images/sport/soccerball.jpg"
 import cleats from "./images/sport/cleats.jpg"
