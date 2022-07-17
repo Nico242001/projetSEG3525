@@ -215,6 +215,7 @@ const Items = () => {
             //   bool =false;
             // }
           }
+          console.log("out");
           // if(bool){
           //   setFinalSaleList(saleFinal);
           // }
