@@ -1,22 +1,22 @@
-import soccer from "/images/shop/soccerCard.jpg"
-import hockey from "/images/shop/hockeyCard.jpg"
-import basketball from "/images/shop/basketball.jpg"
-import sale from "/images/shop/sale.jpg"
+// import soccer from "/images/shop/soccerCard.jpg"
+// import hockey from "/images/shop/hockeyCard.jpg"
+// import basketball from "/images/shop/basketball.jpg"
+// import sale from "/images/shop/sale.jpg"
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 
 const Shop = () => {
     const [sports, setSports] = useState([
-        {name:"Soccer", img: soccer, id:"1"},
-        {name:"Basketball", img: basketball, id:"2"},
-        {name:"Hockey", img: hockey, id:"3"}
+        {name:"Soccer", img: "/images/shop/soccerCard.jpg", id:"1"},
+        {name:"Basketball", img: "/images/shop/basketball.jpg", id:"2"},
+        {name:"Hockey", img: "/images/shop/hockeyCard.jpg", id:"3"}
     ])
    
     return ( 
        <div className="shop bg-light">
         <div className="row " min-width="100%">
             <div className="col padding" min-width="50%" max-width="50%">
-                <img id="soccer" src={sale} className="height-image max-width"alt="" min-width="100%" />
+                <img id="soccer" src="/images/shop/sale.jpg" className="height-image max-width"alt="" min-width="100%" />
             </div>
             <div className="col bg-dark ml-auto d-flex align-items-center mt-md-0 padding " min-width="50%" max-width="50%">
                 <div className="container text-center text-white">

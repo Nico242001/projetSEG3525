@@ -1,13 +1,13 @@
 import { useParams } from "react-router-dom";
-import stick from "/images/sport/stick.jpg";
-import skates from "/images/sport/skates.jpg";
-import helmet from "/images/sport/helmet.jpg";
-import soccerball from "/images/sport/soccerball.jpg";
-import cleats from "/images/sport/cleats.jpg";
-import shinguards from "/images/sport/shinguards.jpg";
-import basketball from "/images/sport/basketball.jpg";
-import shoe from "/images/sport/shoes.jpg";
-import shirt from "/images/sport/shirt.jpg";
+// import stick from "/images/sport/stick.jpg";
+// import skates from "/images/sport/skates.jpg";
+// import helmet from "/images/sport/helmet.jpg";
+// import soccerball from "/images/sport/soccerball.jpg";
+// import cleats from "/images/sport/cleats.jpg";
+// import shinguards from "/images/sport/shinguards.jpg";
+// import basketball from "/images/sport/basketball.jpg";
+// import shoe from "/images/sport/shoes.jpg";
+// import shirt from "/images/sport/shirt.jpg";
 import { Link } from 'react-router-dom';
 
 const Sport = () => {
@@ -15,13 +15,13 @@ const Sport = () => {
     let items = [];
     const {sport} = useParams();
     if(sport === "Hockey"){
-        items = [{id:"1", name:"Sticks", param:"Sticks", img:stick}, {id:"2", name:"Skates", param:"Skates", img:skates}, {id:"3", name:"Helmets", param:"Helmets", img:helmet}]
+        items = [{id:"1", name:"Sticks", param:"Sticks", img:"/images/sport/stick.jpg"}, {id:"2", name:"Skates", param:"Skates", img:"/images/sport/skates.jpg"}, {id:"3", name:"Helmets", param:"Helmets", img:"/images/sport/helmet.jpg"}]
         name ="Hockey"
     } else if(sport === "Soccer"){
-        items = [{id:"1", name:"Soccer Balls", param:"SoccerBalls", img:soccerball}, {id:"2", name:"Cleats", param:"Cleats/true", img:cleats}, {id:"3", name:"Shin Guards", param:"ShinGuards", img:shinguards}]
+        items = [{id:"1", name:"Soccer Balls", param:"SoccerBalls", img:"/images/sport/soccerball.jpg"}, {id:"2", name:"Cleats", param:"Cleats/true", img:"/images/sport/cleats.jpg"}, {id:"3", name:"Shin Guards", param:"ShinGuards", img:"/images/sport/shinguards.jpg"}]
         name ="Soccer"
     }else{
-        items = [{id:"1", name:"Basketballs", param:"Basketballs", img:basketball}, {id:"2", name:"Shoes", param:"Shoes", img:shoe}, {id:"3", name:"Shirts", param:"Shirts", img:shirt}]
+        items = [{id:"1", name:"Basketballs", param:"Basketballs", img:"/images/sport/basketball.jpg"}, {id:"2", name:"Shoes", param:"Shoes", img:"/images/sport/shoes.jpg"}, {id:"3", name:"Shirts", param:"Shirts", img:"/images/sport/shirt.jpg"}]
         name = "Basketball"
     }
 
