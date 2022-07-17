@@ -91,7 +91,7 @@ function onLoad(item){
     list = ListItems.shirts;
     brandBoolean = false;
   }
-  console.log("sale on", sale);
+  console.log("sale on", saleList);
 }
 
 const Items = () => {
