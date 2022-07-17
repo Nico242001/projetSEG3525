@@ -14,120 +14,15 @@ let saleList = [];
 let listFinal = [];
 let saleFinal=[]; 
 let brandBoolean =true;
-// function soccer(item){
-//   brand = ["Adidas", "Nike", "Puma"];
-//   if(paramHistory[paramHistory.length-1] != item ){
-//     setBrandCheck(brand);
-//   }
-//   // brand = ["Adidas", "Nike", "Puma"];
-//   sport = "Soccer";
-// }
-// function hockey(item){
-//   brand = ["Bauer", "CCM","Warrior"];
-//   if(paramHistory[paramHistory.length-1] != item ){
-//     setBrandCheck( brand);
-//   }
-//   // brand = ["Bauer", "CCM","Warrior"];
-//   sport = "Hockey";
-// }
-// function onLoad(item){
-//   saleList=[];
-//   if (item === "SoccerBalls"){
-//     soccer(item);
-//     itemName = "Balls";
-//     name = "Soccer Balls"
-//     size=["1", "2", "3", "4", "5"];
-//     list = ListItems.Soccerballs;
-//     ListItems.sale.forEach(element =>{
-//       if(element.item === "SoccerBalls"){
-//         saleList.push(element);
-//       }
-//     })
-//   } else if(item === "Cleats"){
-//     soccer(item);
-//     itemName = "Cleats";
-//     name = "Soccer Cleats";
-//     size=["6", "7", "8", "9", "10", "11", "12"];
-//     list = ListItems.cleats;
-//   } else if(item === "ShinGuards"){
-//     soccer(item);
-//     itemName = "Shin Guards";
-//     size=["Small", "Medium", "Large"];
-//     name = "Soccer Shin Guards";
-//     list = ListItems.shinguards;
-//   } else if(item === "Sticks"){
-//     hockey(item);
-//     name = "Hockey Sticks";
-//     size=["Small", "Medium", "Large"];
-//     itemName = "Sticks";
-//     list = ListItems.sticks;
-//   } else if(item === "Skates"){
-//     hockey(item);
-//     itemName = "Skates";
-//     size=["6", "7", "8", "9", "10", "11", "12"];
-//     name= "Hockey Skates";
-//     list = ListItems.skates;
-//     ListItems.sale.forEach(element =>{
-//       if(element.item === "Skates"){
-//         saleList.push(element);
-//       }
-//     })
-//   } else if(item ==="Helmets"){
-//     hockey(item);
-//     size=["Small", "Medium", "Large"];
-//     itemName = "Helmets";
-//     name = "Hockey Helmets";
-//     list = ListItems.helmets;
-//   } else if(item ==="Basketballs"){
-//     if(paramHistory[paramHistory.length-1] != item ){
-//       brand = ["Nike", "Spalding", "Wilson"];
-//     }
-//     // brand = ["Nike", "Spalding", "Wilson"];
-//     size=["27.5", "28.5", "29.5"];
-//     itemName = "Balls";
-//     sport = "Basketball";
-//     name ="Basketballs";
-//     list = ListItems.basketballs;
-//   } else if(item ==="Shoes"){
-//     if(paramHistory[paramHistory.length-1] != item ){
-//       brand = ["Adidas", "Nike", "Puma"];
-//     }
-//     // brand = ["Adidas", "Nike", "Puma"];
-//     size=["6", "7", "8", "9", "10", "11", "12"];
-//     itemName = "Shoes";
-//     sport = "Basketball";
-//     name ="Basketball Shoes";
-//     list = ListItems.shoes;
-//   } else if(item === "Shirts"){
-//     size=["Small", "Medium", "Large"];
-//     itemName = "Shirts";
-//     sport = "Basketball";
-//     name = "Basketball Shirts";
-//     list = ListItems.shirts;
-//     brandBoolean = false;
-//   }
-// }
-
-const Items = () => {
-  const {item} = useParams();
-  const [paramHistory, setParamHistory]= useState([item]);
-  console.log(item);
-
-  onLoad();
-  const [finalList, setFinalList] = useState(list);
-  const [finalSaleList, setFinalSaleList] = useState(saleList);
-  const [clicked, setclicked] = useState(0);
-  const [sizes, setSizes] = useState([]);
-  const [brands, setBrands] = useState([]);
-  const [brandCheck, setBrandCheck] = useState(brand);
-  const [sizeCheck, setSizeCheck] = useState(size);
-  const checkClicked = (e, brand) =>{
-    const newclick = clicked+1;
-    setclicked(newclick);
+function soccer(){
+  brand = ["Adidas", "Nike", "Puma"];
+  sport = "Soccer";
 }
-console.log("items" , paramHistory);
-
-onload(()=>{
+function hockey(){
+  brand = ["Bauer", "CCM","Warrior"];
+  sport = "Hockey";
+}
+function onLoad(item){
   saleList=[];
   if (item === "SoccerBalls"){
     soccer();
@@ -176,20 +71,14 @@ onload(()=>{
     name = "Hockey Helmets";
     list = ListItems.helmets;
   } else if(item ==="Basketballs"){
-    if(paramHistory[paramHistory.length-1] != item ){
-      brand = ["Nike", "Spalding", "Wilson"];
-    }
-    // brand = ["Nike", "Spalding", "Wilson"];
+    brand = ["Nike", "Spalding", "Wilson"];
     size=["27.5", "28.5", "29.5"];
     itemName = "Balls";
     sport = "Basketball";
     name ="Basketballs";
     list = ListItems.basketballs;
   } else if(item ==="Shoes"){
-    if(paramHistory[paramHistory.length-1] != item ){
-      brand = ["Adidas", "Nike", "Puma"];
-    }
-    // brand = ["Adidas", "Nike", "Puma"];
+    brand = ["Adidas", "Nike", "Puma"];
     size=["6", "7", "8", "9", "10", "11", "12"];
     itemName = "Shoes";
     sport = "Basketball";
@@ -203,26 +92,33 @@ onload(()=>{
     list = ListItems.shirts;
     brandBoolean = false;
   }
-})
-soccer(()=>{
-  brand = ["Adidas", "Nike", "Puma"];
-  if(paramHistory[paramHistory.length-1] != item ){
-    setBrandCheck(brand);
-  }
-  // brand = ["Adidas", "Nike", "Puma"];
-  sport = "Soccer";
-})
-hockey(()=>{
-  brand = ["Bauer", "CCM","Warrior"];
-  if(paramHistory[paramHistory.length-1] != item ){
-    setBrandCheck( brand);
-  }
-  // brand = ["Bauer", "CCM","Warrior"];
-  sport = "Hockey";
-})
+}
+
+const Items = () => {
+  const {item} = useParams();
+  const [paramHistory, setParamHistory] = useState(item);
+  onLoad();
+  const [finalList, setFinalList] = useState(list);
+  const [finalSaleList, setFinalSaleList] = useState(saleList);
+  const [clicked, setclicked] = useState(0);
+  const [sizes, setSizes] = useState([]);
+  const [brands, setBrands] = useState([]);
+
+  const checkClicked = (e, brand) =>{
+    const newclick = clicked+1;
+    setclicked(newclick);
+}
+console.log("items" , paramHistory);
+
   useEffect(()=>{
  
-    console.log("use" , paramHistory);
+    if(paramHistory != item){
+      var elements = document.getElementsByClassName("checkbox-reset");
+    for (var i = 0, len = elements.length; i < len; i++) {
+      elements[i].checked = false;
+    }
+setParamHistory(item);
+  }
     onLoad();
     let brandChecked = [];
     let sizeChecked = [];
@@ -328,12 +224,12 @@ hockey(()=>{
                   {brandBoolean ? ( <h4>Brand</h4>):""}
                   {brandBoolean ? ( 
                     brand.map((brandName) => (
-                    <><div><input type="checkbox" onClick={(e) =>{checkClicked(e, {brandName})}} id={brandName} value={brandName}></input>
+                    <><div><input className='checkbox-reset' type="checkbox" onClick={(e) =>{checkClicked(e, {brandName})}} id={brandName} value={brandName}></input>
                     <label for={brandName}> {brandName}</label></div></>
                     ) )):""}
                     <h4>Size</h4>
                     {size.map((itemSize) => (
-                      <><div><input type="checkbox"  onClick={(e) =>{checkClicked(e, {itemSize})}} id={itemSize} value={itemSize}></input>
+                      <><div><input className='checkbox-reset' type="checkbox"  onClick={(e) =>{checkClicked(e, {itemSize})}} id={itemSize} value={itemSize}></input>
                       <label for={itemSize}> {itemSize}</label></div></>
                ))}
                 </div>
