@@ -11,81 +11,81 @@ let size;
 let list;
 let saleList = [];
 let listFinal = [];
-let saleFinal=[]; 
-let brandBoolean =true;
-function soccer(){
+let saleFinal = [];
+let brandBoolean = true;
+function soccer() {
   brand = ["Adidas", "Nike", "Puma"];
   sport = "Soccer";
 }
-function hockey(){
-  brand = ["Bauer", "CCM","Warrior"];
+function hockey() {
+  brand = ["Bauer", "CCM", "Warrior"];
   sport = "Hockey";
 }
-function onLoad(item){
-  saleList=[];
-  if (item === "SoccerBalls"){
+function onLoad(item) {
+  saleList = [];
+  if (item === "SoccerBalls") {
     soccer();
     itemName = "Balls";
     name = "Soccer Balls"
-    size=["1", "2", "3", "4", "5"];
+    size = ["1", "2", "3", "4", "5"];
     list = ListItems.Soccerballs;
-    ListItems.sale.forEach(element =>{
-      if(element.item === "SoccerBalls"){
+    ListItems.sale.forEach(element => {
+      if (element.item === "SoccerBalls") {
         saleList.push(element);
       }
     })
-  } else if(item === "Cleats"){
+  } else if (item === "Cleats") {
     soccer();
     itemName = "Cleats";
     name = "Soccer Cleats";
-    size=["6", "7", "8", "9", "10", "11", "12"];
+    size = ["6", "7", "8", "9", "10", "11", "12"];
     list = ListItems.cleats;
-  } else if(item === "ShinGuards"){
+  } else if (item === "ShinGuards") {
     soccer();
     itemName = "Shin Guards";
-    size=["Small", "Medium", "Large"];
+    size = ["Small", "Medium", "Large"];
     name = "Soccer Shin Guards";
     list = ListItems.shinguards;
-  } else if(item === "Sticks"){
+  } else if (item === "Sticks") {
     hockey();
     name = "Hockey Sticks";
-    size=["Small", "Medium", "Large"];
+    size = ["Small", "Medium", "Large"];
     itemName = "Sticks";
     list = ListItems.sticks;
-  } else if(item === "Skates"){
+  } else if (item === "Skates") {
     hockey();
     itemName = "Skates";
-    size=["6", "7", "8", "9", "10", "11", "12"];
-    name= "Hockey Skates";
+    size = ["6", "7", "8", "9", "10", "11", "12"];
+    name = "Hockey Skates";
     list = ListItems.skates;
-    ListItems.sale.forEach(element =>{
-      if(element.item === "Skates"){
+    ListItems.sale.forEach(element => {
+      if (element.item === "Skates") {
         saleList.push(element);
       }
     })
     console.log("push", saleList);
-  } else if(item ==="Helmets"){
+  } else if (item === "Helmets") {
     hockey();
-    size=["Small", "Medium", "Large"];
+    size = ["Small", "Medium", "Large"];
     itemName = "Helmets";
     name = "Hockey Helmets";
     list = ListItems.helmets;
-  } else if(item ==="Basketballs"){
+  } else if (item === "Basketballs") {
     brand = ["Nike", "Spalding", "Wilson"];
-    size=["27.5", "28.5", "29.5"];
+    size = ["27.5", "28.5", "29.5"];
     itemName = "Balls";
     sport = "Basketball";
-    name ="Basketballs";
+    name = "Basketballs";
     list = ListItems.basketballs;
-  } else if(item ==="Shoes"){
+  } else if (item === "Shoes") {
     brand = ["Adidas", "Nike", "Puma"];
-    size=["6", "7", "8", "9", "10", "11", "12"];
+    size = ["6", "7", "8", "9", "10", "11", "12"];
     itemName = "Shoes";
     sport = "Basketball";
-    name ="Basketball Shoes";
+    name = "Basketball Shoes";
     list = ListItems.shoes;
-  } else if(item === "Shirts"){
-    size=["Small", "Medium", "Large"];
+  } else if (item === "Shirts") {
+    size = ["Small", "Medium", "Large"];
     itemName = "Shirts";
     sport = "Basketball";
     name = "Basketball Shirts";
@@ -96,7 +96,7 @@ function onLoad(item){
 }
 
 const Items = () => {
-  const {item} = useParams();
+  const { item } = useParams();
   const [paramHistory, setParamHistory] = useState(item);
   onLoad(item);
   const [finalList, setFinalList] = useState(list);
@@ -106,19 +106,19 @@ const Items = () => {
   const [brands, setBrands] = useState([]);
 
 
-  const checkClicked = (e, brand) =>{
-    const newclick = clicked+1;
+  const checkClicked = (e, brand) => {
+    const newclick = clicked + 1;
     setclicked(newclick);
-}
+  }
 
-  useEffect(()=>{
- 
-    if(paramHistory != item){
+  useEffect(() => {
+
+    if (paramHistory != item) {
       var elements = document.getElementsByClassName("checkbox-reset");
-    for (var i = 0, len = elements.length; i < len; i++) {
-      elements[i].checked = false;
-      saleList = [];
-    }
+      for (var i = 0, len = elements.length; i < len; i++) {
+        elements[i].checked = false;
+        saleList = [];
+      }
       setParamHistory(item);
     }
     console.log("item", item);
@@ -127,73 +127,73 @@ const Items = () => {
     console.log("sale", saleList)
     let brandChecked = [];
     let sizeChecked = [];
-    if(brandBoolean){
-      for(let i = 0; i<brand.length; i++){
-        if(document.getElementById(brand[i]).checked){
+    if (brandBoolean) {
+      for (let i = 0; i < brand.length; i++) {
+        if (document.getElementById(brand[i]).checked) {
           brandChecked.push(brand[i]);
         }
       }
     }
-    for(let i = 0; i<size.length;i++){
-      if(document.getElementById(size[i]).checked){
+    for (let i = 0; i < size.length; i++) {
+      if (document.getElementById(size[i]).checked) {
         sizeChecked.push(size[i]);
       }
     }
-    if((sizes.length !== sizeChecked.length && (sizes.every((val) => sizeChecked.includes(val))))){
+    if ((sizes.length !== sizeChecked.length && (sizes.every((val) => sizeChecked.includes(val))))) {
       setSizes(sizeChecked);
     }
-    if((brands.length !== brandChecked.length && (brands.every((val) => brandChecked.includes(val))))){
+    if ((brands.length !== brandChecked.length && (brands.every((val) => brandChecked.includes(val))))) {
       setBrands(brandChecked);
     }
-    let saleCards=[];
-    let listCards= [];
-    if(sizeChecked.length>0){
+    let saleCards = [];
+    let listCards = [];
+    if (sizeChecked.length > 0) {
       saleList.forEach(element => {
         let bool = false
-        sizeChecked.forEach(elemSize =>{
-          if(element.size.includes(elemSize) && !bool){
+        sizeChecked.forEach(elemSize => {
+          if (element.size.includes(elemSize) && !bool) {
             saleCards.push(element);
             bool = true;
           }
         })
       });
-    } else{
+    } else {
       saleCards = saleList;
     }
-    if(sizeChecked.length>0){
+    if (sizeChecked.length > 0) {
       list.forEach(element => {
         let bool = false
-        sizeChecked.forEach(elemSize =>{
-          if(element.size.includes(elemSize) && !bool){
+        sizeChecked.forEach(elemSize => {
+          if (element.size.includes(elemSize) && !bool) {
             listCards.push(element);
             bool = true;
           }
         })
       });
-    } else{
+    } else {
       listCards = list;
     }
-    listFinal=[];
-    saleFinal=[];    
-    if(brandChecked.length>0){
+    listFinal = [];
+    saleFinal = [];
+    if (brandChecked.length > 0) {
       listCards.forEach(element => {
-        if(brandChecked.includes(element.brand)){
+        if (brandChecked.includes(element.brand)) {
           listFinal.push(element);
         }
       });
-    } else{
+    } else {
       listFinal = listCards;
     }
-    if(brandChecked.length>0){
+    if (brandChecked.length > 0) {
       saleCards.forEach(element => {
-        if(brandChecked.includes(element.brand)){
+        if (brandChecked.includes(element.brand)) {
           saleFinal.push(element);
         }
       });
-    } else{
+    } else {
       saleFinal = saleCards;
     }
-    if(finalList.length != (listFinal.length) ){
+    if (finalList.length != (listFinal.length)) {
       setFinalList(listFinal);
     }
     // else{
@@ -203,109 +203,100 @@ const Items = () => {
     //     }
     //   }
     // }
-    if(finalSaleList.length != (saleFinal.length) ){
-      setFinalSaleList(saleFinal);}
-      else{
-        for(let i =0; i<finalSaleList.length;i++ ){
-          console.log(finalSaleList.length, finalSaleList);
-          console.log(saleFinal.length, saleFinal);
-          // let bool = true;
-          // for(let n= 0; n<saleFinal.length; i++){
-            // console.log(i, n);
-            // console.log("test", saleFinal[n]);
-            // console.log("test1", finalSaleList[i]);
-            // if(saleFinal[n].name != finalSaleList[i].name ){
-            //   bool =false;
-            // }
-          // }
-          // console.log("out");
-          // if(bool){
-          //   setFinalSaleList(saleFinal);
-          // }
+    if (finalSaleList.length != (saleFinal.length)) {
+      setFinalSaleList(saleFinal);
+    }
+    else {
+      for (let i = 0; i < finalSaleList.length; i++) {
+        console.log(finalSaleList.length, finalSaleList);
+        console.log(saleFinal.length, saleFinal);
+        let bool = true;
+        for (let n = 0; n < saleFinal.length; n++) {
+          if (saleFinal[n].name != finalSaleList[i].name) {
+            bool = false;
+          }
         }
+        if (bool) {
+          setFinalSaleList(saleFinal);
+        }
+
       }
-    // } else{
-    //   for(let i = 0; i<finalSaleList.length; i++){
-    //     if(!(finalSaleList.some(e => e.name === saleFinal[i].name))){
-    //       setFinalList(saleFinal);
-    //     }
-    //   }
-    // }
+    }
     console.log("final", finalSaleList, saleList);
-    
+
   })
-   
-    return ( 
-       
-       <div className="items bg-light">
-         <div className="container-fluid pt-4">
-            <div className="container border border-3 border-dark bg-light">
-              <div>
-                <h5><Link to="/">Home</Link> / <Link to="/shop">Shop</Link> / <Link to={"/sport/"+sport}>{sport}</Link> / <Link to={"/items/"+item}>{itemName}</Link></h5>
-              </div>
-            <div className="row mx-auto">
-              <div className="col p-0">
-                 <h2 className="text-left py-2 fit mr-0">{name}</h2> 
-             </div>
-             <div className="col p-0"> 
-                <div className="ml-auto">
-                  <h2 class="align-self-end py-2 max-width fit">{finalSaleList.length+finalList.length} Items</h2> 
-                </div>
+
+  return (
+
+    <div className="items bg-light">
+      <div className="container-fluid pt-4">
+        <div className="container border border-3 border-dark bg-light">
+          <div>
+            <h5><Link to="/">Home</Link> / <Link to="/shop">Shop</Link> / <Link to={"/sport/" + sport}>{sport}</Link> / <Link to={"/items/" + item}>{itemName}</Link></h5>
+          </div>
+          <div className="row mx-auto">
+            <div className="col p-0">
+              <h2 className="text-left py-2 fit mr-0">{name}</h2>
+            </div>
+            <div className="col p-0">
+              <div className="ml-auto">
+                <h2 class="align-self-end py-2 max-width fit">{finalSaleList.length + finalList.length} Items</h2>
               </div>
             </div>
           </div>
         </div>
-    <div className="container my-4 p-0">
+      </div>
+      <div className="container my-4 p-0">
         <div className="row">
-            <div className="col-sm-2"> <div id="filterContainer" className="container float-start border border-3 border-dark bg-light mr-4 max-width fit">
-                <h3>Filter</h3>
-                <div id="itemContainer" className="row">
-                  {brandBoolean ? ( <h4>Brand</h4>):""}
-                  {brandBoolean ? ( 
-                    brand.map((brandName) => (
-                    <><div><input className='checkbox-reset' type="checkbox" onClick={(e) =>{checkClicked(e, {brandName})}} id={brandName} value={brandName}></input>
+          <div className="col-sm-2"> <div id="filterContainer" className="container float-start border border-3 border-dark bg-light mr-4 max-width fit">
+            <h3>Filter</h3>
+            <div id="itemContainer" className="row">
+              {brandBoolean ? (<h4>Brand</h4>) : ""}
+              {brandBoolean ? (
+                brand.map((brandName) => (
+                  <><div><input className='checkbox-reset' type="checkbox" onClick={(e) => { checkClicked(e, { brandName }) }} id={brandName} value={brandName}></input>
                     <label for={brandName}> {brandName}</label></div></>
-                    ) )):""}
-                    <h4>Size</h4>
-                    {size.map((itemSize) => (
-                      <><div><input className='checkbox-reset' type="checkbox"  onClick={(e) =>{checkClicked(e, {itemSize})}} id={itemSize} value={itemSize}></input>
-                      <label for={itemSize}> {itemSize}</label></div></>
-               ))}
-                </div>
-              </div>
+                ))) : ""}
+              <h4>Size</h4>
+              {size.map((itemSize) => (
+                <><div><input className='checkbox-reset' type="checkbox" onClick={(e) => { checkClicked(e, { itemSize }) }} id={itemSize} value={itemSize}></input>
+                  <label for={itemSize}> {itemSize}</label></div></>
+              ))}
             </div>
-            <div className="col-sm-10">
-                <div  className="row max-width">
-                {finalList.map((element) => (<div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12' key={element.id}>
-             
-             <div className="card card-home bg-dark text-white mx-auto card-static">
-                  <img src={element.img}  className="card-img-top img" alt=""/>
+          </div>
+          </div>
+          <div className="col-sm-10">
+            <div className="row max-width">
+              {finalList.map((element) => (<div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12' key={element.id}>
+
+                <div className="card card-home bg-dark text-white mx-auto card-static">
+                  <img src={element.img} className="card-img-top img" alt="" />
                   <div className="card-body text-center">
-                      <h5 className="card-title">{element.name}</h5>
-                      <p className="card-text">$ {element.price}</p>
-                      <a href="#" className="btn btn-secondary">Buy</a>
+                    <h5 className="card-title">{element.name}</h5>
+                    <p className="card-text">$ {element.price}</p>
+                    <a href="#" className="btn btn-secondary">Buy</a>
                   </div>
-              </div>
-            
-          </div>))}
-          {finalSaleList.map((element) => (<div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12' key={element.id}>
-             
-               <div className="card card-home bg-dark text-white mx-auto">
-                    <img src={element.img}  className="card-img-top img" alt=""/>
-                    <div className="card-body text-center">
-                        <h5 className="card-title">{element.name}</h5>
-                        <p className="card-text"><span>$ {element.oldPrice}</span> $ {element.price}</p>
-                        <a href="#" className="btn btn-secondary">Buy</a>
-                    </div>
                 </div>
-              
-            </div>))}
-                    </div>
+
+              </div>))}
+              {finalSaleList.map((element) => (<div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12' key={element.id}>
+
+                <div className="card card-home bg-dark text-white mx-auto">
+                  <img src={element.img} className="card-img-top img" alt="" />
+                  <div className="card-body text-center">
+                    <h5 className="card-title">{element.name}</h5>
+                    <p className="card-text"><span>$ {element.oldPrice}</span> $ {element.price}</p>
+                    <a href="#" className="btn btn-secondary">Buy</a>
+                  </div>
                 </div>
+
+              </div>))}
             </div>
+          </div>
         </div>
+      </div>
     </div>
-     );
+  );
 }
- 
+
 export default Items;
