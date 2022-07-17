@@ -4,9 +4,12 @@ import ListItems from './items.json';
 let sport;
 let item;
 let obj;
+let idInt;
 const Item = () => {
     const {id} = useParams();
+    idInt = parseInt(id);
     console.log(typeof id);
+    console.log(typeof idInt);
     
     // if(3<id<=33){
     //     sport = "Soccer"
