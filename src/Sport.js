@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import stick from "./images/sport/stick.jpg"
-import skate from "./images/sport/skates.jpg"
+import skates from "./images/sport/skates.jpg"
 import helmet from "./images/sport/helmet.jpg"
 import soccerball from "./images/sport/soccerball.jpg"
 import cleats from "./images/sport/cleats.jpg"
@@ -15,7 +15,7 @@ const Sport = () => {
     let items = [];
     const {sport} = useParams();
     if(sport === "Hockey"){
-        items = [{id:"1", name:"Sticks", param:"Sticks", img:stick}, {id:"2", name:"Skates", param:"Skates", img:skate}, {id:"3", name:"Helmets", param:"Helmets", img:helmet}]
+        items = [{id:"1", name:"Sticks", param:"Sticks", img:stick}, {id:"2", name:"Skates", param:"Skates", img:skates}, {id:"3", name:"Helmets", param:"Helmets", img:helmet}]
         name ="Hockey"
     } else if(sport === "Soccer"){
         items = [{id:"1", name:"Soccer Balls", param:"SoccerBalls", img:soccerball}, {id:"2", name:"Cleats", param:"Cleats/true", img:cleats}, {id:"3", name:"Shin Guards", param:"ShinGuards", img:shinguards}]
