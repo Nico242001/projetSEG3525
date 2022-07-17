@@ -9,7 +9,8 @@ let itemName;
 let brand;
 let size;
 let list;
-let count;
+let itemParam;
+let itemParam1;
 let saleList = [];
 let listFinal = [];
 let saleFinal=[]; 
@@ -95,7 +96,9 @@ function onLoad(item){
 }
 
 const Items = () => {
-  const {item} = useParams(); 
+  const {item} = useParams();
+  console.log(item);
+  itemParam = item; 
   onLoad(item);
   const [finalList, setFinalList] = useState(list);
   const [finalSaleList, setFinalSaleList] = useState(saleList);
