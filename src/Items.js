@@ -212,6 +212,7 @@ const Items = () => {
         console.log(saleFinal.length, saleFinal);
         let bool = true;
         for (let n = 0; n < saleFinal.length; n++) {
+          console.log(saleFinal[n].name, finalsaleList[n].name)
           if (saleFinal[n].name != finalSaleList[i].name) {
             bool = false;
             console.log("in");
