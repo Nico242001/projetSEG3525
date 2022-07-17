@@ -23,7 +23,7 @@
                 "param": "Brazuca",
                 "price": "70.00",
                 "description": "test",
-                "image": "images/soccer/balls/brazuca.jpg",
+                "image": "{json}",
                 "size": [
                     "4",
                     "5"
