@@ -1,5 +1,5 @@
 {
-    "sale": [{"id":"1", "name":"CCM Super Tracker", "oldPrice":"100.00", "price":"80.00", "sport":"Hockey", "item":"Skates", "img":"/images/index/ccmSuperTracker.jpg", "size": [
+    "sale": [{"id":"1", "name":"CCM Super Tracker", "oldPrice":"100.00", "price":"80.00", "sport":"Hockey", "item":"Skates", "image":"/images/index/ccmSuperTracker.jpg", "size": [
         "6",
         "7",
         "8",
@@ -7,7 +7,7 @@
         "10",
         "11",
         "12"
-    ],"brand":"CCM"},{"id":"2", "name":"Adidas Starlancer", "oldPrice":"50.00", "price":"30.00", "sport":"Soccer", "item":"SoccerBalls", "img":"/images/index/starlancer.jpg", "size": [
+    ],"brand":"CCM"},{"id":"2", "name":"Adidas Starlancer", "oldPrice":"50.00", "price":"30.00", "sport":"Soccer", "item":"SoccerBalls", "image":"/images/index/starlancer.jpg", "size": [
         "1",
         "2",
         "3",
