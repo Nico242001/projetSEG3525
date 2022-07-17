@@ -210,6 +210,7 @@ const Items = () => {
           console.log(finalSaleList.length, finalSaleList);
           let bool = true;
           for(let n= 0; n<saleFinal.length; i++){
+            console.log(i, n);
             console.log("test", saleFinal[n]);
             console.log("test1", finalSaleList[i]);
             // if(saleFinal[n].name != finalSaleList[i].name ){
