@@ -6,7 +6,7 @@ let item;
 let obj;
 const Item = () => {
     const {id} = useParams();
-    console.log(id);
+    console.log(typeof id);
     
     // if(3<id<=33){
     //     sport = "Soccer"
