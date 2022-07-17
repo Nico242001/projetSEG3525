@@ -120,6 +120,8 @@ console.log("items" , paramHistory);
 setParamHistory(item);
   }
     onLoad();
+    console.log("list", list);
+    console.log("sale", saleList)
     let brandChecked = [];
     let sizeChecked = [];
     if(brandBoolean){
