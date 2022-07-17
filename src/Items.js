@@ -63,6 +63,7 @@ function onLoad(item){
         saleList.push(element);
       }
     })
+    console.log("push", saleList);
   } else if(item ==="Helmets"){
     hockey();
     size=["Small", "Medium", "Large"];
