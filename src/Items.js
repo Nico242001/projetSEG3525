@@ -22,7 +22,7 @@ function hockey(){
   brand = ["Bauer", "CCM","Warrior"];
   sport = "Hockey";
 }
-function onLoad(item){
+function onLoad(){
   saleList=[];
   if (item === "SoccerBalls"){
     soccer();
