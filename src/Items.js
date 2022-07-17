@@ -195,22 +195,23 @@ const Items = () => {
     }
     if(finalList.length != (listFinal.length) ){
       setFinalList(listFinal);
-    }else{
-      for(let i = 0; i<finalList.length; i++){
-        if(!(finalList.some(e => e.name === listFinal[i].name))){
-          setFinalList(listFinal);
-        }
-      }
     }
+    // else{
+    //   for(let i = 0; i<finalList.length; i++){
+    //     if(!(finalList.some(e => e.name === listFinal[i].name))){
+    //       setFinalList(listFinal);
+    //     }
+    //   }
+    // }
     if(finalSaleList.length != (saleFinal.length) ){
-      setFinalSaleList(saleFinal);
-    } else{
-      for(let i = 0; i<finalSaleList.length; i++){
-        if(!(finalSaleList.some(e => e.name === saleFinal[i].name))){
-          setFinalList(saleFinal);
-        }
-      }
-    }
+      setFinalSaleList(saleFinal);}
+    // } else{
+    //   for(let i = 0; i<finalSaleList.length; i++){
+    //     if(!(finalSaleList.some(e => e.name === saleFinal[i].name))){
+    //       setFinalList(saleFinal);
+    //     }
+    //   }
+    // }
     console.log("final", finalSaleList);
     
   })
