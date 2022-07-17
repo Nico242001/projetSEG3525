@@ -5,7 +5,7 @@ let sport;
 let item;
 let obj;
 let idInt;
-function findObject(idInt, list){
+function findObject(id, list){
     for(let i=0;i<list.length;i++){
         if(id == list[i].id){
             return list[i]
