@@ -211,6 +211,7 @@ const Items = () => {
         }
       }
     }
+    console.log("final", finalSaleList);
     
   })
    
