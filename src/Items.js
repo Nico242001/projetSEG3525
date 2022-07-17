@@ -115,6 +115,7 @@ const Items = () => {
       var elements = document.getElementsByClassName("checkbox-reset");
     for (var i = 0, len = elements.length; i < len; i++) {
       elements[i].checked = false;
+      saleList = [];
     }
       setParamHistory(item);
     }
