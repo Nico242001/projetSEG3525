@@ -2,7 +2,7 @@ import ListItems from './items.json';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from "react-router-dom";
-// import json from "./images/soccer/balls/brazuca.jpg"
+import {Link} from 'react-router-dom'
 
 let sport;
 let name;
@@ -278,7 +278,7 @@ const Items = () => {
                   <div className="card-body text-center">
                     <h5 className="card-title">{element.name}</h5>
                     <p className="card-text">$ {element.price}</p>
-                    <a href="#" className="btn btn-secondary">Buy</a>
+                    <Link className="btn btn-secondary" to={"/item/"+element.id}>Buy</Link>
                   </div>
                 </div>
 
@@ -290,7 +290,7 @@ const Items = () => {
                   <div className="card-body text-center">
                     <h5 className="card-title">{element.name}</h5>
                     <p className="card-text"><span>$ {element.oldPrice}</span> $ {element.price}</p>
-                    <a href="#" className="btn btn-secondary">Buy</a>
+                    <Link className="btn btn-secondary" to={"/item/"+element.id}>Buy</Link>
                   </div>
                 </div>
 

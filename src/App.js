@@ -26,6 +26,9 @@ function App() {
           <Route exact path="/items/:item">
             <Items/>
           </Route>
+          <Route exact path="/item/:id">
+            <Item/>
+          </Route>
           
         </Switch>
       </div>

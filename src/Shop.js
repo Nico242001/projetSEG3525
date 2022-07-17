@@ -1,7 +1,3 @@
-// import soccer from "/images/shop/soccerCard.jpg"
-// import hockey from "/images/shop/hockeyCard.jpg"
-// import basketball from "/images/shop/basketball.jpg"
-// import sale from "/images/shop/sale.jpg"
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 

@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import './index.css';
-// import ccmSuperTracker from "./images/index/ccmSuperTracker.jpg"
-// import starlancer from "./images/index/starlancer.jpg"
 
 const Home = () => {
     const [deals, setDeals] = useState([

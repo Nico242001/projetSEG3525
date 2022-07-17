@@ -153,9 +153,387 @@
                 "brand": "Puma"
             }
         ],
-        "cleats": [],
-        "shinguards": [],
-        "sticks": [],
+        "cleats": [  {
+            "id": "14",
+            "name": "Adidas Speed X",
+            "param": "SpeedX",
+            "price": "150.00",
+            "description": "test",
+            "image": "/images/soccer/cleats/speed.jpg",
+            "size": [
+                "7","9","10","11","12"
+            ],
+            "brand": "Adidas"
+        },
+        {
+            "id": "15",
+            "name": "Adidas Predator",
+            "param": "Predator",
+            "price": "100.00",
+            "description": "test",
+            "image": "/images/soccer/cleats/predator.jpg",
+            "size": [
+                "6","7","8","9"
+            ],
+            "brand": "Adidas"
+        },
+        {
+            "id": "16",
+            "name": " Adidas Messi",
+            "param": "Messi",
+            "price": "120.00",
+            "description": "test",
+            "image": "/images/soccer/cleats/messi.jpg",
+            "size": [
+                "7","8","9"
+            ],
+            "brand": "Adidas"
+        },
+        {
+            "id": "17",
+            "name": "Adidas Goletto",
+            "param": "Goletto",
+            "price": "90.00",
+            "description": "test",
+            "image": "/images/soccer/cleats/goletto.jpg",
+            "size": [
+                "10","11","12"
+            ],
+            "brand": "Adidas"
+        },
+        {
+            "id": "18",
+            "name": "Nike CR7",
+            "param": "CR7",
+            "price": "110.00",
+            "description": "test",
+            "image": "/images/soccer/cleats/cr7.jpg",
+            "size": [
+                "9","10"
+            ],
+            "brand": "Nike"
+        },
+        {
+            "id": "19",
+            "name": "Nike Mercurial",
+            "param": "Mercurial",
+            "price": "120.00",
+            "description": "test",
+            "image": "/images/soccer/cleats/mercurial.jpg",
+            "size": [
+                "6","7","8","9","10","11","12"
+            ],
+            "brand": "Nike"
+        },
+        {
+            "id": "20",
+            "name": "Nike Superfly",
+            "param": "Superfly",
+            "price": "100.00",
+            "description": "test",
+            "image": "/images/soccer/cleats/superfly.jpg",
+            "size": [
+                "6","7","8","9","10"
+            ],
+            "brand": "Nike"
+        },
+        {
+            "id": "21",
+            "name": "Puma Ultra",
+            "param": "Ultra",
+            "price": "95.00",
+            "description": "test",
+            "image": "/images/soccer/cleats/ultra.jpg",
+            "size": [
+                "8","9","10","11","12"
+            ],
+            "brand": "Puma"
+        },
+        {
+            "id": "22",
+            "name": "Puma Neymar",
+            "param": "Neymar",
+            "price": "125.00",
+            "description": "test",
+            "image": "/images/soccer/cleats/neymar.jpg",
+            "size": [
+                "6","11","12"
+            ],
+            "brand": "Puma"
+        },
+        {
+            "id": "23",
+            "name": "Puma Platinum",
+            "param": "Platinum",
+            "price": "110.00",
+            "description": "test",
+            "image": "/images/soccer/cleats/platinum.jpg",
+            "size": [
+                "6","7","8","9","10"
+            ],
+            "brand": "Puma"
+        }],
+        "shinguards": [  {
+            "id": "24",
+            "name": "Adidas Brazuca",
+            "param": "Brazuca",
+            "price": "70.00",
+            "description": "test",
+            "image": "/images/soccer/balls/brazuca.jpg",
+            "size": [
+                "4",
+                "5"
+            ],
+            "brand": "Addidas"
+        },
+        {
+            "id": "25",
+            "name": "Adidas Tango",
+            "param": "Tango",
+            "price": "25.00",
+            "description": "test",
+            "image": "/images/soccer/balls/tango.jpg",
+            "size": [
+                "1",
+                "2",
+                "3"
+            ],
+            "brand": "Adidas"
+        },
+        {
+            "id": "26",
+            "name": " Adidas Tiro Pro",
+            "param": "Tiro",
+            "price": "40.00",
+            "description": "test",
+            "image": "/images/soccer/balls/tiro.jpg",
+            "size": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5"
+            ],
+            "brand": "Adidas"
+        },
+        {
+            "id": "27",
+            "name": "Nike Strike",
+            "param": "Strike",
+            "price": "35.00",
+            "description": "test",
+            "image": "/images/soccer/balls/strike.jpg",
+            "size": [
+                "3",
+                "4",
+                "5"
+            ],
+            "brand": "Nike"
+        },
+        {
+            "id": "28",
+            "name": "Nike Rainbow",
+            "param": "Rainbow",
+            "price": "40.00",
+            "description": "test",
+            "image": "/images/soccer/balls/rainbow.jpg",
+            "size": [
+                "5"
+            ],
+            "brand": "Nike"
+        },
+        {
+            "id": "29",
+            "name": "Adidas Messi Club",
+            "param": "MessiClub",
+            "price": "50.00",
+            "description": "test",
+            "image": "/images/soccer/balls/messiClub.jpg",
+            "size": [
+                "4",
+                "5"
+            ],
+            "brand": "Adidas"
+        },
+        {
+            "id": "30",
+            "name": "Adidas Euro Uniforia",
+            "param": "Uniforia",
+            "price": "55.00",
+            "description": "test",
+            "image": "/images/soccer/balls/uniforia.jpg",
+            "size": [
+                "3",
+                "4",
+                "5"
+            ],
+            "brand": "Adidas"
+        },
+        {
+            "id": "31",
+            "name": "Puma Shock",
+            "param": "Shock",
+            "price": "30.00",
+            "description": "test",
+            "image": "/images/soccer/balls/shock.jpg",
+            "size": [
+                "3",
+                "4"
+            ],
+            "brand": "Puma"
+        },
+        {
+            "id": "32",
+            "name": "Puma One Chrome",
+            "param": "OneChrome",
+            "price": "37.00",
+            "description": "test",
+            "image": "/images/soccer/balls/one.jpg",
+            "size": [
+                "1"
+            ],
+            "brand": "Puma"
+        },
+        {
+            "id": "33",
+            "name": "Puma Prestige",
+            "param": "Prestige",
+            "price": "25.00",
+            "description": "test",
+            "image": "/images/soccer/balls/prestige.jpg",
+            "size": [
+                "3",
+                "4",
+                "5"
+            ],
+            "brand": "Puma"
+        }],
+        "sticks": [  {
+            "id": "34",
+            "name": "CCM Ribcor",
+            "param": "Ribcor",
+            "price": "85.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/ribcor.jpg",
+            "size": [
+               "Large"
+            ],
+            "brand": "CCM"
+        },
+        {
+            "id": "35",
+            "name": "CCM Jetspeed",
+            "param": "Jetspeed",
+            "price": "70.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/jetspeed.jpg",
+            "size": [
+                "Medium","Large"
+            ],
+            "brand": "CCM"
+        },
+        {
+            "id": "36",
+            "name": "CCM 252 Wood",
+            "param": "Wood",
+            "price": "35.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/wood.jpg",
+            "size": [
+                "Small","Medium","Large"
+            ],
+            "brand": "CCM"
+        },
+        {
+            "id": "37",
+            "name": "Bauer Nexus",
+            "param": "Nexus",
+            "price": "65.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/nexus.jpg",
+            "size": [
+                "Small",
+                "Medium",
+                "Large"
+            ],
+            "brand": "Bauer"
+        },
+        {
+            "id": "38",
+            "name": "Bauer Supreme",
+            "param": "Supreme",
+            "price": "70.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/supreme.jpg",
+            "size": [
+                "Small",
+                "Medium"
+            ],
+            "brand": "Bauer"
+        },
+        {
+            "id": "39",
+            "name": "Bauer Vapor",
+            "param": "Vapor",
+            "price": "50.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/vapor.jpg",
+            "size": [
+                "Large"
+            ],
+            "brand": "Bauer"
+        },
+        {
+            "id": "40",
+            "name": "Warrior Covert",
+            "param": "Covert",
+            "price": "55.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/covert.jpg",
+            "size": [
+                "Small",
+                "Large"
+            ],
+            "brand": "Warrior"
+        },
+        {
+            "id": "41",
+            "name": "Warrior Alpha",
+            "param": "Alpha",
+            "price": "39.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/alpha.jpg",
+            "size": [
+                "Small"
+            ],
+            "brand": "Warrior"
+        },
+        {
+            "id": "42",
+            "name": "Warrior Alpha DX",
+            "param": "AlphaDX",
+            "price": "89.00",
+            "description": "test",
+            "image": "/images/soccer/balls/alphadx.jpg",
+            "size": [
+                "Medium", "Large"
+            ],
+            "brand": "Warrior"
+        },
+        {
+            "id": "43",
+            "name": "Warrior Covert QRE",
+            "param": "CovertQRE",
+            "price": "75.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/covertqre.jpg",
+            "size": [
+                "Small",
+                "Medium",
+                "Large"
+            ],
+            "brand": "Warrior"
+        }],
         "skates": [],
         "helmets": [],
         "basketballs": [],
