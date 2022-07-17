@@ -23,7 +23,7 @@
                 "param": "Brazuca",
                 "price": "70.00",
                 "description": "test",
-                "image": "/imagesPublic/soccer/balls/brazuca.jpg",
+                "image": "/brazuca.jpg",
                 "size": [
                     "4",
                     "5"
@@ -36,7 +36,7 @@
                 "param": "Tango",
                 "price": "25.00",
                 "description": "test",
-                "image": "../public/images/soccer/balls/tango.jpg",
+                "image": "tango.jpg",
                 "size": [
                     "1",
                     "2",
@@ -50,7 +50,7 @@
                 "param": "Tiro",
                 "price": "40.00",
                 "description": "test",
-                "image": "../public/images/soccer/balls/tiro.jpg",
+                "image": "/tiro.jpg",
                 "size": [
                     "1",
                     "2",
@@ -66,7 +66,7 @@
                 "param": "Strike",
                 "price": "35.00",
                 "description": "test",
-                "image": "../public/images/soccer/balls/strike.jpg",
+                "image": "/strike.jpg",
                 "size": [
                     "3",
                     "4",
@@ -80,7 +80,7 @@
                 "param": "Rainbow",
                 "price": "40.00",
                 "description": "test",
-                "image": "../public/images/soccer/balls/rainbow.jpg",
+                "image": "/rainbow.jpg",
                 "size": [
                     "5"
                 ],
@@ -92,7 +92,7 @@
                 "param": "MessiClub",
                 "price": "50.00",
                 "description": "test",
-                "image": "../public/images/soccer/balls/messiClub.jpg",
+                "image": "/messiClub.jpg",
                 "size": [
                     "4",
                     "5"
@@ -105,7 +105,7 @@
                 "param": "Uniforia",
                 "price": "55.00",
                 "description": "test",
-                "image": "../public/images/soccer/balls/.uniforia.jpg",
+                "image": "/.uniforia.jpg",
                 "size": [
                     "3",
                     "4",
@@ -119,7 +119,7 @@
                 "param": "Shock",
                 "price": "30.00",
                 "description": "test",
-                "image": "../public/images/soccer/balls/shock.jpg",
+                "image": "/shock.jpg",
                 "size": [
                     "3",
                     "4"
@@ -132,7 +132,7 @@
                 "param": "OneChrome",
                 "price": "37.00",
                 "description": "test",
-                "image": "../public/images/soccer/balls/one.jpg",
+                "image": "/one.jpg",
                 "size": [
                     "1"
                 ],
@@ -144,7 +144,7 @@
                 "param": "Prestige",
                 "price": "25.00",
                 "description": "test",
-                "image": "../public/images/soccer/balls/prestige.jpg",
+                "image": "/prestige.jpg",
                 "size": [
                     "3",
                     "4",
