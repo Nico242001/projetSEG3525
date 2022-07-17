@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import './index.css';
-import ccmSuperTracker from "./images/index/ccmSuperTracker.jpg"
-import starlancer from "./images/index/starlancer.jpg"
+// import ccmSuperTracker from "./images/index/ccmSuperTracker.jpg"
+// import starlancer from "./images/index/starlancer.jpg"
 
 const Home = () => {
     const [deals, setDeals] = useState([
-        {name:"Super Tracker", oldPrice:"100", newPrice:"80", sport:"soccer", item:"cleats", img: ccmSuperTracker, id:"1"},
-        {name:"Starlancer", oldPrice:"50", newPrice:"30", sport:"hockey", item:"sticks", img:starlancer, id:"2"},
-        {name:"item3", oldPrice:"65", newPrice:"55", sport:"soccer", item:"balls", img:ccmSuperTracker, id:"3"}
+        {name:"Super Tracker", oldPrice:"100", newPrice:"80", sport:"soccer", item:"cleats", img: "/images/index/ccmSuperTracker.jpg", id:"1"},
+        {name:"Starlancer", oldPrice:"50", newPrice:"30", sport:"hockey", item:"sticks", img:"/images/index/starlancer.jpg", id:"2"},
+        {name:"item3", oldPrice:"65", newPrice:"55", sport:"soccer", item:"balls", img:"/images/index/ccmSuperTracker.jpg", id:"3"}
     ])
     const clickBuy = (e) =>{
         console.log("go view item", e);
