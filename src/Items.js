@@ -273,7 +273,7 @@ const Items = () => {
               {finalList.map((element) => (<div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12' key={element.id}>
 
                 <div className="card card-home bg-dark text-white mx-auto card-static">
-                 <img src={require(element.img)} className="card-img-top img" alt="" />
+                 <img src={element.img} className="card-img-top img" alt="" />
                   
                   <div className="card-body text-center">
                     <h5 className="card-title">{element.name}</h5>
