@@ -15,15 +15,17 @@ let listFinal = [];
 let saleFinal=[]; 
 let brandBoolean =true;
 function soccer(item){
+  brand = ["Adidas", "Nike", "Puma"];
   if(paramHistory[paramHistory.length-1] != item ){
-    brand = ["Adidas", "Nike", "Puma"];
+    setBrandCheck(brand);
   }
   // brand = ["Adidas", "Nike", "Puma"];
   sport = "Soccer";
 }
 function hockey(item){
+  brand = ["Bauer", "CCM","Warrior"];
   if(paramHistory[paramHistory.length-1] != item ){
-    brand = ["Bauer", "CCM","Warrior"];
+    setBrandCheck( brand);
   }
   // brand = ["Bauer", "CCM","Warrior"];
   sport = "Hockey";
