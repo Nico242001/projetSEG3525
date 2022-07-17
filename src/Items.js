@@ -29,6 +29,7 @@ function onLoad(item){
     itemName = "Balls";
     name = "Soccer Balls"
     size=["1", "2", "3", "4", "5"];
+    console.log(ListItems.Soccerballs);
     list = ListItems.Soccerballs;
     ListItems.sale.forEach(element =>{
       if(element.item === "SoccerBalls"){
