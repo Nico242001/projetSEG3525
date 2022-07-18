@@ -23,7 +23,7 @@ const Item = () => {
     const { id } = useParams();
     console.log("id", id);
     idInt = parseInt(id);
-    var amount = sessionStorage.getItem(0);
+    var amount = parseInt(sessionStorage.getItem(0));
     amount = amount + 1;
     sessionStorage.setItem(0, amount);
     console.log("AMOUNT", amount);
