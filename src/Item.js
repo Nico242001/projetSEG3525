@@ -84,7 +84,6 @@ const Item = () => {
 
     return (
         <div className="item bg-light">
-
             <div className='container-fluid'>
                 <div className="container-fluid pt-4">
                     <div className="container">
@@ -100,18 +99,24 @@ const Item = () => {
                         </div>
                         <div className="row mt-4">
                             <div className="col">
-                                <div id="itemDescription" className="container-fluid border border-3 border-dark bg-light">
-                                    <img id="image" src={obj.image} width="500px" />
+                                <div className="float-start container-fluid border border-3 border-dark bg-light p-0">
+                                    <img id="image" src={obj.image} width="600px" />
                                 </div>
                             </div>
                             <div className="col">
-                                <div id="details" className="container border border-3 border-dark bg-light">
+                                <div className="container border border-3 border-dark bg-light">
                                     <div class="container text-center border-bottom border-3 border-dark">
                                         <h3 >Total: $<span id="price">{obj.price}</span></h3>
                                     </div>
                                     <div class="container mt-3">
                                         <h4 >Size</h4>
-                                        <select name="itemSize" id="itemSize" width="85px" margin-left="25px"></select>
+                                        <select name="itemSize" id="itemSize" width="85px" margin-left="25px">
+                                            {
+                                                obj.size.map((size) => (
+                                                    <option key={size} value={size}>{size}</option>
+                                                    ))
+                                            }
+                                        </select>
                                         <br />
                                         <br />
                                         <h4 >Quantity</h4>
@@ -129,7 +134,7 @@ const Item = () => {
                                         </select>
                                         <br />
                                         <br />
-                                        <button type="button" margin-left="25px">Add to Cart</button>
+                                        <button type="button" className='btn btn-primary btn-color' margin-left="25px">Add to Cart</button>
                                         <br />
                                         <br />
                                     </div>

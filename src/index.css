@@ -157,6 +157,9 @@ position: sticky; top: 0;
 .fit-min{
   min-width: fit-content;
 }
+.btn-color{
+  background-color: #5680E9;
+}
 @media only screen and (max-width: 800px) {
   .height-video{
     height: 300px;
