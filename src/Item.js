@@ -94,14 +94,16 @@ const [num, setNum] = useState(1);
             setOldId(id);
         }
         console.log(num, size, oldId);
-        function addToCart(size, num){
-            var amount = parseInt(sessionStorage.getItem(0));
-            amount = amount + 1;
-            sessionStorage.setItem(0, amount);
-            console.log("size", size, "amount",amount);
-            let listObj = [obj,num,size];
-            sessionStorage.setItem(amount, listObj);
-        }
+        
+    }
+    function addToCart(size, num){
+        console.log("in add");
+        var amount = parseInt(sessionStorage.getItem(0));
+        amount = amount + 1;
+        sessionStorage.setItem(0, amount);
+        console.log("size", size, "amount",amount);
+        let listObj = [obj,num,size];
+        sessionStorage.setItem(amount, listObj);
     }
 
     return (
