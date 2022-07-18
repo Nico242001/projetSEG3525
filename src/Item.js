@@ -15,12 +15,13 @@ function findObject(id) {
         }
     }
 }
-function addToCart(){
+function addToCart(size, num){
     var amount = parseInt(sessionStorage.getItem(0));
     amount = amount + 1;
     sessionStorage.setItem(0, amount);
-    let num = document.getElementById("itemAmount").value;
-    let size = document.getElementById("itemSize").value;
+    console.log("size", size, "amount",amount);
+    // let num = document.getElementById("itemAmount").value;
+    // let size = document.getElementById("itemSize").value;
     let listObj = [obj,num,size];
     sessionStorage.setItem(amount, listObj);
 }
@@ -139,7 +140,7 @@ const Item = () => {
                                         </select>
                                         <br />
                                         <br />
-                                        <button type="button" onClick={addToCart()} className='btn btn-primary btn-color' margin-left="25px">Add to Cart</button>
+                                        <button type="button" onClick={addToCart(document.getElementById("itemSize").value, document.getElementById("itemAmount").value)} className='btn btn-primary btn-color' margin-left="25px">Add to Cart</button>
                                         <br />
                                         <br />
                                     </div>
