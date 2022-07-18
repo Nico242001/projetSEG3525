@@ -97,7 +97,7 @@ const [num, setNum] = useState(1);
         
     }
     const addToCart = (event) =>{
-        
+        console.log(document.getElementById("itemAmount").value);
         console.log("in add", event);
         var amount = parseInt(sessionStorage.getItem(0));
         amount = amount + 1;
