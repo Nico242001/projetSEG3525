@@ -7,11 +7,14 @@ let obj;
 let idInt;
 let itemLink;
 function findObject(id, list){
+    console.log("in", id)
     for(let i=0;i<list.length;i++){
         if(id == list[i].id){
+            console.log(list[i])
             return list[i]
         }
     }
+    console.log("not");
 }
 const Item = () => {
     const { id } = useParams();
