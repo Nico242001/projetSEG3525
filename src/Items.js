@@ -111,7 +111,6 @@ const Items = () => {
   const [sizes, setSizes] = useState([]);
   const [brands, setBrands] = useState([]);
 
-
   const checkClicked = (e, brand) => {
     const newclick = clicked + 1;
     setclicked(newclick);

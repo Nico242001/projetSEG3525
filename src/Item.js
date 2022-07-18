@@ -98,26 +98,26 @@ const Item = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className="container m-4 p-0">
-        <div id="itemDescription" className="container float-start text-center border border-3 border-dark bg-light" style="max-width:60%;">
-            <img id="image" src="soccer.jpg" width="35%"/>
+            <div className="container m-4 p-0">
+        <div id="itemDescription" className="container float-start text-center border border-3 border-dark bg-light" max-width="60%">
+            <img id="image" src={obj.image} width="35%"/>
             <br/>
             <h3>Description</h3>
-            <p></p>
+            <p>{obj.description}</p>
         </div>
-        <div id="details" className="container float-end border border-3 border-dark bg-light" style="min-width: fit-content;max-width:35%;">
+        <div id="details" className="container float-end border border-3 border-dark bg-light fit" max-width="35%">
             <div class="container text-center border-bottom border-3 border-dark">
-                <h3 >Total: $<span id="price">price</span></h3>
+                <h3 >Total: $<span id="price">{obj.price}</span></h3>
             </div>
 
          
             <div class="container mt-3">
                 <h4 style="margin-left:25px;">Size</h4>
-                <select name="itemSize" id="itemSize" style="width:85px; margin-left:25px;"></select>
+                <select name="itemSize" id="itemSize" width="85px" margin-left="25px"></select>
                 <br/>
                 <br/>
                 <h4 style="margin-left:25px;">Quantity</h4>
-                <select name="itemAmount" id="itemAmount" style="width:85px; margin-left:25px;">
+                <select name="itemAmount" id="itemAmount" width="85px" margin-left="25px">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -131,12 +131,12 @@ const Item = () => {
                 </select>
                 <br/>
                 <br/>
-                <button type="button" onclick="addToCart()" style="margin-left:25px;">Add to Cart</button>
+                <button type="button"  margin-left="25px">Add to Cart</button>
                 <br/>
                 <br/>
             </div>
         </div>
-    </div> */}
+    </div>
         </div>
     );
 }
