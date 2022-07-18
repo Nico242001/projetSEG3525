@@ -96,8 +96,9 @@ const [num, setNum] = useState(1);
         console.log(num, size, oldId);
         
     }
-    function addToCart(size, num){
-        console.log("in add");
+    const addToCart = (event) =>{
+        
+        console.log("in add", event);
         var amount = parseInt(sessionStorage.getItem(0));
         amount = amount + 1;
         sessionStorage.setItem(0, amount);
@@ -158,7 +159,7 @@ const [num, setNum] = useState(1);
                                         </select>
                                         <br />
                                         <br />
-                                        <button type="button" onClick={addToCart()} className='btn btn-primary btn-color' margin-left="25px">Add to Cart</button>
+                                        <button type="button" onClick={event => addToCart(event)} className='btn btn-primary btn-color' margin-left="25px">Add to Cart</button>
                                         <br />
                                         <br />
                                     </div>
