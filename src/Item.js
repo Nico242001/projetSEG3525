@@ -7,8 +7,9 @@ let obj;
 let idInt;
 let itemLink;
 function findObject(id, list){
-    console.log("in", id)
+    console.log("in", id, list);
     for(let i=0;i<list.length;i++){
+        console.log(list[i].id);
         if(id == list[i].id){
             console.log(list[i])
             return list[i]
