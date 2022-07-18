@@ -34,7 +34,6 @@ const Item = () => {
             item = "Cleats";
             itemLink = "Cleats";
             list = ListItems.cleats;
-            console.log(list)
             obj = findObject(id);
         } else {
             item = "Shin Guards";
@@ -82,7 +81,6 @@ const Item = () => {
             obj = findObject(id);
         }
     }
-    console.log("sport", sport, "item", item, "obj", obj);
 
     return (
         <div className="item bg-light">
@@ -91,7 +89,7 @@ const Item = () => {
 
                 <div className="container border border-3 border-dark bg-light">
                     <div>
-                        <h5><Link to="./">Home</Link> / <Link to="./">Shop</Link> / <Link to="./">{sport}</Link> / <Link to={"/items/"+itemLink}>{item}</Link> / <Link to="./">{obj.name}</Link></h5>
+                        <h5><Link to="/">Home</Link> / <Link to="/shop">Shop</Link> / <Link to={"/sport/"+sport}>{sport}</Link> / <Link to={"/items/"+itemLink}>{item}</Link> / <Link to={"/item/"+obj.id}>{obj.name}</Link></h5>
                     </div>
                     <div className="row mx-auto">
                         <div className="col p-0">

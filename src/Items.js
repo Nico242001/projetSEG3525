@@ -34,24 +34,28 @@ function onLoad(item) {
         saleList.push(element);
       }
     })
+    brandBoolean = true;
   } else if (item === "Cleats") {
     soccer();
     itemName = "Cleats";
     name = "Soccer Cleats";
     size = ["6", "7", "8", "9", "10", "11", "12"];
     list = ListItems.cleats;
+    brandBoolean = true;
   } else if (item === "ShinGuards") {
     soccer();
     itemName = "Shin Guards";
     size = ["Small", "Medium", "Large"];
     name = "Soccer Shin Guards";
     list = ListItems.shinguards;
+    brandBoolean = true;
   } else if (item === "Sticks") {
     hockey();
     name = "Hockey Sticks";
     size = ["Small", "Medium", "Large"];
     itemName = "Sticks";
     list = ListItems.sticks;
+    brandBoolean = true;
   } else if (item === "Skates") {
     hockey();
     itemName = "Skates";
@@ -63,12 +67,14 @@ function onLoad(item) {
         saleList.push(element);
       }
     })
+    brandBoolean = true;
   } else if (item === "Helmets") {
     hockey();
     size = ["Small", "Medium", "Large"];
     itemName = "Helmets";
     name = "Hockey Helmets";
     list = ListItems.helmets;
+    brandBoolean = true;
   } else if (item === "Basketballs") {
     brand = ["Nike", "Spalding", "Wilson"];
     size = ["27.5", "28.5", "29.5"];
@@ -76,6 +82,7 @@ function onLoad(item) {
     sport = "Basketball";
     name = "Basketballs";
     list = ListItems.basketballs;
+    brandBoolean = true;
   } else if (item === "Shoes") {
     brand = ["Adidas", "Nike", "Puma"];
     size = ["6", "7", "8", "9", "10", "11", "12"];
@@ -83,6 +90,7 @@ function onLoad(item) {
     sport = "Basketball";
     name = "Basketball Shoes";
     list = ListItems.shoes;
+    brandBoolean = true;
   } else if (item === "Shirts") {
     size = ["Small", "Medium", "Large"];
     itemName = "Shirts";
