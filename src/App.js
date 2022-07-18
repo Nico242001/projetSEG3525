@@ -6,6 +6,7 @@ import Shop from './Shop';
 import Sport from './Sport';
 import Items from './Items';
 import Item from './Item';
+import Cart from './Cart';
 
 
 function App() {
@@ -30,7 +31,9 @@ function App() {
           <Route exact path="/item/:id">
             <Item/>
           </Route>
-          
+          <Route exact path="/cart">
+            <Cart/>
+          </Route>
         </Switch>
       </div>
     </div>
