@@ -7,6 +7,7 @@ let obj;
 let idInt;
 let itemLink;
 let list = [];
+sessionStorage.setItem(0,0);
 function findObject(id) {
     console.log("in", id, list);
     for (let i = 0; i < list.length; i++) {
@@ -19,6 +20,10 @@ function findObject(id) {
     console.log("not");
 }
 const Item = () => {
+    var amount = sessionStorage.getItem(0);
+    amount = amount + 1;
+    sessionStorage.setItem(0, amount);
+    console.log(amount);
     const { id } = useParams();
     console.log("id", id);
     idInt = parseInt(id);
