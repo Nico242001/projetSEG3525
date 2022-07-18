@@ -22,7 +22,7 @@ const Item = () => {
     const { id } = useParams();
     console.log("id", id);
     idInt = parseInt(id);
-    if (3 < idInt <= 33) {
+    if (3 < idInt && idInt <= 33) {
         sport = "Soccer";
         if (3 < idInt && idInt <= 13) {
             item = "Balls";
@@ -45,7 +45,7 @@ const Item = () => {
     }
     else if (33 < idInt && idInt <= 63) {
         sport = "Hockey"
-        if (33 < idInt <= 43) {
+        if (33 < idInt && idInt <= 43) {
             item = "Sticks";
             itemLink = "Sticks";
             list = ListItems.sticks;
@@ -64,7 +64,7 @@ const Item = () => {
         }
     } else if (63 < idInt && idInt <= 93) {
         sport = "Basketball"
-        if (63 < idInt <= 73) {
+        if (63 < idInt && idInt <= 73) {
             item = "Balls";
             itemLink = "Basketballs";
             list = ListItems.basketballs;
