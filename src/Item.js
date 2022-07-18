@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState , useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from "react-router-dom";
 import ListItems from './items.json';
@@ -97,15 +97,17 @@ const [num, setNum] = useState(1);
         
     }
     const addToCart = (event) =>{
-        console.log(document.getElementById("itemAmount").value);
-        console.log("in add", event);
+        let num = document.getElementById("itemAmount").value;
+        let size = document.getElementById("itemSize").value;
         var amount = parseInt(sessionStorage.getItem(0));
         amount = amount + 1;
         sessionStorage.setItem(0, amount);
-        console.log("size", size, "amount",amount);
         let listObj = [obj,num,size];
         sessionStorage.setItem(amount, listObj);
     }
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
 
     return (
         <div className="item bg-light">
