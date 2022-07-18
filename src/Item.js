@@ -112,11 +112,11 @@ const Item = () => {
 
          
             <div class="container mt-3">
-                <h4 style="margin-left:25px;">Size</h4>
+                <h4 >Size</h4>
                 <select name="itemSize" id="itemSize" width="85px" margin-left="25px"></select>
                 <br/>
                 <br/>
-                <h4 style="margin-left:25px;">Quantity</h4>
+                <h4 >Quantity</h4>
                 <select name="itemAmount" id="itemAmount" width="85px" margin-left="25px">
                     <option value="1">1</option>
                     <option value="2">2</option>
