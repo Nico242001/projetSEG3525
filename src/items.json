@@ -396,7 +396,7 @@
         "sticks": [  {
             "id": "34",
             "name": "CCM Ribcor",
-            "param": "Ribcor",
+            "param": "CCM  Ribcor",
             "price": "85.00",
             "description": "test",
             "image": "/images/hockey/sticks/ribcor.jpg",
@@ -408,7 +408,7 @@
         {
             "id": "35",
             "name": "CCM Jetspeed",
-            "param": "Jetspeed",
+            "param": "CCM Jetspeed",
             "price": "70.00",
             "description": "test",
             "image": "/images/hockey/sticks/jetspeed.jpg",
@@ -420,7 +420,7 @@
         {
             "id": "36",
             "name": "CCM 252 Wood",
-            "param": "Wood",
+            "param": "CCM 252 Wood",
             "price": "35.00",
             "description": "test",
             "image": "/images/hockey/sticks/wood.jpg",
@@ -432,7 +432,7 @@
         {
             "id": "37",
             "name": "Bauer Nexus",
-            "param": "Nexus",
+            "param": "Bauer Nexus",
             "price": "65.00",
             "description": "test",
             "image": "/images/hockey/sticks/nexus.jpg",
@@ -446,7 +446,7 @@
         {
             "id": "38",
             "name": "Bauer Supreme",
-            "param": "Supreme",
+            "param": "Bauer Supreme",
             "price": "70.00",
             "description": "test",
             "image": "/images/hockey/sticks/supreme.jpg",
@@ -459,7 +459,7 @@
         {
             "id": "39",
             "name": "Bauer Vapor",
-            "param": "Vapor",
+            "param": "Bauer Vapor",
             "price": "50.00",
             "description": "test",
             "image": "/images/hockey/sticks/vapor.jpg",
@@ -471,7 +471,7 @@
         {
             "id": "40",
             "name": "Warrior Covert",
-            "param": "Covert",
+            "param": "Warrior Covert",
             "price": "55.00",
             "description": "test",
             "image": "/images/hockey/sticks/covert.jpg",
@@ -484,7 +484,7 @@
         {
             "id": "41",
             "name": "Warrior Alpha",
-            "param": "Alpha",
+            "param": "Warrior Alpha",
             "price": "39.00",
             "description": "test",
             "image": "/images/hockey/sticks/alpha.jpg",
@@ -496,7 +496,7 @@
         {
             "id": "42",
             "name": "Warrior Alpha DX",
-            "param": "AlphaDX",
+            "param": "Warrior Alpha DX",
             "price": "89.00",
             "description": "test",
             "image": "/images/soccer/balls/alphadx.jpg",
@@ -508,7 +508,7 @@
         {
             "id": "43",
             "name": "Warrior Covert QRE",
-            "param": "CovertQRE",
+            "param": "Warrior Covert QRE",
             "price": "75.00",
             "description": "test",
             "image": "/images/hockey/sticks/covertqre.jpg",

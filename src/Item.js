@@ -5,6 +5,7 @@ let sport;
 let item;
 let obj;
 let idInt;
+let itemLink;
 function findObject(id, list){
     for(let i=0;i<list.length;i++){
         if(id == list[i].id){
@@ -14,47 +15,65 @@ function findObject(id, list){
 }
 const Item = () => {
     const { id } = useParams();
+    console.log("id", id);
     idInt = parseInt(id);
     if (3 < idInt <= 33) {
         sport = "Soccer";
         if (3 < idInt <= 13) {
             item = "Balls";
+            itemLink = "SoccerBalls"
             let list = ListItems.Soccerballs;
             obj = findObject(id, list);
 
         } else if (13 < idInt <= 23) {
             item = "Cleats";
+            itemLink = "Cleats";
             let list = ListItems.cleats;
+            obj = findObject(id, list);
         } else {
             item = "Shin Guards";
+            itemLink = "Shin Guards";
             let list = ListItems.shinguards;
+            obj = findObject(id, list);
         }
     }
     else if (33 < idInt <= 63) {
         sport = "Hockey"
         if (33 < idInt <= 43) {
             item = "Sticks";
+            itemLink = "Sticks";
             let list = ListItems.sticks;
+            obj = findObject(id, list);
 
         } else if (43 < idInt <= 53) {
             item = "Skates";
+            itemLink = "Skates";
             let list = ListItems.skates;
+            obj = findObject(id, list);
         } else {
             item = "Helmets";
+            itemLink = "Helmets";
             let list = ListItems.helmetss;
+            obj = findObject(id, list);
         }
     } else if (63 < idInt <= 93) {
         sport = "Basketball"
         if (63 < idInt <= 73) {
             item = "Balls";
+            itemLink = "Basketballs";
             let list = ListItems.basketballs;
+            obj = findObject(id, list);
 
         } else if (73 < idInt <= 83) {
             item = "Shoes";
+            itemLink = "Shoes";
             let list = ListItems.shoes;
+            obj = findObject(id, list);
         } else {
             item = "Shirts";
+            itemLink = "Shirts";
             let list = ListItems.shirts;
+            obj = findObject(id, list);
         }
     }
     console.log("sport", sport, "item", item, "obj", obj);
@@ -66,11 +85,11 @@ const Item = () => {
 
                 <div className="container border border-3 border-dark bg-light">
                     <div>
-                        <h5><Link to="./">Home</Link> / <Link to="./"></Link> / <Link to="./"></Link> / <Link to="./"></Link> / <Link to="./"></Link></h5>
+                        <h5><Link to="./">Home</Link> / <Link to="./">Shop</Link> / <Link to="./">{sport}</Link> / <Link to={"/items/"+itemLink}>{item}</Link> / <Link to="./">{obj.name}</Link></h5>
                     </div>
                     <div className="row mx-auto">
                         <div className="col p-0">
-                            <h2 id="itemNameHeader" className="text-left py-2 fit max-width">Item</h2>
+                            <h2 className="text-left py-2 fit max-width">{obj.name}</h2>
                         </div>
                     </div>
                 </div>
