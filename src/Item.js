@@ -155,7 +155,7 @@ const [num, setNum] = useState(1);
                                         </select>
                                         <br />
                                         <br />
-                                        <button type="button" onClick={addToCart(document.getElementById("itemSize").value, document.getElementById("itemAmount").value)} className='btn btn-primary btn-color' margin-left="25px">Add to Cart</button>
+                                        <button type="button" onClick={addToCart()} className='btn btn-primary btn-color' margin-left="25px">Add to Cart</button>
                                         <br />
                                         <br />
                                     </div>
