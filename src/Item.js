@@ -8,9 +8,7 @@ let obj;
 let idInt;
 let itemLink;
 let list = [];
-const [oldId, setOldId] = useState(0);
-const [size, setSize] = useState(0);
-const [num, setNum] = useState(1);
+
 sessionStorage.setItem(0,0);
 function findObject(id) {
     for (let i = 0; i < list.length; i++) {
@@ -28,6 +26,9 @@ function addToCart(size, num){
     sessionStorage.setItem(amount, listObj);
 }
 const Item = () => {
+    const [oldId, setOldId] = useState(0);
+const [size, setSize] = useState(0);
+const [num, setNum] = useState(1);
     const { id } = useParams();
    
     idInt = parseInt(id);
