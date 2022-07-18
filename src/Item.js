@@ -87,7 +87,7 @@ const Item = () => {
 
             <div className='container-fluid'>
                 <div className="container-fluid pt-4">
-                    <div className="container border border-3 border-dark bg-light">
+                    <div className="container">
                         <div className="container border border-3 border-dark bg-light">
                             <div>
                                 <h5><Link to="/">Home</Link> / <Link to="/shop">Shop</Link> / <Link to={"/sport/" + sport}>{sport}</Link> / <Link to={"/items/" + itemLink}>{item}</Link> / <Link to={"/item/" + obj.id}>{obj.name}</Link></h5>
@@ -105,7 +105,7 @@ const Item = () => {
                                 </div>
                             </div>
                             <div className="col">
-                                <div id="details" className="container border border-3 border-dark bg-light fit">
+                                <div id="details" className="container border border-3 border-dark bg-light">
                                     <div class="container text-center border-bottom border-3 border-dark">
                                         <h3 >Total: $<span id="price">{obj.price}</span></h3>
                                     </div>
@@ -138,16 +138,8 @@ const Item = () => {
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
-
-
-
-
         </div>
-
     );
 }
 
