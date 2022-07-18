@@ -6,7 +6,8 @@ let item;
 let obj;
 let idInt;
 let itemLink;
-function findObject(id, list){
+let list = [];
+function findObject(id){
     console.log("in", id, list);
     for(let i=0;i<list.length;i++){
         console.log(list[i].id);
@@ -26,19 +27,20 @@ const Item = () => {
         if (3 < idInt <= 13) {
             item = "Balls";
             itemLink = "SoccerBalls"
-            let list = ListItems.Soccerballs;
-            obj = findObject(id, list);
+            list = ListItems.Soccerballs;
+            obj = findObject(id);
 
         } else if (13 < idInt <= 23) {
             item = "Cleats";
             itemLink = "Cleats";
-            let list = ListItems.cleats;
-            obj = findObject(id, list);
+            list = ListItems.cleats;
+            console.log(list)
+            obj = findObject(id);
         } else {
             item = "Shin Guards";
             itemLink = "Shin Guards";
-            let list = ListItems.shinguards;
-            obj = findObject(id, list);
+            list = ListItems.shinguards;
+            obj = findObject(id);
         }
     }
     else if (33 < idInt <= 63) {
@@ -46,38 +48,38 @@ const Item = () => {
         if (33 < idInt <= 43) {
             item = "Sticks";
             itemLink = "Sticks";
-            let list = ListItems.sticks;
-            obj = findObject(id, list);
+            list = ListItems.sticks;
+            obj = findObject(id);
 
         } else if (43 < idInt <= 53) {
             item = "Skates";
             itemLink = "Skates";
-            let list = ListItems.skates;
-            obj = findObject(id, list);
+            list = ListItems.skates;
+            obj = findObject(id);
         } else {
             item = "Helmets";
             itemLink = "Helmets";
-            let list = ListItems.helmetss;
-            obj = findObject(id, list);
+            list = ListItems.helmetss;
+            obj = findObject(id);
         }
     } else if (63 < idInt <= 93) {
         sport = "Basketball"
         if (63 < idInt <= 73) {
             item = "Balls";
             itemLink = "Basketballs";
-            let list = ListItems.basketballs;
-            obj = findObject(id, list);
+            list = ListItems.basketballs;
+            obj = findObject(id);
 
         } else if (73 < idInt <= 83) {
             item = "Shoes";
             itemLink = "Shoes";
-            let list = ListItems.shoes;
-            obj = findObject(id, list);
+            list = ListItems.shoes;
+            obj = findObject(id);
         } else {
             item = "Shirts";
             itemLink = "Shirts";
-            let list = ListItems.shirts;
-            obj = findObject(id, list);
+            list = ListItems.shirts;
+            obj = findObject(id);
         }
     }
     console.log("sport", sport, "item", item, "obj", obj);
