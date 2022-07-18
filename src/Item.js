@@ -24,13 +24,13 @@ const Item = () => {
     idInt = parseInt(id);
     if (3 < idInt <= 33) {
         sport = "Soccer";
-        if (3 < idInt <= 13) {
+        if (3 < idInt && idInt <= 13) {
             item = "Balls";
             itemLink = "SoccerBalls"
             list = ListItems.Soccerballs;
             obj = findObject(id);
 
-        } else if (13 < idInt <= 23) {
+        } else if (13 < idInt && idInt <= 23) {
             item = "Cleats";
             itemLink = "Cleats";
             list = ListItems.cleats;
@@ -43,7 +43,7 @@ const Item = () => {
             obj = findObject(id);
         }
     }
-    else if (33 < idInt <= 63) {
+    else if (33 < idInt && idInt <= 63) {
         sport = "Hockey"
         if (33 < idInt <= 43) {
             item = "Sticks";
@@ -51,7 +51,7 @@ const Item = () => {
             list = ListItems.sticks;
             obj = findObject(id);
 
-        } else if (43 < idInt <= 53) {
+        } else if (43 < idInt && idInt <= 53) {
             item = "Skates";
             itemLink = "Skates";
             list = ListItems.skates;
@@ -62,7 +62,7 @@ const Item = () => {
             list = ListItems.helmetss;
             obj = findObject(id);
         }
-    } else if (63 < idInt <= 93) {
+    } else if (63 < idInt && idInt <= 93) {
         sport = "Basketball"
         if (63 < idInt <= 73) {
             item = "Balls";
@@ -70,7 +70,7 @@ const Item = () => {
             list = ListItems.basketballs;
             obj = findObject(id);
 
-        } else if (73 < idInt <= 83) {
+        } else if (73 < idInt && idInt <= 83) {
             item = "Shoes";
             itemLink = "Shoes";
             list = ListItems.shoes;
