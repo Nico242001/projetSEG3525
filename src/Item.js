@@ -9,26 +9,24 @@ let itemLink;
 let list = [];
 sessionStorage.setItem(0,0);
 function findObject(id) {
-    console.log("in", id, list);
     for (let i = 0; i < list.length; i++) {
-        console.log(list[i].id);
         if (id == list[i].id) {
-            console.log(list[i])
             return list[i]
         }
     }
-    console.log("not");
 }
-const Item = () => {
-    const { id } = useParams();
-    console.log("id", id);
-    idInt = parseInt(id);
+function addToCart(){
     var amount = parseInt(sessionStorage.getItem(0));
     amount = amount + 1;
     sessionStorage.setItem(0, amount);
-    console.log("AMOUNT", amount);
-   
-    
+    let num = document.getElementById("itemAmount").value;
+    let size = document.getElementById("itemSize").value;
+    let listObj = [obj,num,size];
+    sessionStorage.setItem(amount, listObj);
+}
+const Item = () => {
+    const { id } = useParams();
+    idInt = parseInt(id);
     if (3 < idInt && idInt <= 33) {
         sport = "Soccer";
         if (3 < idInt && idInt <= 13) {
@@ -141,7 +139,7 @@ const Item = () => {
                                         </select>
                                         <br />
                                         <br />
-                                        <button type="button" className='btn btn-primary btn-color' margin-left="25px">Add to Cart</button>
+                                        <button type="button" onClick={addToCart()} className='btn btn-primary btn-color' margin-left="25px">Add to Cart</button>
                                         <br />
                                         <br />
                                     </div>
