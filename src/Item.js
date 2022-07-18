@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from "react-router-dom";
 import ListItems from './items.json';
@@ -7,6 +8,9 @@ let obj;
 let idInt;
 let itemLink;
 let list = [];
+const [oldId, setOldId] = useState(0);
+const [size, setSize] = useState(0);
+const [num, setNum] = useState(1);
 sessionStorage.setItem(0,0);
 function findObject(id) {
     for (let i = 0; i < list.length; i++) {
@@ -20,13 +24,12 @@ function addToCart(size, num){
     amount = amount + 1;
     sessionStorage.setItem(0, amount);
     console.log("size", size, "amount",amount);
-    // let num = document.getElementById("itemAmount").value;
-    // let size = document.getElementById("itemSize").value;
     let listObj = [obj,num,size];
     sessionStorage.setItem(amount, listObj);
 }
 const Item = () => {
     const { id } = useParams();
+   
     idInt = parseInt(id);
     if (3 < idInt && idInt <= 33) {
         sport = "Soccer";
@@ -86,6 +89,17 @@ const Item = () => {
             list = ListItems.shirts;
             obj = findObject(id);
         }
+        if(oldId != id){
+            console.log("in");
+            if(size != obj.size[0]){
+                setSize(obj.size[0]);
+            }
+            if(num != 1){
+                setNum(1);
+            }
+            setOldId(id);
+        }
+        console.log(num, size, oldId);
     }
 
     return (
