@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link, useHistory } from 'react-router-dom'
+// import { Link, useHistory } from 'react-router-dom'
 const Checkout = () => {
     // const [postal, setPostal] = useState('');
     // const [adress, setAdress] = useState('');
@@ -19,7 +19,7 @@ const Checkout = () => {
         //     document.getElementById("city").classList.add("red");
         }else{
             console.log("history");
-            history.push("/payment");
+            // history.push("/payment");
         }
     };
     const useEffect = () =>{
