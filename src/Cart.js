@@ -19,6 +19,7 @@ const Cart = () => {
         }
     }
     total = total * 1.13;
+    let afterTaxes = parseFloat(total).toFixed(2);
     const remove = (e, key) => {
         sessionStorage.removeItem(key);
         setrefresh(refresh + "ref");
@@ -97,7 +98,7 @@ const Cart = () => {
                              <h4 id="totalPrice" className="mx-auto">$ {total}</h4>
                          </div>
                          <div className="col-1 text-center">
-                             <Link className="btn btn-primary" to="/">CheckOut</Link>
+                             <Link className="btn btn-primary" to="/checkout">CheckOut</Link>
                          </div>
                      </div>
                  </div>
@@ -105,7 +106,7 @@ const Cart = () => {
                 ) : ""}
 
             {(empty) ? (
-                <div className="container mx-auto"><h2 className='mt-5 mx-auto'>Your cart is empty</h2></div>
+                <div className="container mx-auto"><h2 className='mt-5 fit mx-auto'>Your cart is empty</h2></div>
                 
                 ) : ""}
            

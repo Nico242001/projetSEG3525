@@ -7,6 +7,7 @@ import Sport from './Sport';
 import Items from './Items';
 import Item from './Item';
 import Cart from './Cart';
+import Checkout from './Checkout';
 
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route exact path="/cart">
             <Cart/>
+          </Route>
+          <Route exact path="/checkout">
+            <Checkout/>
           </Route>
         </Switch>
       </div>
