@@ -26,8 +26,14 @@ const Home = () => {
     return (
         <div className="home bg-light">
             {show ? (
-                    <div className='alert alert-warning alert-dismissible fade show mb-0'>We currently can only ship to Canada but are currently working on expanding our shipping! <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span>
-                    </button></div>
+                <div className="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <button type="button" className="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+                    // <div className='alert alert-warning alert-dismissible fade show mb-0'>We currently can only ship to Canada but are currently working on expanding our shipping! <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span>
+                    // </button></div>
                 ) : ""}
             <div className="row" min-width="100%" max-width="100%">
                 <div className="col bg-dark ml-auto d-flex align-items-center mt-md-0 height-video bottomBorder padding " min-width="50%" max-width="50%">
