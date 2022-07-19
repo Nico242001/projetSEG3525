@@ -11,8 +11,8 @@ const Checkout = () => {
         // let cityValue = city;
         // const specialChars =  /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
         if(city.length == 0){
-            document.getElementById("city").innerHTML=" *please enter a city";
-            document.getElementById("city").classList.add("red");
+            // document.getElementById("city").innerHTML=" *please enter a city";
+            // document.getElementById("city").classList.add("red");
         // } else if(specialChars.test(cityValue)){
         //     document.getElementById("city").innerHTML=" *city does not contain any special characters";
         //     document.getElementById("city").classList.add("red");
