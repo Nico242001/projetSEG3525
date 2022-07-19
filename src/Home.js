@@ -26,7 +26,7 @@ const Home = () => {
     return (
         <div className="home bg-light">
             {show ? (
-                    <div className='alert alert-warning mb-0'>We currently can only ship to Canada but are currently working on expanding our shipping! <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span>
+                    <div className='alert alert-warning alert-dismissible fade show mb-0'>We currently can only ship to Canada but are currently working on expanding our shipping! <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span>
                     </button></div>
                 ) : ""}
             <div className="row" min-width="100%" max-width="100%">
