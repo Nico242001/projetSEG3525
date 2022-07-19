@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom'
 const Checkout = () => {
-    const [postal, setPostal] = useState('');
-    const [adress, setAdress] = useState('');
+    // const [postal, setPostal] = useState('');
+    // const [adress, setAdress] = useState('');
     // const [city, setCity] = useState('');
-    const [province, setProvince] = useState('Ontario');
+    // const [province, setProvince] = useState('Ontario');
     const history = useHistory();
     const handleClick = (e) => {
         let city = document.getElementById("cityValue").value;
@@ -32,8 +32,8 @@ const Checkout = () => {
                         <label className='mb-1 mt-2'><span className='bold'>Province</span> *</label>
                         <br/>
                         <select
-                            value={province}
-                            onChange={(e) => setProvince(e.target.value)}
+                            // value={province}
+                            // onChange={(e) => setProvince(e.target.value)}
                         >
                             <option value="Ontario">Ontario</option>
                             <option value="Alberta">Alberta</option>
@@ -71,8 +71,8 @@ const Checkout = () => {
                         <br/>
                         <input type="text"
                             // required
-                            value={adress}
-                            onChange={(e) => setAdress(e.target.value)}
+                            // value={adress}
+                            // onChange={(e) => setAdress(e.target.value)}
                         />
                      
                         <br/>
@@ -81,8 +81,8 @@ const Checkout = () => {
                         <br/>
                         <input type="text"
                             // required
-                            value={postal}
-                            onChange={(e) => setPostal(e.target.value)}
+                            // value={postal}
+                            // onChange={(e) => setPostal(e.target.value)}
                         />
                        
                         <br/>
