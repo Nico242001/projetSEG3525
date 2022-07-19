@@ -1,4 +1,4 @@
-
+import { useState } from 'react';
 
 const Cart = () => {
     let listOfkey=[];
@@ -11,10 +11,11 @@ const Cart = () => {
     let keys = Object.keys(sessionStorage);
     for(let key of keys){
         if(key>0){
-        console.log(JSON.parse(sessionStorage.getItem(key)));
-        listObj.push(JSON.parse(sessionStorage.getItem(key)));
-        listOfkey.push(key);
-        console.log("obj", listObj, "key", listOfkey);
+        // console.log(JSON.parse(sessionStorage.getItem(key)));
+        let obj = JSON.parse(sessionStorage.getItem(key));
+        listObj.push(obj);
+        // listOfkey.push(key);
+        // console.log("obj", listObj, "key", listOfkey);
         total = total + parseInt(obj.price);
     }
     }
@@ -77,7 +78,7 @@ const Cart = () => {
                                     <h4 className='mx-auto'>$ {parseInt(element.price)*parseInt(element.amount)}.00</h4>
                                 </div>
                                 <div className='col-1 p-0 text-center'>
-                                    <button type='button' onClick={(e) => { checkClicked(e, element.key ) }} className="btn btn-danger">X</button>
+                                    <button type='button' onClick={(e) => { remove(e, element.key ) }} className="btn btn-danger">X</button>
                                 </div>
                         </div>
                         ))

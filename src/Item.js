@@ -20,8 +20,8 @@ function findObject(id) {
 
 const Item = () => {
     const [oldId, setOldId] = useState(0);
-const [size, setSize] = useState(0);
-const [num, setNum] = useState(1);
+    const [size, setSize] = useState(0);
+    const [num, setNum] = useState(1);
     const { id } = useParams();
    
     idInt = parseInt(id);
