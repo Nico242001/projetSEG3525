@@ -9,12 +9,11 @@ const Checkout = () => {
     const handleClick = (e) => history.push("/cart");
     return (<div className="checkout bg-light">
         <div className="container my-4 p-0 pb-4">
-        <div className="container text-center"><h1 className="text-center">Shipping Information</h1></div>
+        <div className="container text-center"><h2 className="text-center mb-2">Shipping Information</h2></div>
             <div className="container border border-3 border-dark bg-light fit">
                 <div className="container">
-                    <br />
                     <form>
-                        <label className='mb-1'>Province</label>
+                        <label className='mb-1 mt-2'><span font-weight="bold" >Province</span></label>
                         <br/>
                         <select
                             value={province}
