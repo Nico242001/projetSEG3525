@@ -9,11 +9,11 @@ const Checkout = () => {
     const handleClick = (e) => history.push("/cart");
     return (<div className="checkout bg-light">
         <div className="container my-4 p-0 pb-4">
-        <div className="container text-center"><h2 className="text-center mb-2">Shipping Information</h2></div>
+        <div className="container text-center"><h2 className="text-center mb-4">Shipping Information</h2></div>
             <div className="container border border-3 border-dark bg-light fit">
                 <div className="container">
                     <form>
-                        <label className='mb-1 mt-2'><span font-weight="bold" >Province</span></label>
+                        <label className='mb-1 mt-2'><span className='bold'>Province</span></label>
                         <br/>
                         <select
                             value={province}
@@ -36,7 +36,7 @@ const Checkout = () => {
                      
                         <br/>
                         <br/>
-                        <label className='mb-1'>City</label>
+                        <label className='mb-1'><span className='bold'>City</span></label>
                         <br/>
                         <input type="text"
                             required
@@ -46,7 +46,7 @@ const Checkout = () => {
                     
                         <br/>
                         <br/>
-                        <label className='mb-1'>Adress</label>
+                        <label className='mb-1'><span className='bold'>Adress</span></label>
                         <br/>
                         <input type="text"
                             required
@@ -56,7 +56,7 @@ const Checkout = () => {
                      
                         <br/>
                         <br/>
-                        <label className='mb-1'>Postal Code</label>
+                        <label className='mb-1'><span className='bold'>Postal Code</span></label>
                         <br/>
                         <input type="text"
                             required
