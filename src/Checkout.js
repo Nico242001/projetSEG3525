@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom'
 const Checkout = () => {
     const [postal, setPostal] = useState('');
@@ -7,9 +7,9 @@ const Checkout = () => {
     const [province, setProvince] = useState('Ontario');
     const history = useHistory();
     const handleClick = (e) => {
-        let cityValue = city;
-        const specialChars =  /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
-        if(cityValue.length == 0){
+        // let cityValue = city;
+        // const specialChars =  /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+        if(city.length == 0){
             document.getElementById("city").innerHTML=" *please enter a city";
             document.getElementById("city").classList.add("red");
         // } else if(specialChars.test(cityValue)){
@@ -19,6 +19,9 @@ const Checkout = () => {
             history.push("/payment");
         }
     };
+    const useEffect = () =>{
+
+    }
     return (<div className="checkout bg-light">
         <div className="container my-4 p-0 pb-4">
         <div className="container text-center"><h2 className="text-center mb-4">Shipping Information</h2></div>
