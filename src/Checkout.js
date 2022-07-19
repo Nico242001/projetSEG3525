@@ -3,10 +3,11 @@ import { Link, useHistory } from 'react-router-dom'
 const Checkout = () => {
     const [postal, setPostal] = useState('');
     const [adress, setAdress] = useState('');
-    const [city, setCity] = useState('');
+    // const [city, setCity] = useState('');
     const [province, setProvince] = useState('Ontario');
     const history = useHistory();
     const handleClick = (e) => {
+        let city = document.getElementById("cityValue").value;
         // let cityValue = city;
         // const specialChars =  /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
         if(city.length == 0){
@@ -53,10 +54,15 @@ const Checkout = () => {
                         <br/>
                         <label className='mb-1'><span className='bold'>City</span><span id="city"> *</span></label>
                         <br/>
-                        <input type="text"
+                        {/* <input type="text" 
                             // required
                             value={city}
                             onChange={(e) => setCity(e.target.value)}
+                        /> */}
+                        <input type="text" 
+                            // required
+                            value={city}
+                            id="cityValue"
                         />
                     
                         <br/>
