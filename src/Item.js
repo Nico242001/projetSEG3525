@@ -101,7 +101,7 @@ const [num, setNum] = useState(1);
         let size = document.getElementById("itemSize").value;
         var amount = parseInt(sessionStorage.getItem(0));
         amount = amount + 1;
-        let newObj = {id:obj.id, name:obj.name, price:obj.price, amount:num, size:size, image:obj.image}
+        let newObj = {id:obj.id, name:obj.name, price:obj.price, amount:num, size:size, image:obj.image, key:amount}
         sessionStorage.setItem(0, amount);
         let listObj = [obj,num,size];
         sessionStorage.setItem(amount, JSON.stringify(newObj));
