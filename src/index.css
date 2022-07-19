@@ -92,7 +92,9 @@ position: sticky; top: 0;
   width: 25px;
   color: white;
 }
-
+.x:hover{
+  cursor: pointer;
+}
 .icon:hover{
   cursor:pointer;
 }
