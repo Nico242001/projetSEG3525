@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-// import { Link, useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 const Checkout = () => {
     // const [postal, setPostal] = useState('');
     // const [adress, setAdress] = useState('');
