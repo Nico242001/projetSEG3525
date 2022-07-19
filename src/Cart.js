@@ -26,7 +26,7 @@ const Cart = () => {
 
     return (<div className="cart bg-light">
         <div className="container my-4 p-0 pb-4">
-            <div className="container text-center"><h2 className="mx-auto text=center">Cart</h2></div>
+            <div className="container text-center"><h1 className="mx-auto text=center">Cart</h1></div>
 
             {(!empty) ? (
                   <div className="container border-bottom border-3 border-dark">
@@ -105,7 +105,8 @@ const Cart = () => {
                 ) : ""}
 
             {(empty) ? (
-                <h2>Your cart is empty</h2>
+                <div className="container mx-auto"><h2 className='mt-5 mx-auto'>Your cart is empty</h2></div>
+                
                 ) : ""}
            
         </div>
