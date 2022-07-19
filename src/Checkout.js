@@ -5,6 +5,7 @@ const Checkout = () => {
     // const [adress, setAdress] = useState('');
     // const [city, setCity] = useState('');
     // const [province, setProvince] = useState('Ontario');
+    const history = useHistory();
     
     const handleClick = (e) => {
         console.log("in");
@@ -18,9 +19,9 @@ const Checkout = () => {
         //     document.getElementById("city").innerHTML=" *city does not contain any special characters";
         //     document.getElementById("city").classList.add("red");
         }else{
-            // const history = useHistory();
+            // 
             console.log("history");
-            // history.push("/payment");
+            history.push("/payment");
         }
     };
     const useEffect = () =>{
