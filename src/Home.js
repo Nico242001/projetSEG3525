@@ -24,7 +24,7 @@ const Home = () => {
 
     }
     const remove = (e) => {
-        document.getElementById("alert").remove
+        document.getElementById("alert").remove();
     }
     const clickArg = (name, e) => {
         console.log(name, e);
