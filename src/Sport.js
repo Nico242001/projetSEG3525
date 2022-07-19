@@ -9,7 +9,7 @@ const Sport = () => {
         items = [{id:"1", name:"Sticks", param:"Sticks", img:"/images/sport/stick.jpg"}, {id:"2", name:"Skates", param:"Skates", img:"/images/sport/skates.jpg"}, {id:"3", name:"Helmets", param:"Helmets", img:"/images/sport/helmet.jpg"}]
         name ="Hockey"
     } else if(sport === "Soccer"){
-        items = [{id:"1", name:"Soccer Balls", param:"SoccerBalls", img:"/images/sport/soccerball.jpg"}, {id:"2", name:"Cleats", param:"Cleats/true", img:"/images/sport/cleats.jpg"}, {id:"3", name:"Shin Guards", param:"ShinGuards", img:"/images/sport/shinguards.jpg"}]
+        items = [{id:"1", name:"Soccer Balls", param:"SoccerBalls", img:"/images/sport/soccerball.jpg"}, {id:"2", name:"Cleats", param:"Cleats", img:"/images/sport/cleats.jpg"}, {id:"3", name:"Shin Guards", param:"ShinGuards", img:"/images/sport/shinguards.jpg"}]
         name ="Soccer"
     }else{
         items = [{id:"1", name:"Basketballs", param:"Basketballs", img:"/images/sport/basketball.jpg"}, {id:"2", name:"Shoes", param:"Shoes", img:"/images/sport/shoes.jpg"}, {id:"3", name:"Shirts", param:"Shirts", img:"/images/sport/shirt.jpg"}]

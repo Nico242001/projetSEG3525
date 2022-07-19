@@ -51,31 +51,28 @@ let listObj=[];
             <div className="container" id="cartItems">
                 {
                     listObj.map((element) => (
-                        <div className='row mt-3 mx-auto border border-3 border-dark bg-light'>
-                            <div className='col-12'><div className='row mx-auto p-0'>
-                                <div className='col-2'><img classeName="max-img"src={element.image}/>
+                        <div className='row mt-3 mx-auto border border-3 border-dark bg-light p-0'>
+                                <div className='col-2 p-0'><img classeName="max-img"src={element.image}/>
                                 </div>
-                                <div className='col-2 text-center'>
+                                <div className='col-2 p-0 text-center'>
                                     <h4 className='mx-auto'>{element.name}</h4>
                                 </div>
-                                <div className='col-2 text-center'>
+                                <div className='col-2 p-0 text-center'>
                                     <h4 className='mx-auto'>{element.size}</h4>
                                 </div>
-                                <div className='col-2 text-center'>
+                                <div className='col-2 p-0 text-center'>
                                     <h4 className='mx-auto'>$ {element.price}</h4>
                                 </div>
-                                <div className='col-1 text-center'>
+                                <div className='col-1 p-0 text-center'>
                                     <h4 className='mx-auto'>{element.amount}</h4>
                                 </div>
-                                <div className='col-2 text-center'>
+                                <div className='col-2 p-0 text-center'>
                                     <h4 className='mx-auto'>$ {parseInt(element.price)*parseInt(element.amount)}.00</h4>
                                 </div>
-                                <div className='col-1 text-center'>
+                                <div className='col-1 p-0 text-center'>
                                     <button type='button' className="btn btn-primary btn-color">X</button>
                                 </div>
-                            </div>
                         </div>
-                    </div>
                         ))
                 }
             </div>
