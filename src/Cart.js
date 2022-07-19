@@ -100,7 +100,7 @@ const Cart = () => {
                              <h4 className="mx-auto">Total+tax</h4>
                          </div>
                          <div className="col-2 text-center">
-                             <h4 id="totalPrice" className="mx-auto">$ {total}</h4>
+                             <h4 id="totalPrice" className="mx-auto">$ {afterTaxes}</h4>
                          </div>
                          <div className="col-1 text-center">
                              <Link className="btn btn-primary" to="/checkout">CheckOut</Link>

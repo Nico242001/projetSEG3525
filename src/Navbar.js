@@ -5,6 +5,7 @@ import {FaYoutube} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+    //
     let show;
     if (sessionStorage.getItem(200) == "true") {
        show = true;
@@ -15,13 +16,16 @@ const Navbar = () => {
     const remove = (e) => {
         document.getElementById("alert").remove();
     }
+    //
     return (<div className="container-fluid stick p-0" id='navbar'> 
+    
       {show ? (
                 <div id="alert" className="alert alert-warning mb-0" role="alert">
                 <strong>We currently can only ship to Canada but are currently working on expanding our shipping!</strong>
                 <span className='p-1 float-end x' onClick={(e) => { remove(e) }}>X</span>
               </div>
                 ) : ""}
+                
         <nav className="navbar-react">
             <h1 className="title"><Link to="/" >Joe's Sporting Goods</Link></h1>
             <div className="links-react">

@@ -4,15 +4,11 @@ import './index.css';
 sessionStorage.setItem(200, "true");
 
 const Home = () => {
- 
-    
-    const [deals, setDeals] = useState([
+  const [deals, setDeals] = useState([
         { name: "Super Tracker", oldPrice: "100", newPrice: "80", sport: "soccer", item: "cleats", img: "/images/index/ccmSuperTracker.jpg", id: "1" },
         { name: "Starlancer", oldPrice: "50", newPrice: "30", sport: "hockey", item: "sticks", img: "/images/index/starlancer.jpg", id: "2" },
         { name: "item3", oldPrice: "65", newPrice: "55", sport: "soccer", item: "balls", img: "/images/index/ccmSuperTracker.jpg", id: "3" }
     ])
-
-
     const clickArg = (name, e) => {
         console.log(name, e);
     }
