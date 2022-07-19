@@ -52,7 +52,7 @@ let listObj=[];
                 {
                     listObj.map((element) => (
                         <div className='row mt-3 mx-auto border border-3 border-dark bg-light p-0'>
-                                <div className='col-2 p-0'><img classeName="max-img"src={element.image}/>
+                                <div className='col-2 p-0'><img classeName="max-img" width="150px" height="150px" src={element.image}/>
                                 </div>
                                 <div className='col-2 p-0 text-center'>
                                     <h4 className='mx-auto'>{element.name}</h4>
