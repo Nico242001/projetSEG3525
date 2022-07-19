@@ -8,7 +8,7 @@ const Navbar = () => {
     //
     let show;
     if (sessionStorage.getItem(200) == "true") {
-       show = true;
+        show = true;
         sessionStorage.setItem(200, "false");
     } else {
         show = false;
