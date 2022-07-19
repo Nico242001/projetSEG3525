@@ -9,12 +9,12 @@ const Checkout = () => {
     const handleClick = (e) => history.push("/cart");
     return (<div className="checkout bg-light">
         <div className="container my-4 p-0 pb-4">
+        <div className="container text-center"><h1 className="text-center">Shipping Information</h1></div>
             <div className="container border border-3 border-dark bg-light fit">
-                <div className="container text-center"><h4 className="text-center">Shipping Information</h4></div>
                 <div className="container">
                     <br />
                     <form>
-                        <label>Province</label>
+                        <label className='mb-1'>Province</label>
                         <br/>
                         <select
                             value={province}
@@ -34,42 +34,37 @@ const Checkout = () => {
                             <option value="Nunavut">Nunavut</option>
                             <option value="Yukon">Yukon</option>
                         </select>
+                     
                         <br/>
                         <br/>
-                        <br/>
-                        <label>City</label>
+                        <label className='mb-1'>City</label>
                         <br/>
                         <input type="text"
                             required
                             value={city}
                             onChange={(e) => setCity(e.target.value)}
                         />
+                    
                         <br/>
                         <br/>
-                        <br/>
-                        {/* <input type="text"
-                            required
-                            value={ContactName}
-                            onChange={(e) => setCity(e.target.value)}
-                        /> */}
-                        <label>Adress</label>
+                        <label className='mb-1'>Adress</label>
                         <br/>
                         <input type="text"
                             required
                             value={adress}
                             onChange={(e) => setAdress(e.target.value)}
                         />
+                     
                         <br/>
                         <br/>
-                        <br/>
-                        <label>Postal Code</label>
+                        <label className='mb-1'>Postal Code</label>
                         <br/>
                         <input type="text"
                             required
                             value={postal}
                             onChange={(e) => setPostal(e.target.value)}
                         />
-                        <br/>
+                       
                         <br/>
                         <br/>
                         <button className='btn btn-primary btn-color' onClick={(e) => { handleClick(e) }}>Next</button>
