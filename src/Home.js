@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { ToggleButton } from 'react-bootstrap';
-// import { ToggleButton, Alert } from 'react';
 import { Button, Alert } from 'reactstrap';
 import './index.css';
 sessionStorage.setItem(200, "true");
@@ -19,10 +17,7 @@ const Home = () => {
         { name: "Starlancer", oldPrice: "50", newPrice: "30", sport: "hockey", item: "sticks", img: "/images/index/starlancer.jpg", id: "2" },
         { name: "item3", oldPrice: "65", newPrice: "55", sport: "soccer", item: "balls", img: "/images/index/ccmSuperTracker.jpg", id: "3" }
     ])
-    const clickBuy = (e) => {
-        console.log("go view item", e);
 
-    }
     const remove = (e) => {
         document.getElementById("alert").remove();
     }
@@ -31,17 +26,12 @@ const Home = () => {
     }
     return (
         <div className="home bg-light">
-            {/* {show ? (
-                <div className="alert alert-warning alert-dismissible fade show" role="alert">
-                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                <button type="button" className="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+            {show ? (
+                <div className="alert alert-warning mb-0" role="alert">
+                <strong>We currently can only ship to Canada but are currently working on expanding our shipping!</strong>
+                <span className='ml-3 float-end x' onClick={(e) => { remove(e) }}>X</span>
               </div>
-                    // <div className='alert alert-warning alert-dismissible fade show mb-0'>We currently can only ship to Canada but are currently working on expanding our shipping! <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span>
-                    // </button></div>
-                ) : ""} */}
-                <Alert id="alert" color='warning' isOpen={show} > hey <button className='ml-3' onClick={(e) => { remove(e) }}>X</button></Alert>
+                ) : ""}
             <div className="row" min-width="100%" max-width="100%">
                 <div className="col bg-dark ml-auto d-flex align-items-center mt-md-0 height-video bottomBorder padding " min-width="50%" max-width="50%">
                     <div className="container text-center text-white">
