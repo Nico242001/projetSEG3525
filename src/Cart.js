@@ -4,11 +4,10 @@ const Cart = () => {
     if (sessionStorage.length == 0) {
         sessionStorage.setItem(0, 0);
     }
-    
+
     return (<div className="cart bg-light">
         <div className="container my-4 p-0 pb-4">
             {/* <h2 style="color:#94def2;">help </h2> */}
-            <h2 >help </h2>
             <div className="container border border-3 border-dark bg-light">
                 <div className="row mx-auto">
                     <div className="col-12 text-center">
