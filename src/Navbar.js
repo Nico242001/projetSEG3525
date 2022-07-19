@@ -5,9 +5,9 @@ import {FaYoutube} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-    //
     let show;
-    if (sessionStorage.getItem(200) == "true") {
+    if (sessionStorage.getItem(200) === "true") {
+        // console.lo
         show = true;
         sessionStorage.setItem(200, "false");
     } else {
@@ -16,9 +16,7 @@ const Navbar = () => {
     const remove = (e) => {
         document.getElementById("alert").remove();
     }
-    //
     return (<div className="container-fluid stick p-0" id='navbar'> 
-    
       {show ? (
                 <div id="alert" className="alert alert-warning mb-0" role="alert">
                 <strong>We currently can only ship to Canada but are currently working on expanding our shipping!</strong>
