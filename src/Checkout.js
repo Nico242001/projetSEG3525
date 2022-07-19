@@ -1,5 +1,7 @@
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 const Checkout = () => {
+    const history = useHistory();
+    const handleClick = (e) => history.push("/cart");
     return ( <div className="checkout bg-light">
         <div className="container my-4 p-0 pb-4">
     <div className="container border border-3 border-dark bg-light fit">
@@ -31,7 +33,7 @@ const Checkout = () => {
         <input type="text"/>
         <br/>
         <br/>
-        <Link type="button" className='btn btn-primary btn-color'>Next</Link>
+        <button type="button" onClick={(e) => { handleClick(e) }}className='btn btn-primary btn-color'>Next</button>
     </div>
     </div>
     </div>
