@@ -7,10 +7,15 @@ const Checkout = () => {
     const [province, setProvince] = useState('Ontario');
     const history = useHistory();
     const handleClick = (e) => {
-        if(city.length == 0){
+        let cityValue = city;
+        const specialChars =  /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+        if(cityValue.length == 0){
             document.getElementById("city").innerHTML=" *please enter a city";
             document.getElementById("city").classList.add("red");
-        } else{
+        } else if(specialChars.test(cityValue)){
+            document.getElementById("city").innerHTML=" *city does not contain any special characters";
+            document.getElementById("city").classList.add("red");
+        }else{
             history.push("/payment");
         }
     };
@@ -46,7 +51,7 @@ const Checkout = () => {
                         <label className='mb-1'><span className='bold'>City</span><span id="city"> *</span></label>
                         <br/>
                         <input type="text"
-                            required
+                            // required
                             value={city}
                             onChange={(e) => setCity(e.target.value)}
                         />
@@ -56,7 +61,7 @@ const Checkout = () => {
                         <label className='mb-1'><span className='bold' >Adress</span><span id="adress"> *</span></label>
                         <br/>
                         <input type="text"
-                            required
+                            // required
                             value={adress}
                             onChange={(e) => setAdress(e.target.value)}
                         />
@@ -66,7 +71,7 @@ const Checkout = () => {
                         <label className='mb-1'><span className='bold'>Postal Code</span><span id="postal"> *</span></label>
                         <br/>
                         <input type="text"
-                            required
+                            // required
                             value={postal}
                             onChange={(e) => setPostal(e.target.value)}
                         />
