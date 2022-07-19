@@ -15,6 +15,7 @@ const Checkout = () => {
                     <br />
                     <form>
                         <label>Province</label>
+                        <br/>
                         <select
                             value={province}
                             onChange={(e) => setProvince(e.target.value)}
@@ -33,30 +34,44 @@ const Checkout = () => {
                             <option value="Nunavut">Nunavut</option>
                             <option value="Yukon">Yukon</option>
                         </select>
+                        <br/>
+                        <br/>
+                        <br/>
                         <label>City</label>
+                        <br/>
                         <input type="text"
                             required
                             value={city}
                             onChange={(e) => setCity(e.target.value)}
                         />
-                     
+                        <br/>
+                        <br/>
+                        <br/>
                         {/* <input type="text"
                             required
                             value={ContactName}
                             onChange={(e) => setCity(e.target.value)}
                         /> */}
                         <label>Adress</label>
+                        <br/>
                         <input type="text"
                             required
                             value={adress}
                             onChange={(e) => setAdress(e.target.value)}
                         />
+                        <br/>
+                        <br/>
+                        <br/>
                         <label>Postal Code</label>
+                        <br/>
                         <input type="text"
                             required
                             value={postal}
                             onChange={(e) => setPostal(e.target.value)}
                         />
+                        <br/>
+                        <br/>
+                        <br/>
                         <button className='btn btn-primary btn-color' onClick={(e) => { handleClick(e) }}>Next</button>
                     </form>
                 </div>
