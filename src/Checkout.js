@@ -33,27 +33,28 @@ const Checkout = () => {
                             <option value="Nunavut">Nunavut</option>
                             <option value="Yukon">Yukon</option>
                         </select>
-                        <input type="text"
-                            required
-                            value={ContactName}
-                            onChange={(e) => setCity(e.target.value)}
-                        />
                         <label>City</label>
                         <input type="text"
                             required
-                            value={ContactName}
+                            value={city}
                             onChange={(e) => setCity(e.target.value)}
                         />
+                     
+                        {/* <input type="text"
+                            required
+                            value={ContactName}
+                            onChange={(e) => setCity(e.target.value)}
+                        /> */}
                         <label>Adress</label>
                         <input type="text"
                             required
-                            value={ContactName}
+                            value={adress}
                             onChange={(e) => setAdress(e.target.value)}
                         />
                         <label>Postal Code</label>
                         <input type="text"
                             required
-                            value={ContactName}
+                            value={postal}
                             onChange={(e) => setPostal(e.target.value)}
                         />
                         <button className='btn btn-primary btn-color' onClick={(e) => { handleClick(e) }}>Next</button>
