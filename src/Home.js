@@ -1,16 +1,19 @@
 import { useState } from 'react';
-import { ToggleButton, Alert } from 'react-bootstrap';
+import { ToggleButton } from 'react-bootstrap';
+// import { ToggleButton, Alert } from 'react';
+import { Button, Alert } from 'reactstrap';
 import './index.css';
 sessionStorage.setItem(200, "true");
 
 const Home = () => {
-    let show
+    let show;
     if (sessionStorage.getItem(200) == "true") {
-        show = true;
+       show = true;
         sessionStorage.setItem(200, "false");
     } else {
         show = false;
     }
+    
     const [deals, setDeals] = useState([
         { name: "Super Tracker", oldPrice: "100", newPrice: "80", sport: "soccer", item: "cleats", img: "/images/index/ccmSuperTracker.jpg", id: "1" },
         { name: "Starlancer", oldPrice: "50", newPrice: "30", sport: "hockey", item: "sticks", img: "/images/index/starlancer.jpg", id: "2" },
@@ -20,12 +23,15 @@ const Home = () => {
         console.log("go view item", e);
 
     }
+    const remove = (e) => {
+        document.getElementById("alert").remove
+    }
     const clickArg = (name, e) => {
         console.log(name, e);
     }
     return (
         <div className="home bg-light">
-            {show ? (
+            {/* {show ? (
                 <div className="alert alert-warning alert-dismissible fade show" role="alert">
                 <strong>Holy guacamole!</strong> You should check in on some of those fields below.
                 <button type="button" className="close" data-dismiss="alert" aria-label="Close">
@@ -34,7 +40,8 @@ const Home = () => {
               </div>
                     // <div className='alert alert-warning alert-dismissible fade show mb-0'>We currently can only ship to Canada but are currently working on expanding our shipping! <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span>
                     // </button></div>
-                ) : ""}
+                ) : ""} */}
+                <Alert id="alert" color='warning' isOpen={show} > hey <button className='ml-3' onClick={(e) => { remove(e, element.key) }}>X</button></Alert>
             <div className="row" min-width="100%" max-width="100%">
                 <div className="col bg-dark ml-auto d-flex align-items-center mt-md-0 height-video bottomBorder padding " min-width="50%" max-width="50%">
                     <div className="container text-center text-white">
