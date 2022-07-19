@@ -61,7 +61,7 @@ const Checkout = () => {
                         /> */}
                         <input type="text" 
                             // required
-                            value={city}
+                            // value={city}
                             id="cityValue"
                         />
                     
