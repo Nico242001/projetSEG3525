@@ -159,8 +159,8 @@ position: sticky; top: 0;
   background-color: #5680E9;
 }
 .max-img{
-  max-width:100%;
-max-height:100%;
+  max-width:150px;
+max-height:150px;
 }
 @media only screen and (max-width: 800px) {
   .height-video{
