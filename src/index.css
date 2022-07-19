@@ -146,14 +146,12 @@ position: sticky; top: 0;
 .card-static{
   position: static;
 }
-
 .btm-border{
   border-bottom: 5px solid white;
 }
 .top-border{
     border-top: 5px solid white;
 }
-
 .fit-min{
   min-width: fit-content;
 }

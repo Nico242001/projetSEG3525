@@ -39,7 +39,7 @@ const Navbar = () => {
                 <FaFacebookF className='icon'/>
                 <FaInstagram className='icon'/>
                 <FaYoutube className='icon'/>
-                <FaShoppingCart className='icon'/>
+                <Link to="/cart"><FaShoppingCart className='icon'/></Link>
             </div>
         </nav>
         </div>
