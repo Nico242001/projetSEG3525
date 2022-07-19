@@ -167,6 +167,9 @@ max-height:150px;
 .bold{
   font-weight: bold;
 }
+.red{
+  color: red;
+}
 @media only screen and (max-width: 800px) {
   .height-video{
     height: 300px;

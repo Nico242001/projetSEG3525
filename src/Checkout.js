@@ -6,14 +6,21 @@ const Checkout = () => {
     const [city, setCity] = useState('');
     const [province, setProvince] = useState('Ontario');
     const history = useHistory();
-    const handleClick = (e) => history.push("/cart");
+    const handleClick = (e) => {
+        if(city.length == 0){
+            document.getElementById("city").innerHTML=" *please enter a city";
+            document.getElementById("city").classList.add("red");
+        } else{
+            history.push("/payment");
+        }
+    };
     return (<div className="checkout bg-light">
         <div className="container my-4 p-0 pb-4">
         <div className="container text-center"><h2 className="text-center mb-4">Shipping Information</h2></div>
             <div className="container border border-3 border-dark bg-light fit">
                 <div className="container">
                     <form>
-                        <label className='mb-1 mt-2'><span className='bold'>Province</span></label>
+                        <label className='mb-1 mt-2'><span className='bold'>Province</span> *</label>
                         <br/>
                         <select
                             value={province}
@@ -36,7 +43,7 @@ const Checkout = () => {
                      
                         <br/>
                         <br/>
-                        <label className='mb-1'><span className='bold'>City</span></label>
+                        <label className='mb-1'><span className='bold'>City</span><span id="city"> *</span></label>
                         <br/>
                         <input type="text"
                             required
@@ -46,7 +53,7 @@ const Checkout = () => {
                     
                         <br/>
                         <br/>
-                        <label className='mb-1'><span className='bold'>Adress</span></label>
+                        <label className='mb-1'><span className='bold' >Adress</span><span id="adress"> *</span></label>
                         <br/>
                         <input type="text"
                             required
@@ -56,7 +63,7 @@ const Checkout = () => {
                      
                         <br/>
                         <br/>
-                        <label className='mb-1'><span className='bold'>Postal Code</span></label>
+                        <label className='mb-1'><span className='bold'>Postal Code</span><span id="postal"> *</span></label>
                         <br/>
                         <input type="text"
                             required
