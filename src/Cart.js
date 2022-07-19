@@ -1,17 +1,20 @@
 
-let listOfkey;
-let listObj=[];
 
 const Cart = () => {
+    let listOfkey=[];
+let listObj=[];
+
     if (sessionStorage.length == 0) {
         sessionStorage.setItem(0, 0);
     }
     let keys = Object.keys(sessionStorage);
     for(let key of keys){
+        if(key>0){
         console.log(JSON.parse(sessionStorage.getItem(key)));
         listObj.push(JSON.parse(sessionStorage.getItem(key)));
         listOfkey.push(key);
         console.log("obj", listObj, "key", listOfkey);
+    }
     }
 
     return (<div className="cart bg-light">
