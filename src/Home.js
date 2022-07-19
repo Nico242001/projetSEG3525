@@ -41,7 +41,7 @@ const Home = () => {
                     // <div className='alert alert-warning alert-dismissible fade show mb-0'>We currently can only ship to Canada but are currently working on expanding our shipping! <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span>
                     // </button></div>
                 ) : ""} */}
-                <Alert id="alert" color='warning' isOpen={show} > hey <button className='ml-3' onClick={(e) => { remove(e, element.key) }}>X</button></Alert>
+                <Alert id="alert" color='warning' isOpen={show} > hey <button className='ml-3' onClick={(e) => { remove(e) }}>X</button></Alert>
             <div className="row" min-width="100%" max-width="100%">
                 <div className="col bg-dark ml-auto d-flex align-items-center mt-md-0 height-video bottomBorder padding " min-width="50%" max-width="50%">
                     <div className="container text-center text-white">
