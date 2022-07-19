@@ -86,7 +86,7 @@ const Cart = () => {
             <div className="row mx-auto">
                 <div className="col-12">
                     <div className="row mx-auto p-0">
-                        <div className="col-8 text-center">
+                        <div className="col-7 text-center">
                         </div>
                         <div className="col-2 text-center">
                             <h4 className="mx-auto">Total+tax</h4>
