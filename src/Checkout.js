@@ -31,7 +31,7 @@ const Checkout = () => {
         <div className="container text-center"><h2 className="text-center mb-4">Shipping Information</h2></div>
             <div className="container border border-3 border-dark bg-light fit">
                 <div className="container">
-                    <form>
+                  
                         <label className='mb-1 mt-2'><span className='bold'>Province</span> *</label>
                         <br/>
                         <select
@@ -91,7 +91,7 @@ const Checkout = () => {
                         <br/>
                         <br/>
                         <button className='btn btn-primary btn-color' onClick={(e) => { handleClick(e) }}>Next</button>
-                    </form>
+                    
                 </div>
             </div>
         </div>
