@@ -48,7 +48,7 @@ let listObj=[];
                 </div>
             </div>
 
-            <div className="container" id="cartItems">
+            <div className="container p-0" id="cartItems">
                 {
                     listObj.map((element) => (
                         <div className='row mt-3 mx-auto border border-3 border-dark bg-light p-0'>
@@ -70,7 +70,7 @@ let listObj=[];
                                     <h4 className='mx-auto'>$ {parseInt(element.price)*parseInt(element.amount)}.00</h4>
                                 </div>
                                 <div className='col-1 p-0 text-center'>
-                                    <button type='button' className="btn btn-primary btn-color">X</button>
+                                    <button type='button' className="btn btn-danger">X</button>
                                 </div>
                         </div>
                         ))

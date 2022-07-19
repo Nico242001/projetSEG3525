@@ -158,6 +158,10 @@ position: sticky; top: 0;
 .btn-color{
   background-color: #5680E9;
 }
+.max-img{
+  max-width:100%;
+max-height:100%;
+}
 @media only screen and (max-width: 800px) {
   .height-video{
     height: 300px;
