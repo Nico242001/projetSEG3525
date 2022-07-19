@@ -4,13 +4,7 @@ import './index.css';
 sessionStorage.setItem(200, "true");
 
 const Home = () => {
-    let show;
-    if (sessionStorage.getItem(200) == "true") {
-       show = true;
-        sessionStorage.setItem(200, "false");
-    } else {
-        show = false;
-    }
+ 
     
     const [deals, setDeals] = useState([
         { name: "Super Tracker", oldPrice: "100", newPrice: "80", sport: "soccer", item: "cleats", img: "/images/index/ccmSuperTracker.jpg", id: "1" },
@@ -18,20 +12,13 @@ const Home = () => {
         { name: "item3", oldPrice: "65", newPrice: "55", sport: "soccer", item: "balls", img: "/images/index/ccmSuperTracker.jpg", id: "3" }
     ])
 
-    const remove = (e) => {
-        document.getElementById("alert").remove();
-    }
+
     const clickArg = (name, e) => {
         console.log(name, e);
     }
     return (
         <div className="home bg-light">
-            {show ? (
-                <div id="alert" className="alert alert-warning mb-0" role="alert">
-                <strong>We currently can only ship to Canada but are currently working on expanding our shipping!</strong>
-                <span className='p-1 float-end x' onClick={(e) => { remove(e) }}>X</span>
-              </div>
-                ) : ""}
+          
             <div className="row" min-width="100%" max-width="100%">
                 <div className="col bg-dark ml-auto d-flex align-items-center mt-md-0 height-video bottomBorder padding " min-width="50%" max-width="50%">
                     <div className="container text-center text-white">
