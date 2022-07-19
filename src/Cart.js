@@ -8,10 +8,15 @@ const Cart = () => {
     const [refresh, setrefresh] = useState("ref");
     if (sessionStorage.length == 0) {
         sessionStorage.setItem(0, 0);
+    } else if(sessionStorage.length == 1){
+        let keys = Object.keys(sessionStorage);
+        if(keys == 200){
+            sessionStorage.setItem(0,0)
+        }
     }
     let keys = Object.keys(sessionStorage);
     for (let key of keys) {
-        if (key > 0) {
+        if (key > 0 && key != 200) {
             empty = false;
             let obj = JSON.parse(sessionStorage.getItem(key));
             listObj.push(obj);
