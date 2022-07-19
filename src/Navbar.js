@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     let show;
     if (sessionStorage.getItem(200) === "true") {
-        // console.lo
+        console.log("show");
         show = true;
         sessionStorage.setItem(200, "false");
     } else {
