@@ -104,7 +104,7 @@ const [num, setNum] = useState(1);
         let newObj = {id:obj.id, name:obj.name, price:obj.price, amount:num, size:size, image:obj.image}
         sessionStorage.setItem(0, amount);
         let listObj = [obj,num,size];
-        sessionStorage.setItem(amount, newObj);
+        sessionStorage.setItem(amount, JSON.stringify(newObj));
     }
     useEffect(() => {
         window.scrollTo(0, 0)
