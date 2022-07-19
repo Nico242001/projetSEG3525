@@ -1,25 +1,26 @@
 import { useEffect, useState } from 'react';
-// import { Link, useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 const Checkout = () => {
     // const [postal, setPostal] = useState('');
     // const [adress, setAdress] = useState('');
     // const [city, setCity] = useState('');
     // const [province, setProvince] = useState('Ontario');
-    const history = useHistory();
+    
     const handleClick = (e) => {
         console.log("in");
         let city = document.getElementById("cityValue").value;
         // let cityValue = city;
         // const specialChars =  /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
         if(city.length == 0){
-            // document.getElementById("city").innerHTML=" *please enter a city";
-            // document.getElementById("city").classList.add("red");
+            document.getElementById("city").innerHTML=" *please enter a city";
+            document.getElementById("city").classList.add("red");
         // } else if(specialChars.test(cityValue)){
         //     document.getElementById("city").innerHTML=" *city does not contain any special characters";
         //     document.getElementById("city").classList.add("red");
         }else{
+            const history = useHistory();
             console.log("history");
-            // history.push("/payment");
+            history.push("/payment");
         }
     };
     const useEffect = () =>{
