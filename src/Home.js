@@ -27,9 +27,9 @@ const Home = () => {
     return (
         <div className="home bg-light">
             {show ? (
-                <div className="alert alert-warning mb-0" role="alert">
+                <div id="alert" className="alert alert-warning mb-0" role="alert">
                 <strong>We currently can only ship to Canada but are currently working on expanding our shipping!</strong>
-                <span className='m-2 float-end x' onClick={(e) => { remove(e) }}>X</span>
+                <span className='p-1 float-end x' onClick={(e) => { remove(e) }}>X</span>
               </div>
                 ) : ""}
             <div className="row" min-width="100%" max-width="100%">
