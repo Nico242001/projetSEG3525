@@ -7,6 +7,7 @@ const Checkout = () => {
     // const [province, setProvince] = useState('Ontario');
     const history = useHistory();
     const handleClick = (e) => {
+        console.log("in");
         let city = document.getElementById("cityValue").value;
         // let cityValue = city;
         // const specialChars =  /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
@@ -17,6 +18,7 @@ const Checkout = () => {
         //     document.getElementById("city").innerHTML=" *city does not contain any special characters";
         //     document.getElementById("city").classList.add("red");
         }else{
+            console.log("history");
             history.push("/payment");
         }
     };
