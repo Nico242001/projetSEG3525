@@ -1,24 +1,29 @@
 
+let listOfkey;
+let listObj=[];
 
 const Cart = () => {
     if (sessionStorage.length == 0) {
         sessionStorage.setItem(0, 0);
     }
+    let keys = Object.keys(sessionStorage);
+    for(let key of keys){
+        console.log(JSON.parse(sessionStorage.getItem(key)));
+        listObj.push(JSON.parse(sessionStorage.getItem(key)));
+        listOfkey.push(key);
+        console.log("obj", listObj, "key", listOfkey);
+    }
 
     return (<div className="cart bg-light">
         <div className="container my-4 p-0 pb-4">
             {/* <h2 style="color:#94def2;">help </h2> */}
-            <div className="container border border-3 border-dark bg-light">
-                <div className="row mx-auto">
-                    <div className="col-12 text-center">
-                        <h2 className="mx-auto">CART</h2>
-                    </div>
-                </div>
+            <div className="container text-center"><h2 className="mx-auto text=center">CART</h2></div>
+            
+            <div className="container border-bottom border-3 border-dark">
                 <div className="row mx-auto">
                     <div className="col-12">
                         <div className="row mx-auto p-0">
                             <div className="col-2 text-center">
-                                <h4 className="mx-auto">Image</h4>
                             </div>
                             <div className="col-2 text-center">
                                 <h4 className="mx-auto">Product</h4>
@@ -41,7 +46,11 @@ const Cart = () => {
             </div>
 
             <div className="container" id="cartItems">
-
+                {/* {
+                    .map((size) => (
+                        <option key={size} value={size}>{size}</option>
+                        ))
+                } */}
             </div>
             <div className="row mx-auto">
                 <div className="col-12">
