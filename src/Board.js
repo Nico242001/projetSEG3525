@@ -31,7 +31,7 @@ const Board = () => {
             </div>
             <div id="error" className="red"></div>
             <div className="mx-auto rev mt-2">
-                <input type="text"
+                <input type="text" autocomplete="false"
                 id="input"
                 value={revVal}
                 onChange={(e) => setRevVal(e.target.value)}
