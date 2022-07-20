@@ -181,9 +181,10 @@ max-height:150px;
 .red{
   color: red;
 }
-.faq{
+.faq-box{
   font-size:large;
-  color: white;
+  color: white; 
+  background-color: #5680E9;
 }
 @media only screen and (max-width: 800px) {
   .height-video{
