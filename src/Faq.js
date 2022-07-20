@@ -33,9 +33,11 @@ const Faq = () => {
     }
     const switchLang = (e) => {
         if(langVal == "EN"){
+            console.log("if")
             langVal ="FR";
             setLang(lang);
         } else{
+            console.log("else")
             langVal ="EN";
             setLang(lang);
         }
