@@ -2,7 +2,7 @@ const Faq = () => {
     return (  <div className="faq bg-light">
 
     <div className="container">
-    <div className="container padding-left"><h1 className="mx-auto text=center">FAQ</h1></div>
+    <div className="container"><h1 className="mx-auto text=center">FAQ</h1><div className="float-end">Fr</div></div>
         <div className="container margin-left mb-3">
             Q: What sport items do you offer?<br/>
             A: We specialize in items for Soccer, Hockey and Basketball.

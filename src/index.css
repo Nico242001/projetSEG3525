@@ -281,7 +281,9 @@ max-height:150px;
 }
 
 
-
+.margin-right{
+  margin-right: 50px;
+}
 .margin-left{
   margin-left: 300px;
 }
