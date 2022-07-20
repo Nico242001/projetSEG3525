@@ -11,7 +11,7 @@ const Faq = () => {
     let a3;
     let q4;
     let a4;
-    if (langVal == "EN") {
+    if (langVal == "FR") {
         q1 = "Q: What sport items do you offer?";
         a1 = "A: We specialize in items for Soccer, Hockey and Basketball.";
         q2 = "Q: Do you ship internationally?";
@@ -43,7 +43,7 @@ const Faq = () => {
         }
     };
     return (<div className="faq bg-light">
-        <div className="row mt-3 mb-3"><div className="col-11 text-center"><h1 >FAQ</h1></div><div className="col-1 x" onClick={(e) => { switchLang(e) }}><h3>{lang}</h3></div></div>
+        <div className="row mt-3 mb-3"><div className="col-11 text-center"><h1 >FAQ</h1></div><div className="col-1 x" onClick={(e) => { switchLang(e) }}><h3>{langVal}</h3></div></div>
         <div className="container">
 
             <div className="container border border-3 border-dark  margin-left mb-3 mt-3 bold faq-box p-3" width="600px">
