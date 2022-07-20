@@ -16,7 +16,7 @@ const Faq = () => {
             A: We have a 30 day return policy, no questions asked.
         </div>
         <div className="container margin-left mb-3 bold faq">
-            Q: Where are you located?<br/>
+            Q: Where are you located?<br/> 
             A: We are located in Ottawa but exclussivly sell on our online store.
         </div>
 
