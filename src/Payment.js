@@ -67,12 +67,12 @@ const Payment = () => {
                     <label className='mb-1'><span className='bold'>Security Code</span><span id="postal"> *</span></label>
                     <br />
                     <input type="text"
-                        value={postal}
-                        onChange={(e) => setPostal(e.target.value)}
+                        // value={postal}
+                        // onChange={(e) => setPostal(e.target.value)}
                     />
                     <br />
                     <br />
-                    <button className='btn btn-primary btn-color mb-2' onClick={(e) => { handleClick(e) }}>Next</button>
+                    {/* <button className='btn btn-primary btn-color mb-2' onClick={(e) => { handleClick(e) }}>Next</button> */}
                 </div>
             </div>
         </div>
