@@ -254,6 +254,7 @@ max-height:150px;
 .firstStep{
   color: green;
   border-color: green;
+  z-index: 1;
 }
 .progressbar li:first-child:after {
   content: none;
