@@ -1,16 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom'
 const Checkout = () => {
-    let showAlert;
-    if (sessionStorage.getItem(200) !== null) {
-        sessionStorage.setItem(200,"false");
-        showAlert = true;
-    } else{
-        showAlert = false;
-    }
-    const removeAlert = (e) => {
-        document.getElementById("alert").remove();
-    }
+   
     const [postal, setPostal] = useState('');
     const [street, setStreet] = useState('');
     const [number, setNumber] = useState('');
@@ -68,12 +59,7 @@ const Checkout = () => {
     };
 
     return (<div className="checkout bg-light">
-          {showAlert ? (
-                <div id="alert" className="alert alert-warning mb-0 card-static">
-                <strong>We currently can only ship to Canada but are currently working on expanding our shipping!</strong>
-                <span className='p-1 float-end x' onClick={(e) => { removeAlert(e) }}>X</span>
-              </div>
-                ) : ""}
+        
         <div className="container text-center mt-3">
             <div className="container-progressbar">
                 <ul className="progressbar">
