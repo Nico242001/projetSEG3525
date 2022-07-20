@@ -35,11 +35,11 @@ const Faq = () => {
         if(langVal == "EN"){
             console.log("if")
             langVal ="FR";
-            setLang(lang);
+            setLang(langVal);
         } else{
             console.log("else")
             langVal ="EN";
-            setLang(lang);
+            setLang(langVal);
         }
     };
     return (<div className="faq bg-light">
