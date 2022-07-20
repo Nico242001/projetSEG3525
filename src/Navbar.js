@@ -54,9 +54,9 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="right-side">
-                <FaFacebookF className='icon'/>
-                <FaInstagram className='icon'/>
-                <FaYoutube className='icon'/>
+            <Link className="p-0" to="https://www.facebook.com/"><FaFacebookF className='icon'/></Link>
+                <Link className="p-0" to="https://www.instagram.com/"><FaInstagram className='icon'/></Link>
+                <Link className="p-0" to="https://www.youtube.com/"><FaYoutube className='icon'/></Link>
                 <Link className="p-0" to="/cart"><FaShoppingCart className='icon'/></Link>
             </div>
         </nav>
