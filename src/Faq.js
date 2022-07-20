@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-let langVal = "EN";
+let langVal = "FR";
 const Faq = () => {
     const [lang, setLang] = useState(langVal);
     let q1;
@@ -17,28 +17,28 @@ const Faq = () => {
         q2 = "Q: Do you ship internationally?";
         a2 = "A: We currently exclussivly ship in Canada but are currently working on expanding to shipping internationally.";
         q3 = "Q: What is your return policy?";
-        a3="A: We have a 30 day return policy, no questions asked.";
-        q4="Q: Where are you located?";
-        a4="A: We are located in Ottawa but exclusively sell on our online store.";
+        a3 = "A: We have a 30 day return policy, no questions asked.";
+        q4 = "Q: Where are you located?";
+        a4 = "A: We are located in Ottawa but exclusively sell on our online store.";
 
-    } else{
+    } else {
         q1 = "Q: Quels articles de sport proposez-vous?";
         a1 = "R: Nous spécialisons dans les articles pour le soccer, le hockey et le basketball.";
         q2 = "Q: Expédiez-vous à l'international?";
         a2 = "R: Nous expédions actuellement exclusivement au Canada, mais nous travaillons à l'expansion à l'international.";
         q3 = "Q: Quelle est votre politique de retour?";
-        a3="R: Nous avons une politique de retour de 30 jours.";
-        q4="Q: Où vous situez-vous?";
-        a4="R: Nous sommes situés à Ottawa mais vendons exclusivement sur notre boutique en ligne.";
+        a3 = "R: Nous avons une politique de retour de 30 jours.";
+        q4 = "Q: Où vous situez-vous?";
+        a4 = "R: Nous sommes situés à Ottawa mais vendons exclusivement sur notre boutique en ligne.";
     }
     const switchLang = (e) => {
-        if(langVal == "EN"){
+        if (langVal == "EN") {
             console.log("if")
-            langVal ="FR";
+            langVal = "FR";
             setLang(langVal);
-        } else{
+        } else {
             console.log("else")
-            langVal ="EN";
+            langVal = "EN";
             setLang(langVal);
         }
     };
@@ -57,12 +57,8 @@ const Faq = () => {
             </div>
             <div className="container border border-3 border-dark margin-left mb-3 mt-3 bold faq-box p-3" width="600px">
                 {q4}<br />{a4}
-                <br />
-                
             </div>
-
         </div>
-
     </div>);
 }
 

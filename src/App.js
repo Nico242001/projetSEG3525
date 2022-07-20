@@ -10,6 +10,7 @@ import Cart from './Cart';
 import Checkout from './Checkout';
 import Payment from './Payment';
 import Faq from './Faq';
+import Board from './Board';
 
 
 function App() {
@@ -45,6 +46,9 @@ function App() {
           </Route>
           <Route exact path="/FAQ">
             <Faq/>
+          </Route>
+          <Route exact path="/board">
+            <Board/>
           </Route>
         </Switch>
       </div>
