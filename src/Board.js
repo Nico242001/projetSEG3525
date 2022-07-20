@@ -6,7 +6,7 @@ const Board = () => {
             <div class="overflow-auto mx-auto border border-3 border-dark dialog" >
                 {list.map((element) => (
 
-                    <p className="p-2 mt-2 mb-2 bg-dark white">{element}</p>
+                    <p className="p-2 mt-2 mb-2 mx-2 bg-dark white">{element}</p>
                 ))
 
                 }
