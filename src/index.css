@@ -239,7 +239,7 @@ max-height:150px;
   margin: 0 auto 10px auto;
   border-radius: 50%;
   background-color: #94def2;
-  /* border:black ; */
+  border:black ;
 }
 .progressbar li:after {
   content: '';
