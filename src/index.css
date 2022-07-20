@@ -185,6 +185,7 @@ max-height:150px;
   font-size:large;
   color: white; 
   background-color: #5680E9;
+  width: 600px;
 }
 @media only screen and (max-width: 800px) {
   .height-video{
