@@ -296,5 +296,8 @@ max-height:150px;
 
 .dialog{
   width: 400px;
-  height: 600px;
+  height: 400px;
+}
+.rev{
+  width:400px;
 }
