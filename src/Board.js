@@ -8,11 +8,9 @@ const Board = () => {
             <div class="overflow-auto mx-auto border border-3 border-dark dialog" >
                 {list.map((element) => (
 
-                    <p className="p-2 mt-2 mb-2 mx-2 bg-dark white border-radius">{element}</p>
+                    <p className="p-2 mt-2 mb-2 mx-2 radius">{element}</p>
                 ))
-
                 }
-
             </div>
             <div className="border border-3 border-dark mx-auto rev mt-2">
                 <input type="text" className="input-board"></input> <button type="button" className="btn btn-secondary">Send</button>
