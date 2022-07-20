@@ -246,7 +246,7 @@ const Items = () => {
             </div>
             <div className="col p-0">
               <div className="ml-auto">
-                <h2 class="align-self-end py-2 max-width fit">{finalSaleList.length + finalList.length} Items</h2>
+                <h2 class="float-end fit py-2">{finalSaleList.length + finalList.length} Items</h2>
               </div>
             </div>
           </div>
