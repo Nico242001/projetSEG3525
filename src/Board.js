@@ -12,7 +12,7 @@ const Board = () => {
                 }
 
             </div>
-            <div className="border border-3 border-dark mx-auto rev">
+            <div className="border border-3 border-dark mx-auto rev mt-2">
                 <input type="text" className="input-board"></input> <button type="button" className="btn btn-secondary">Send</button>
             </div>
         </div>
