@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-let lang = "EN";
+let langVal = "EN";
 const Faq = () => {
-    const [lang, setLang] = useState(lang);
+    const [lang, setLang] = useState(langVal);
     let q1;
     let a1;
     let q2;
@@ -11,7 +11,7 @@ const Faq = () => {
     let a3;
     let q4;
     let a4;
-    if (lang == "EN") {
+    if (langVal == "EN") {
         q1 = "Q: What sport items do you offer?";
         a1 = "A: We specialize in items for Soccer, Hockey and Basketball.";
         q2 = "Q: Do you ship internationally?";
@@ -32,11 +32,11 @@ const Faq = () => {
         a4="R: gh";
     }
     const switchLang = (e) => {
-        if(lang == "EN"){
-            lang ="FR";
+        if(langVal == "EN"){
+            langVal ="FR";
             setLang(lang);
         } else{
-            lang ="EN";
+            langVal ="EN";
             setLang(lang);
         }
     };
