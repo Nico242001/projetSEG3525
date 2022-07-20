@@ -311,6 +311,12 @@ max-height:150px;
 .white{
   color: white;
 }
+
 .radius{
   border-radius: 4px;
+  font-size:large;
+  color: white; 
+  background-color: #5680E9;
+  border: 3px;
+  border-color: #212529;
 }
