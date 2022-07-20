@@ -302,7 +302,8 @@ max-height:150px;
   width:400px;
 }
 .input-board{
-  width: 250px;
+  height: 100%;
+  width: 325px;
 }
 .white{
   color: white;
