@@ -8,10 +8,30 @@ const Payment = () => {
     const [security, setSecurity] = useState('');
     const history = useHistory();
     const handleClick = (e) => {
+        let num = number;
+        num = num.replace(/ /g, "");
+
+        var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
         var elements = document.getElementsByClassName("red");
         for (let i = 0; i < elements.length; i++) {
             elements[i].innerHTML = " *";
             elements[i].classList.remove("red");
+        }
+        if(name.length == 0){
+            document.getElementById("name").innerHTML = " *please enter a first name";
+            document.getElementById("name").classList.add("red");
+        } else if(!(regName.test(name))){
+            document.getElementById("name").innerHTML = " *invalid first name";
+            document.getElementById("name").classList.add("red");
+        } else if(lastName.length == 0){
+            document.getElementById("last").innerHTML = " *please enter a last name";
+            document.getElementById("last").classList.add("red");
+        }else if(!(regName.test(lastName))){
+            document.getElementById("last").innerHTML = " *invalid first name";
+            document.getElementById("last").classList.add("red");
+        }else if(number.length == 0){
+            document.getElementById("number").innerHTML = " *please enter a card number";
+            document.getElementById("number").classList.add("red");
         }
     }
 
@@ -67,7 +87,7 @@ const Payment = () => {
                     />
                     <br />
                     <br />
-                    {/* <button className='btn btn-primary btn-color mb-2' onClick={(e) => { handleClick(e) }}>Next</button> */}
+                    <button className='btn btn-primary btn-color mb-2' onClick={(e) => { handleClick(e) }}>Next</button>
                 </div>
             </div>
         </div>
