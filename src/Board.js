@@ -10,7 +10,7 @@ const Board = () => {
 
             </div>
             <div className="border border-3 border-dark mx-auto rev">
-                <input type="text" ></input> <button type="btn btn-primary btn-color">Send</button>
+                <input type="text" className="input-board"></input> <button type="button" className="btn btn-primary btn-color">Send</button>
             </div>
         </div>
     </div>);
