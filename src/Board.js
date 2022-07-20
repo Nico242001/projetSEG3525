@@ -1,5 +1,7 @@
 const Board = () => {
-    let list=["I love my new Soccer ball!", "Ordered my new Hockey stick and it arrived the next day!", "My cleats broke and had no issue returning the pair and getting a new one!",]
+    let list = ["I love my new Soccer ball!", "Ordered my new Hockey stick and it arrived the next day!",
+        "My cleats broke and had no issue returning the pair and getting a new one!", "My kids love the new Basketball they got for Christmas!",
+        "My son loves the new basketball I got him, he never wants to take it off!"]
     return (<div className="board bg-light">
         <div className="container text-center"><h1 className="mx-auto text=center">Reviews</h1></div>
         <div className="container mx-auto">

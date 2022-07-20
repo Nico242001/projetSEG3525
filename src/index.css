@@ -304,7 +304,7 @@ max-height:150px;
   width:400px;
 }
 .input-board{
-  height: 100%;
+  margin-top: 7px;
   width: 325px;
   border-radius:4px;
 }
