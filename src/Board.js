@@ -4,7 +4,10 @@ const Board = () => {
         <div className="container text-center"><h1 className="mx-auto text=center">Reviews</h1></div>
         <div className="container text-center mx-auto">
             <div class="overflow-auto dialog" >
-                {
+                {list.map((element) => (
+
+                    <div>element</div>
+                ))
 
                 }
 
