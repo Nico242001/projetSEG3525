@@ -15,11 +15,13 @@ const Checkout = () => {
             elements[i].innerHTML = " *";
             elements[i].classList.remove("red");
         }
-        console.log("in");
         let postalCode =  postal;
         postalCode = postalCode.replace(/ /g, "");
-        
+        let part1 = postalCode.charAt(0)+postalCode.charAt(2)+postalCode.charAt(4);
+        let part2 = postalCode.charAt(1)+postalCode.charAt(3)+postalCode.charAt(5);
+        const numberReg = /[0-9]/;
         const specialChars =  /[`!@#$%^&*()_+=\[\]{};':"\\|,<>\/?~]/;
+        const specialCharsPostal =  /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
         const letter = /[a-zA-Z]/;
         if(city.length == 0){
             document.getElementById("city").innerHTML=" *please enter a city";
@@ -33,17 +35,28 @@ const Checkout = () => {
         }else if(specialChars.test(street)){
             document.getElementById("street").innerHTML=" *please enter no special characters";
             document.getElementById("street").classList.add("red");
-        }else if(number.length == 0){
+        }
+        else if(numberReg.test(street)){
+            document.getElementById("street").innerHTML=" *please enter no numbers";
+            document.getElementById("street").classList.add("red");
+        }
+        else if(number.length == 0){
             document.getElementById("number").innerHTML=" *please enter a street number";
             document.getElementById("number").classList.add("red");
         } else if(letter.test(number) || specialChars.test(number)){
             document.getElementById("number").innerHTML=" *please enter only numbers";
             document.getElementById("number").classList.add("red");
-        }
+        } else if(specialCharsPostal.test(postal)){
+            document.getElementById("postal").innerHTML=" *please enter no special characters";
+            document.getElementById("postal").classList.add("red");
+        } 
+        // else if(){
+
+        // }
         else{
-           
-            console.log("history");
-            history.push("/payment");
+            console.log(part1);
+            console.log(part2);
+            // history.push("/payment");
         }
     };
     const useEffect = () =>{
@@ -117,7 +130,7 @@ const Checkout = () => {
                        
                         <br/>
                         <br/>
-                        <button className='btn btn-primary btn-color' onClick={(e) => { handleClick(e) }}>Next</button>
+                        <button className='btn btn-primary btn-color mb-2' onClick={(e) => { handleClick(e) }}>Next</button>
                     
                 </div>
             </div>
