@@ -1,8 +1,8 @@
 const Faq = () => {
     return (  <div className="faq bg-light">
-
-    <div className="container">
     <div className="row"><div className="col-11"><h1 >FAQ</h1></div><div className="col-1">Fr</div></div>
+    <div className="container">
+
         <div className="container margin-left mb-3">
             Q: What sport items do you offer?<br/>
             A: We specialize in items for Soccer, Hockey and Basketball.
