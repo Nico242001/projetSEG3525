@@ -47,11 +47,11 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="right-side">
-                <Link className="link-test" to={{ pathname: "https://www.facebook.com/" }} target="_blank" ><FaFacebookF className='icon-test'/> <span className='mb-0 mt-3'>Facebook</span></Link>
+                <Link className="link-test m-1" to={{ pathname: "https://www.facebook.com/" }} target="_blank" ><FaFacebookF className='icon-test'/> <span className='mb-0 mt-3'>Facebook</span></Link>
                 <Link className="link-test" to={{ pathname: "https://www.instagram.com/" }} target="_blank"><FaInstagram className='icon-test'/> <span className='mb-0 mt-2'>Instagram</span></Link>
                 <Link className="link-test" to={{ pathname: "https://www.youtube.com/" }} target="_blank"><FaYoutube className='icon-test'/><span className='mb-0 mt-1'>Youtube</span></Link>
                 <Link className="link-test" to="/FAQ">FAQ</Link>
-                <Link className="p-0" to="/cart"><FaShoppingCart className='icon'/></Link>
+                <Link className="link-test" to="/cart"><FaShoppingCart className='icon-test'/></Link>
             </div>
         </nav>
         </div>
