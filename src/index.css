@@ -183,6 +183,7 @@ max-height:150px;
 }
 .faq{
   font-size:large;
+  color: white;
 }
 @media only screen and (max-width: 800px) {
   .height-video{
