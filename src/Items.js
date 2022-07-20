@@ -102,6 +102,16 @@ function onLoad(item) {
 }
 
 const Items = () => {
+  let showAlert;
+  if (sessionStorage.getItem(200) !== null) {
+      sessionStorage.setItem(200,"false");
+      showAlert = true;
+  } else{
+      showAlert = false;
+  }
+  const removeAlert = (e) => {
+      document.getElementById("alert").remove();
+  }
   const { item } = useParams();
   const [paramHistory, setParamHistory] = useState(item);
   onLoad(item);
@@ -233,6 +243,12 @@ const Items = () => {
   return (
 
     <div className="items bg-light">
+        {showAlert ? (
+                <div id="alert" className="alert alert-warning mb-0 card-static">
+                <strong>We currently can only ship to Canada but are currently working on expanding our shipping!</strong>
+                <span className='p-1 float-end x' onClick={(e) => { removeAlert(e) }}>X</span>
+              </div>
+                ) : ""}
       <div className="container-fluid pt-4">
         <div className="container border border-3 border-dark bg-light">
           <div>

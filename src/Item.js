@@ -19,6 +19,16 @@ function findObject(id) {
 }
 
 const Item = () => {
+    let showAlert;
+    if (sessionStorage.getItem(200) !== null) {
+        sessionStorage.setItem(200,"false");
+        showAlert = true;
+    } else{
+        showAlert = false;
+    }
+    const removeAlert = (e) => {
+        document.getElementById("alert").remove();
+    }
     const [show, setShow] = useState("false");
     const [oldId, setOldId] = useState(0);
     const [size, setSize] = useState(0);
@@ -114,6 +124,12 @@ const Item = () => {
 
     return (
         <div className="item bg-light">
+              {showAlert ? (
+                <div id="alert" className="alert alert-warning mb-0 card-static">
+                <strong>We currently can only ship to Canada but are currently working on expanding our shipping!</strong>
+                <span className='p-1 float-end x' onClick={(e) => { removeAlert(e) }}>X</span>
+              </div>
+                ) : ""}
             {(show == "true") ? (
                 <div id="alert" className="alert alert-success mb-0 card-static" >
                 <strong>We currently can only ship to Canada but are currently working on expanding our shipping!</strong>

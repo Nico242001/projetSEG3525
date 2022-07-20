@@ -2,6 +2,16 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom'
 
 const Shop = () => {
+    let showAlert;
+    if (sessionStorage.getItem(200) !== null) {
+        sessionStorage.setItem(200,"false");
+        showAlert = true;
+    } else{
+        showAlert = false;
+    }
+    const removeAlert = (e) => {
+        document.getElementById("alert").remove();
+    }
     const [sports, setSports] = useState([
         {name:"Soccer", img: "/images/shop/soccerCard.jpg", id:"1"},
         {name:"Basketball", img: "/images/shop/basketball.jpg", id:"2"},
@@ -10,6 +20,12 @@ const Shop = () => {
    
     return ( 
        <div className="shop bg-light">
+          {showAlert ? (
+                <div id="alert" className="alert alert-warning mb-0 card-static">
+                <strong>We currently can only ship to Canada but are currently working on expanding our shipping!</strong>
+                <span className='p-1 float-end x' onClick={(e) => { removeAlert(e) }}>X</span>
+              </div>
+                ) : ""}
         <div className="row " min-width="100%">
             <div className="col padding" min-width="50%" max-width="50%">
                 <img id="soccer" src="/images/shop/sale.jpg" className="height-image max-width"alt="" min-width="100%" />
