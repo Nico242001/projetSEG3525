@@ -239,7 +239,7 @@ max-height:150px;
   margin: 0 auto 10px auto;
   border-radius: 50%;
   background-color: #94def2;
-  border:black ;
+  /* border:black ; */
 }
 .progressbar li:after {
   content: '';
@@ -249,7 +249,7 @@ max-height:150px;
   background-color: black;
   top: 15px;
   left: -50%;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .firstStep{
   color: green;
