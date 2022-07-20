@@ -6,7 +6,7 @@ const Board = () => {
             <div class="overflow-auto dialog" >
                 {list.map((element) => (
 
-                    <div>element</div>
+                    <p>{element}</p>
                 ))
 
                 }
