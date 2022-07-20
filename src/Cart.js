@@ -136,11 +136,6 @@ const Cart = () => {
                 </div>
             ) : ""}
 
-            {(empty) ? (
-                <div className="container mx-auto"><h2 className='mt-5 fit mx-auto'>Your cart is empty</h2></div>
-
-            ) : ""}
-
         </div>
     </div>
 
