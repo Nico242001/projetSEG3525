@@ -16,18 +16,30 @@ const Checkout = () => {
             elements[i].classList.remove("red");
         }
         console.log("in");
+        let postalCode =  postal;
+        postalCode = postalCode.replace(/ /g, "");
         
-        const specialChars =  /[`!@#$%^&*()_+=\[\]{};':"\\|,.<>\/?~]/;
+        const specialChars =  /[`!@#$%^&*()_+=\[\]{};':"\\|,<>\/?~]/;
+        const letter = /[a-zA-Z]/;
         if(city.length == 0){
             document.getElementById("city").innerHTML=" *please enter a city";
             document.getElementById("city").classList.add("red");
         }else if(specialChars.test(city)){
             document.getElementById("city").innerHTML=" *please enter no special characters";
             document.getElementById("city").classList.add("red");
+        } else if(street.length == 0){
+            document.getElementById("street").innerHTML=" *please enter a street name";
+            document.getElementById("street").classList.add("red");
+        }else if(specialChars.test(street)){
+            document.getElementById("street").innerHTML=" *please enter no special characters";
+            document.getElementById("street").classList.add("red");
+        }else if(number.length == 0){
+            document.getElementById("number").innerHTML=" *please enter a street number";
+            document.getElementById("number").classList.add("red");
+        } else if(letter.test(number) || specialChars.test(number)){
+            document.getElementById("number").innerHTML=" *please enter only numbers";
+            document.getElementById("number").classList.add("red");
         }
-        //  else if(){
-
-        // }
         else{
            
             console.log("history");
@@ -83,6 +95,8 @@ const Checkout = () => {
                             value={street}
                             onChange={(e) => setStreet(e.target.value)}
                         />
+                         <br/>
+                        <br/>
                           <label className='mb-1'><span className='bold' >Street Number</span><span id="number"> *</span></label>
                         <br/>
                         <input type="text"
