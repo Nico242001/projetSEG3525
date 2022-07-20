@@ -112,6 +112,12 @@ const Item = () => {
 
     return (
         <div className="item bg-light">
+            {
+                <div id="alert" className="alert alert-warning mb-0" role="alert">
+                <strong>We currently can only ship to Canada but are currently working on expanding our shipping!</strong>
+                <span className='p-1 float-end x' onClick={(e) => { remove(e) }}>X</span>
+              </div>
+            }
             <div className='container-fluid'>
                 <div className="container-fluid pt-4">
                     <div className="container">
