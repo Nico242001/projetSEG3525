@@ -252,8 +252,8 @@ max-height:150px;
   /* z-index: -1; */
 }
 .firstStep{
-  color: green;
-  border-color: green;
+  color: white;
+  border-color: #5680E9;
   z-index: 1;
 }
 .progressbar li:first-child:after {
