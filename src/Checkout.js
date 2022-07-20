@@ -1,25 +1,35 @@
 import { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom'
 const Checkout = () => {
-    // const [postal, setPostal] = useState('');
-    // const [adress, setAdress] = useState('');
-    // const [city, setCity] = useState('');
+    const [postal, setPostal] = useState('');
+    const [street, setStreet] = useState('');
+    const [number, setNumber] = useState('');
+    const [city, setCity] = useState('');
+ 
     // const [province, setProvince] = useState('Ontario');
     const history = useHistory();
     
     const handleClick = (e) => {
+        var elements = document.getElementsByClassName("red");
+        for(let i = 0; i<elements.length;i++){
+            elements[i].innerHTML = " *";
+            elements[i].classList.remove("red");
+        }
         console.log("in");
-        let city = document.getElementById("cityValue").value;
-        // let cityValue = city;
-        // const specialChars =  /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+        
+        const specialChars =  /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
         if(city.length == 0){
             document.getElementById("city").innerHTML=" *please enter a city";
             document.getElementById("city").classList.add("red");
-        // } else if(specialChars.test(cityValue)){
-        //     document.getElementById("city").innerHTML=" *city does not contain any special characters";
-        //     document.getElementById("city").classList.add("red");
-        }else{
-            // 
+        }else if(specialChars.test(city)){
+            document.getElementById("city").innerHTML=" *please enter no special characters";
+            document.getElementById("city").classList.add("red");
+        }
+        //  else if(){
+
+        // }
+        else{
+           
             console.log("history");
             history.push("/payment");
         }
@@ -58,25 +68,27 @@ const Checkout = () => {
                         <br/>
                         <label className='mb-1'><span className='bold'>City</span><span id="city"> *</span></label>
                         <br/>
-                        {/* <input type="text" 
+                        <input type="text" 
                             // required
                             value={city}
                             onChange={(e) => setCity(e.target.value)}
-                        /> */}
-                        <input type="text" 
-                            // required
-                            // value={city}
-                            id="cityValue"
                         />
                     
                         <br/>
                         <br/>
-                        <label className='mb-1'><span className='bold' >Adress</span><span id="adress"> *</span></label>
+                        <label className='mb-1'><span className='bold' >Street Name</span><span id="street"> *</span></label>
                         <br/>
                         <input type="text"
                             // required
-                            // value={adress}
-                            // onChange={(e) => setAdress(e.target.value)}
+                            value={street}
+                            onChange={(e) => setStreet(e.target.value)}
+                        />
+                          <label className='mb-1'><span className='bold' >Street Number</span><span id="number"> *</span></label>
+                        <br/>
+                        <input type="text"
+                            // required
+                            value={number}
+                            onChange={(e) => setNumber(e.target.value)}
                         />
                      
                         <br/>
@@ -85,8 +97,8 @@ const Checkout = () => {
                         <br/>
                         <input type="text"
                             // required
-                            // value={postal}
-                            // onChange={(e) => setPostal(e.target.value)}
+                            value={postal}
+                            onChange={(e) => setPostal(e.target.value)}
                         />
                        
                         <br/>
