@@ -19,6 +19,7 @@ function findObject(id) {
 }
 
 const Item = () => {
+    const [show, setShow] = useState("false");
     const [oldId, setOldId] = useState(0);
     const [size, setSize] = useState(0);
     const [num, setNum] = useState(1);
@@ -105,6 +106,7 @@ const Item = () => {
         sessionStorage.setItem(0, amount);
         let listObj = [obj,num,size];
         sessionStorage.setItem(amount, JSON.stringify(newObj));
+        setShow("true");
     }
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -112,12 +114,12 @@ const Item = () => {
 
     return (
         <div className="item bg-light">
-            {
-                <div id="alert" className="alert alert-warning mb-0 card-static" >
+            {(show == "true") ? (
+                <div id="alert" className="alert alert-success mb-0 card-static" >
                 <strong>We currently can only ship to Canada but are currently working on expanding our shipping!</strong>
                 <span className='p-1 float-end x' >X</span>
               </div>
-            }
+            ) : ""}
             <div className='container-fluid'>
                 <div className="container-fluid pt-4">
                     <div className="container">
