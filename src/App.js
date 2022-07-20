@@ -9,6 +9,7 @@ import Item from './Item';
 import Cart from './Cart';
 import Checkout from './Checkout';
 import Payment from './Payment';
+import Faq from './Faq';
 
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
             <Payment/>
           </Route>
           <Route exact path="/FAQ">
-            <Payment/>
+            <Faq/>
           </Route>
         </Switch>
       </div>
