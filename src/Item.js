@@ -109,6 +109,9 @@ const Item = () => {
         sessionStorage.setItem(amount, JSON.stringify(newObj));
         setShow("true");
     }
+    const removeAlert = (e) => {
+        document.getElementById("alert").remove();
+    };
     useEffect(() => {
         window.scrollTo(0, 0)
       }, [])
@@ -119,7 +122,7 @@ const Item = () => {
             {(show == "true") ? (
                 <div id="alert" className="alert alert-success mb-0 card-static" >
                 <strong>Successfully added item to your cart!</strong>
-                <span className='p-1 float-end x' >X</span>
+                <span className='p-1 float-end x' onClick={(e) => { removeAlert(e) }}>X</span>
               </div>
             ) : ""}
             <div className='container-fluid'>

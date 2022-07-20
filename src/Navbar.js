@@ -47,9 +47,9 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="right-side">
-                <Link className="p-0" to={{ pathname: "https://www.facebook.com/" }} target="_blank" ><FaFacebookF className='icon'/> Facebook</Link>
-                <Link className="p-0" to={{ pathname: "https://www.instagram.com/" }} target="_blank"><FaInstagram className='icon'/> Instagram</Link>
-                <Link className="p-0" to={{ pathname: "https://www.youtube.com/" }} ><FaYoutube className='icon'/><span className='mb-0'>Youtube</span></Link>
+                <Link className="p-0" to={{ pathname: "https://www.facebook.com/" }} target="_blank" ><FaFacebookF className='icon'/> <span className='mb-0 mt-3'>Facebook</span></Link>
+                <Link className="p-0" to={{ pathname: "https://www.instagram.com/" }} target="_blank"><FaInstagram className='icon'/> <span className='mb-0 mt-2'>Instagram</span></Link>
+                <Link className="p-0" to={{ pathname: "https://www.youtube.com/" }} target="_blank"><FaYoutube className='icon'/><span className='mb-0 mt-1'>Youtube</span></Link>
                 <Link className="p-0" to="/FAQ">FAQ</Link>
                 <Link className="p-0" to="/cart"><FaShoppingCart className='icon'/></Link>
             </div>

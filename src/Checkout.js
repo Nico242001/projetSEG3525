@@ -34,10 +34,12 @@ const Checkout = () => {
         } else if (specialChars.test(street)) {
             document.getElementById("street").innerHTML = " *please enter no special characters";
             document.getElementById("street").classList.add("red");
-        } else if (numberReg.test(street)) {
-            document.getElementById("street").innerHTML = " *please enter no numbers";
-            document.getElementById("street").classList.add("red");
-        } else if (number.length == 0) {
+        } 
+        // else if (numberReg.test(street)) {
+        //     document.getElementById("street").innerHTML = " *please enter no numbers";
+        //     document.getElementById("street").classList.add("red");
+        // } 
+        else if (number.length == 0) {
             document.getElementById("number").innerHTML = " *please enter a street number";
             document.getElementById("number").classList.add("red");
         } else if (letter.test(number) || specialChars.test(number)) {
@@ -57,6 +59,7 @@ const Checkout = () => {
             history.push("/payment");
         }
     };
+ 
 
     return (<div className="checkout bg-light">
         
