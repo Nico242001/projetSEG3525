@@ -293,3 +293,8 @@ max-height:150px;
 .margin-left{
   margin-left: 300px;
 }
+
+.dialog{
+  width: 400px;
+  height: 600px;
+}
