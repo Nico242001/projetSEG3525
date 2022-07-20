@@ -4,6 +4,7 @@ let list = ["I love my new Soccer ball!", "Ordered my new Hockey stick and it ar
 "My son loves the new basketball shirt I got him, he never wants to take it off!", "I love going skating in the new skates I bought last week."];
 
 const Board = () => {
+    const [listShow, setListShow] =useState(list);
     const [revVal, setRevVal] = useState('');
     const [addList, setAddList] = useState("add");
     const addRev = (e) => {
@@ -14,10 +15,11 @@ const Board = () => {
             document.getElementById("error").innerHTML = "*please enter a message"
         } else{
             let newList = [revVal];
-            list = newList.concat(list);
+            list = newList.concat(listShow);
             console.log(list);
             document.getElementById("input").value="";
-            setAddList("add");            
+            // setAddList("add");  
+            setListShow(list);          
         }
     };
     return (<div className="board bg-light">
