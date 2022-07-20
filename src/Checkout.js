@@ -17,7 +17,7 @@ const Checkout = () => {
         }
         console.log("in");
         
-        const specialChars =  /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+        const specialChars =  /[`!@#$%^&*()_+=\[\]{};':"\\|,.<>\/?~]/;
         if(city.length == 0){
             document.getElementById("city").innerHTML=" *please enter a city";
             document.getElementById("city").classList.add("red");
