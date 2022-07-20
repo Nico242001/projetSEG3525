@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Shop = () => {
     let showAlert;
-    if (sessionStorage.getItem(200) !== null) {
+    if (sessionStorage.getItem(200) === null) {
         sessionStorage.setItem(200,"false");
         showAlert = true;
     } else{
