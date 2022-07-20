@@ -42,6 +42,9 @@ function App() {
           <Route exact path="/payment">
             <Payment/>
           </Route>
+          <Route exact path="/FAQ">
+            <Payment/>
+          </Route>
         </Switch>
       </div>
     </div>
