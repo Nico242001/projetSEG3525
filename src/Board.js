@@ -15,6 +15,7 @@ const Board = () => {
         } else{
             let newList = [revVal];
             list = newList.concat(list);
+            console.log(list);
             document.getElementById("input").value="";
             setAddList("add");            
         }
