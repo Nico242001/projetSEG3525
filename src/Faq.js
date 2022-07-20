@@ -11,7 +11,7 @@ const Faq = () => {
     let a3;
     let q4;
     let a4;
-    if (lang === "EN") {
+    if (lang == "EN") {
         q1 = "Q: What sport items do you offer?";
         a1 = "A: We specialize in items for Soccer, Hockey and Basketball.";
         q2 = "Q: Do you ship internationally?";
@@ -32,7 +32,7 @@ const Faq = () => {
         a4="R: gh";
     }
     const switchLang = (e) => {
-        if(lang === "EN"){
+        if(lang == "EN"){
             lang ="FR";
             setLang(lang);
         } else{
