@@ -2,17 +2,19 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom'
 
 const Cart = () => {
-   
+    const removeAlert = (e) => {
+        document.getElementById("alert").remove();
+    }
     let listObj = [];
     let total = 0;
     let empty = true;
     const [refresh, setrefresh] = useState("ref");
     if (sessionStorage.length == 0) {
         sessionStorage.setItem(0, 0);
-    } else if(sessionStorage.length == 1){
+    } else if (sessionStorage.length == 1) {
         let keys = Object.keys(sessionStorage);
-        if(keys == 200){
-            sessionStorage.setItem(0,0)
+        if (keys == 200) {
+            sessionStorage.setItem(0, 0)
         }
     }
     let keys = Object.keys(sessionStorage);
@@ -32,52 +34,59 @@ const Cart = () => {
     }
 
     return (<div className="cart bg-light">
-       
+        {(empty) ? (
 
-{(!empty) ? (
-        <div className="container text-center mt-3">
-    <div className="container-progressbar">
-        <ul className="progressbar">
-            <li className="firstStep">step 1</li>
-            <li >step 2</li>
-            <li >step 3</li>
-            <li >step 4</li>
-        </ul>
-    </div>
-    
-</div>
-  ) : ""}
+    <div id="alert" className="alert alert-danger mb-0 card-static">
+    <strong>Your cart is empty!</strong>
+    <span className='p-1 float-end x' onClick={(e) => { removeAlert(e) }}>X</span>
+  </div>
+
+
+        ): ""}
+
+        {(!empty) ? (
+            <div className="container text-center mt-3">
+                <div className="container-progressbar">
+                    <ul className="progressbar">
+                        <li className="firstStep">step 1</li>
+                        <li >step 2</li>
+                        <li >step 3</li>
+                        <li >step 4</li>
+                    </ul>
+                </div>
+
+            </div>
+        ) : ""}
 
         <div className="container my-4 p-0 pb-4">
             <div className="container text-center"><h1 className="mx-auto text=center">Cart</h1></div>
 
-            {(!empty) ? (
-                  <div className="container border-bottom border-3 border-dark">
-                  <div className="row mx-auto p-0">
-                      <div className="col-2 text-center">
-                      </div>
-                      <div className="col-2 text-center">
-                          <h4 className="mx-auto">Product</h4>
-                      </div>
-                      <div className="col-1 text-center">
-                          <h4 className="mx-auto">Size</h4>
-                      </div>
-                      <div className="col-2 text-center">
-                          <h4 className="mx-auto">Price</h4>
-                      </div>
-                      <div className="col-2 text-center">
-                          <h4 className="mx-auto">Quantity</h4>
-                      </div>
-                      <div className="col-2 text-center">
-                          <h4 className="mx-auto">Total</h4>
-                      </div>
-                      <div className="col-1 text-center">
-                          
-                      </div>
-                  </div>
-              </div>
-                ) : ""}
-           
+    
+                <div className="container border-bottom border-3 border-dark">
+                    <div className="row mx-auto p-0">
+                        <div className="col-2 text-center">
+                        </div>
+                        <div className="col-2 text-center">
+                            <h4 className="mx-auto">Product</h4>
+                        </div>
+                        <div className="col-1 text-center">
+                            <h4 className="mx-auto">Size</h4>
+                        </div>
+                        <div className="col-2 text-center">
+                            <h4 className="mx-auto">Price</h4>
+                        </div>
+                        <div className="col-2 text-center">
+                            <h4 className="mx-auto">Quantity</h4>
+                        </div>
+                        <div className="col-2 text-center">
+                            <h4 className="mx-auto">Total</h4>
+                        </div>
+                        <div className="col-1 text-center">
+
+                        </div>
+                    </div>
+                </div>
+
 
             <div className="container p-0" id="cartItems">
                 {
@@ -108,30 +117,30 @@ const Cart = () => {
                 }
             </div>
             {(!empty) ? (
-                 <div className="row mx-auto mt-3">
-                 <div className="col-12">
-                     <div className="row mx-auto p-0">
-                         <div className="col-7 text-center">
-                         </div>
-                         <div className="col-2 text-center">
-                             <h4 className="mx-auto">Total+tax</h4>
-                         </div>
-                         <div className="col-2 text-center">
-                             <h4 id="totalPrice" className="mx-auto">$ {afterTaxes}</h4>
-                         </div>
-                         <div className="col-1 text-center">
-                             <Link className="btn btn-primary" to="/checkout">CheckOut</Link>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-                ) : ""}
+                <div className="row mx-auto mt-3">
+                    <div className="col-12">
+                        <div className="row mx-auto p-0">
+                            <div className="col-7 text-center">
+                            </div>
+                            <div className="col-2 text-center">
+                                <h4 className="mx-auto">Total+tax</h4>
+                            </div>
+                            <div className="col-2 text-center">
+                                <h4 id="totalPrice" className="mx-auto">$ {afterTaxes}</h4>
+                            </div>
+                            <div className="col-1 text-center">
+                                <Link className="btn btn-primary" to="/checkout">CheckOut</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            ) : ""}
 
             {(empty) ? (
                 <div className="container mx-auto"><h2 className='mt-5 fit mx-auto'>Your cart is empty</h2></div>
-                
-                ) : ""}
-           
+
+            ) : ""}
+
         </div>
     </div>
 

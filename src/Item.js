@@ -118,7 +118,7 @@ const Item = () => {
              
             {(show == "true") ? (
                 <div id="alert" className="alert alert-success mb-0 card-static" >
-                <strong>We currently can only ship to Canada but are currently working on expanding our shipping!</strong>
+                <strong>Successfully added item to your cart!</strong>
                 <span className='p-1 float-end x' >X</span>
               </div>
             ) : ""}
