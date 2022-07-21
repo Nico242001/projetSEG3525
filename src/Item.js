@@ -27,9 +27,24 @@ const Item = () => {
     const { id } = useParams();
    
     idInt = parseInt(id);
+    if(0< idInt && idInt <=3){
+        if(idInt == 1){
+            sport ="Soccer";
+            item = "Balls";
+        }if(idInt == 2){
+            sport = "Hockey";
+            item = "Skates"
+        } if(idInt == 3){
+            sport = "Basketball";
+            item = "Shirts";
+        }
+        list = ListItems.sale
+        obj = findObject(id);
+
+    }
     if (3 < idInt && idInt <= 33) {
         sport = "Soccer";
-        if (3 < idInt && idInt <= 13) {
+        if (3 < idInt && idInt <= 13 ) {
             item = "Balls";
             itemLink = "SoccerBalls"
             list = ListItems.Soccerballs;
