@@ -18,8 +18,8 @@ const Confirmed = () => {
         </div>
 
         <div className="container">
-            <h1 className="fit">Your purchase as been completed!</h1>
-            <Link to="/" className="mt-3 btn btn-primary btn-color">Home</Link>
+            <h1 className="fit mx-auto mt-5">Your purchase as been completed!</h1>
+            <Link to="/" className="mt-3 mx-auto btn btn-primary btn-color">Home</Link>
         </div>
 
     </div>);
