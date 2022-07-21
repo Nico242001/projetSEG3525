@@ -249,7 +249,7 @@ max-height:150px;
   width:30px;
   height: 30px;
   line-height: 30px;
-  border-color: black;
+  border-color: grey;
   border: 3px solid;
   display: block;
   text-align: center;
@@ -277,13 +277,13 @@ max-height:150px;
   content: none;
 }
 .progressbar li.active {
-  color: green;
+  color: black;
 }
 /* .progressbar li:before {
   border-color: green;
 } */
 .progressbar li.active + li:after {
-  background-color: green;
+  background-color: black;
 }
 
 
