@@ -39,16 +39,16 @@ const Payment = () => {
         else if(number.length == 0){
             document.getElementById("number").innerHTML = " *please enter a card number";
             document.getElementById("number").classList.add("red");
-        }else if(number.length >= 16){
+        }else if(number.length != 16){
             document.getElementById("number").innerHTML = " *invalid card number ";
             document.getElementById("number").classList.add("red");
-        } else if(onlyNum.test(number)){
+        } else if(!(onlyNum.test(number))){
             document.getElementById("number").innerHTML = " *invalid card number ";
             document.getElementById("number").classList.add("red");
         }else if(sec.length == 0){
             document.getElementById("security").innerHTML = " *enter a security number";
             document.getElementById("security").classList.add("red");
-        } else if((!(sec.length == 3)&&!(sec.length == 4)) || onlyNum.test(sec)){
+        } else if((!(sec.length == 3)&&!(sec.length == 4)) || !(onlyNum.test(sec))){
             document.getElementById("security").innerHTML = " *invalid a security number";
             document.getElementById("security").classList.add("red");
         } else{
