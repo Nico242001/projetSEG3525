@@ -1,5 +1,6 @@
-import { useState, Link } from 'react';
+import { useState } from 'react';
 import { Button, Alert } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import './index.css';
 sessionStorage.setItem(200, "true");
 
@@ -19,9 +20,9 @@ const Home = () => {
         { name: "Starlancer", oldPrice: "50.00", newPrice: "30.00", sport: "hockey", item: "sticks", img: "/images/index/starlancer.jpg", id: "2" },
         { name: "item3", oldPrice: "70.00", newPrice: "55.00", sport: "basketball", item: "shirts", img: "/images/index/pheonix.jpg", id: "3" }
     ])
-    const clickArg = (name, e) => {
-        console.log(name, e);
-    }
+    // const clickArg = (name, e) => {
+    //     console.log(name, e);
+    // }
     return (
         <div className="home bg-light">
               {showAlert ? (
@@ -38,7 +39,9 @@ const Home = () => {
                         <br />
                         <h4 className='fit mx-auto'>The all new Speed of Light Adidas X boots are finally out! Dont wait, get them now before we are all sold out!</h4>
                         <br />
-                        <button onClick={(e) => { clickArg("hey", e) }} className="btn btn-secondary mx-auto">Buy Now!</button></div>
+                        {/* <button onClick={(e) => { clickArg("hey", e) }} className="btn btn-secondary mx-auto">Buy Now!</button> */}
+                        <Link to="/cart/14" className="btn btn-secondary mx-auto">Buy Now!</Link>
+                        </div>
                 </div>
                 <div className="col padding" min-width="50%" max-width="50%">
                     <iframe className='widthFull height-video' src="https://www.youtube.com/embed/VJHEKcKqvOI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
