@@ -232,7 +232,8 @@ max-height:150px;
     height: 275px;
   }
 }
-/* 
+
+
 .container-progressbar{
   width:100%;
 }
@@ -252,7 +253,7 @@ max-height:150px;
   width:30px;
   height: 30px;
   line-height: 30px;
-  border-color: grey;
+  border-color: black;
   border: 3px solid;
   display: block;
   text-align: center;
@@ -260,8 +261,8 @@ max-height:150px;
   border-radius: 50%;
   background-color: #5680E9;
   /* border:black ; */
-/* } */
-/* .progressbar li:after {
+}
+.progressbar li:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -269,102 +270,28 @@ max-height:150px;
   background-color: black;
   top: 15px;
   left: -50%;
-  /* z-index: -1; */
-/* }  */
-/* .firstStep{
-  color: black;
-  border-color: #5680E9;
-  z-index: 1;
-} */
-/* .progressbar li:first-child:after {
+  z-index: -1;
+}
+.firstStep{
+  color: green;
+  border-color: green;
+}
+.progressbar li:first-child:after {
   content: none;
-} */
-/* .progressbar li.active {
-  color: black;
-} */
+}
+.progressbar li.active {
+  color: green;
+}
 /* .progressbar li:before {
   border-color: green;
 } */
-/* .progressbar li.active + li:after {
-  background-color: black;
-} */ 
-
-
-.stepper-wrapper {
-  margin-top: auto;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-.stepper-item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-
-  @media (max-width: 768px) {
-    font-size: 12px;
-  }
+.progressbar li.active + li:after {
+  background-color: green;
 }
 
-.stepper-item::before {
-  position: absolute;
-  content: "";
-  border-bottom: 2px solid #ccc;
-  width: 100%;
-  top: 20px;
-  left: -50%;
-  z-index: 2;
-}
 
-.stepper-item::after {
-  position: absolute;
-  content: "";
-  border-bottom: 2px solid #ccc;
-  width: 100%;
-  top: 20px;
-  left: 50%;
-  z-index: 2;
-}
 
-.stepper-item .step-counter {
-  position: relative;
-  z-index: 5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #ccc;
-  margin-bottom: 6px;
-}
 
-.stepper-item.active {
-  font-weight: bold;
-}
-
-.stepper-item.completed .step-counter {
-  background-color: #4bb543;
-}
-
-.stepper-item.completed::after {
-  position: absolute;
-  content: "";
-  border-bottom: 2px solid #4bb543;
-  width: 100%;
-  top: 20px;
-  left: 50%;
-  z-index: 3;
-}
-
-.stepper-item:first-child::before {
-  content: none;
-}
-.stepper-item:last-child::after {
-  content: none;
-}
 
 .margin-right{
   margin-right: 50px;
