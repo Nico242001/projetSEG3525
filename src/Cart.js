@@ -1,7 +1,21 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
+import StepProgressBar from "react-step-progress";
 
 const Cart = () => {
+    const step1Content = <h1>fgfgghgjh</h1>;
+    const step2Content = <h1>dgfdg</h1>;
+    const step3Content = <h1>dgdfgfdgdfg</h1>;
+  
+    // setup step validators, will be called before proceeding to the next step
+    function step2Validator() {
+      return true;
+    }
+  
+    function step3Validator() {
+        return false;
+      // return a boolean
+    }
     const removeAlert = (e) => {
         document.getElementById("alert").remove();
     }
@@ -45,17 +59,33 @@ const Cart = () => {
         ): ""}
 
         {(!empty) ? (
-          <div class="container text-center mt-3">
-          <div class="container-progressbar">
-              <ul class="progressbar">
-                  <li class="active">step 1</li>
-                  <li class="firstStep">step 2</li>
-                  <li >step 3</li>
-                  <li >step 4</li>
-              </ul>
-          </div>
-          
-      </div>
+          <StepProgressBar
+          startingStep={0}
+          previousBtnName="Geri"
+          steps={[
+            {
+              label: "Briefing",
+              name: "Briefing",
+              content: step1Content
+            },
+            {
+              label: "Image-Acquisition",
+              name: "Image-Acquisition",
+              content: step2Content
+            },
+            {
+              label: "Image-processing",
+              name: "Image Processing",
+              content: step3Content
+              // validator: step2Validator
+            },
+            {
+              label: "Finish",
+              name: "Finish",
+              content: step3Content
+            }
+          ]}
+        />
       
         ) : ""}
 
