@@ -11,7 +11,7 @@ const Payment = () => {
         let num = number;
         num = num.replace(/ /g, "");
 
-        var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+        var regName = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
         var elements = document.getElementsByClassName("red");
         for (let i = 0; i < elements.length; i++) {
             elements[i].innerHTML = " *";
