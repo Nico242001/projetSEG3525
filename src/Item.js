@@ -28,11 +28,11 @@ const Item = () => {
    
     idInt = parseInt(id);
     if(0< idInt && idInt <=3){
-        if(idInt == 1){
+        if(idInt == 2){
             sport ="Soccer";
             item = "Balls";
             itemLink = "SoccerBalls";
-        }if(idInt == 2){
+        }if(idInt == 1){
             sport = "Hockey";
             item = "Skates"
             itemLink = "Skates";
