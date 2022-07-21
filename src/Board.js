@@ -18,7 +18,6 @@ const Board = () => {
             list = newList.concat(listShow);
             console.log(list);
             document.getElementById("input").value="";
-            // setAddList("add");  
             setListShow(list);          
         }
     };
