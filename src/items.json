@@ -604,7 +604,103 @@
             "brand": "Warrior"
         }
        ],
-        "helmets": [],
+        "helmets": [
+            {
+                "id": "56",
+                "name": "Warrior Alpha",
+                "param": "Warrior Alpha",
+                "price": "60.00",
+                "description": "test",
+                "image": "/images/hockey/helmets/alpha.jpg",
+                "size": [
+                   
+                ],
+                "brand": "Warrior"
+            },
+            {
+            "id": "57",
+            "name": "Warrior Covert",
+            "param": "Warrior Covert",
+            "price": "72.00",
+            "description": "test",
+            "image": "/images/hockey/helmets/covert.jpg",
+            "size": [
+               
+            ],
+            "brand": "Warrior"
+        },
+        {
+            "id": "58",
+            "name": "CCM Fitlite",
+            "param": "CCM Fitlite",
+            "price": "63.00",
+            "description": "test",
+            "image": "/images/hockey/helmets/Fitlite.jpg",
+            "size": [
+               
+            ],
+            "brand": "CCM"
+        },
+        {
+            "id": "59",
+            "name": "Bauer Hyperlite",
+            "param": "Bauer Hyperlite",
+            "price": "97.00.00",
+            "description": "test",
+            "image": "/images/hockey/helmets/hyperlite.jpg",
+            "size": [
+               
+            ],
+            "brand": "Bauer"
+        },
+        {
+            "id": "60",
+            "name": "Bauer Prodigy",
+            "param": "Bauer Prodigy",
+            "price": "77.00",
+            "description": "test",
+            "image": "/images/hockey/helmets/prodigy.jpg",
+            "size": [
+               
+            ],
+            "brand": "Bauer"
+        },
+        {
+            "id": "61",
+            "name": "CCM Super",
+            "param": "CCM Super",
+            "price": "58.00",
+            "description": "test",
+            "image": "/images/hockey/helmets/super.jpg",
+            "size": [
+               
+            ],
+            "brand": "CCM"
+        },
+        {
+            "id": "62",
+            "name": "CCM T120",
+            "param": "CCM T120",
+            "price": "133.00",
+            "description": "test",
+            "image": "/images/hockey/helmets/t120.jpg",
+            "size": [
+              
+            ],
+            "brand": "CCM"
+        },
+        {
+            "id": "63",
+            "name": "CCM Tacks",
+            "param": "CCM Tacks",
+            "price": "90.00",
+            "description": "test",
+            "image": "/images/hockey/helmets/tacks",
+            "size": [
+               
+            ],
+            "brand": "CCM"
+        }],
         "basketballs": [],
         "shoes": [],
         "shirts": []
