@@ -20,7 +20,7 @@ const Payment = () => {
         if(name.length == 0){
             document.getElementById("name").innerHTML = " *please enter a first name";
             document.getElementById("name").classList.add("red");
-        } else if(!(regName.test(name))){
+        } else if((regName.test(name))){
             document.getElementById("name").innerHTML = " *invalid first name";
             document.getElementById("name").classList.add("red");
         } else if(lastName.length == 0){
@@ -38,10 +38,12 @@ const Payment = () => {
 
     return (<div className="payment bg-light">
 
-<div className="progress-bar" role="progressbar" aria-valuenow="70"
+<div className="progress mt-4 bar">
+                <div className="progress-bar" role="progressbar" aria-valuenow="70"
                     aria-valuemin="0" aria-valuemax="100" style={{width:"75%"}}>
                     Step 3 of 4
                 </div>
+            </div>
 
         <div className="container my-4 p-0 pb-4">
             <div className="container text-center"><h2 className="text-center mb-4">Payment Information</h2></div>

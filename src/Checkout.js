@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom'
 const Checkout = () => {
-   
+
     const [postal, setPostal] = useState('');
     const [street, setStreet] = useState('');
     const [number, setNumber] = useState('');
@@ -34,11 +34,7 @@ const Checkout = () => {
         } else if (specialChars.test(street)) {
             document.getElementById("street").innerHTML = " *please enter no special characters";
             document.getElementById("street").classList.add("red");
-        } 
-        // else if (numberReg.test(street)) {
-        //     document.getElementById("street").innerHTML = " *please enter no numbers";
-        //     document.getElementById("street").classList.add("red");
-        // } 
+        }
         else if (number.length == 0) {
             document.getElementById("number").innerHTML = " *please enter a street number";
             document.getElementById("number").classList.add("red");
@@ -59,16 +55,14 @@ const Checkout = () => {
             history.push("/payment");
         }
     };
- 
-
     return (<div className="checkout bg-light">
 
-<div className="progress mt-4 bar">
-                <div className="progress-bar" role="progressbar" aria-valuenow="70"
-                    aria-valuemin="0" aria-valuemax="100" style={{width:"50%"}}>
-                    Step 2 of 4
-                </div>
+        <div className="progress mt-4 bar">
+            <div className="progress-bar" role="progressbar" aria-valuenow="70"
+                aria-valuemin="0" aria-valuemax="100" style={{ width: "50%" }}>
+                Step 2 of 4
             </div>
+        </div>
 
         <div className="container my-4 p-0 pb-4">
             <div className="container text-center"><h2 className="text-center mb-4">Shipping Information</h2></div>
