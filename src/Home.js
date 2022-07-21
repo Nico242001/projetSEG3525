@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, Link } from 'react';
 import { Button, Alert } from 'reactstrap';
 import './index.css';
 sessionStorage.setItem(200, "true");
@@ -15,9 +15,9 @@ const Home = () => {
         document.getElementById("alert").remove();
     }
   const [deals, setDeals] = useState([
-        { name: "Super Tracker", oldPrice: "100", newPrice: "80", sport: "soccer", item: "cleats", img: "/images/index/ccmSuperTracker.jpg", id: "1" },
-        { name: "Starlancer", oldPrice: "50", newPrice: "30", sport: "hockey", item: "sticks", img: "/images/index/starlancer.jpg", id: "2" },
-        { name: "item3", oldPrice: "70", newPrice: "55", sport: "basketball", item: "shirts", img: "/images/index/pheonix.jpg", id: "3" }
+        { name: "Super Tracker", oldPrice: "100.00", newPrice: "80.00", sport: "soccer", item: "cleats", img: "/images/index/ccmSuperTracker.jpg", id: "1" },
+        { name: "Starlancer", oldPrice: "50.00", newPrice: "30.00", sport: "hockey", item: "sticks", img: "/images/index/starlancer.jpg", id: "2" },
+        { name: "item3", oldPrice: "70.00", newPrice: "55.00", sport: "basketball", item: "shirts", img: "/images/index/pheonix.jpg", id: "3" }
     ])
     const clickArg = (name, e) => {
         console.log(name, e);
@@ -54,7 +54,7 @@ const Home = () => {
                         <div className="card-body text-center">
                             <h5 className="card-title">{deal.name}</h5>
                             <p className="card-text"><span><s>$ {deal.oldPrice}</s></span> $ {deal.newPrice}</p>
-                            <a href="#" className="btn btn-secondary">Buy</a>
+                            <Link to={"/cart/"+deal.id} className="btn btn-secondary ">Buy</Link>
                         </div>
                     </div>
 
