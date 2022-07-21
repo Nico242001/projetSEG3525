@@ -40,7 +40,7 @@ const Home = () => {
                         <h4 className='fit mx-auto'>The all new Speed of Light Adidas X boots are finally out! Dont wait, get them now before we are all sold out!</h4>
                         <br />
                         {/* <button onClick={(e) => { clickArg("hey", e) }} className="btn btn-secondary mx-auto">Buy Now!</button> */}
-                        <Link to="/cart/14" className="btn btn-secondary mx-auto">Buy Now!</Link>
+                        <Link to="/item/14" className="btn btn-secondary mx-auto">Buy Now!</Link>
                         </div>
                 </div>
                 <div className="col padding" min-width="50%" max-width="50%">
@@ -57,7 +57,7 @@ const Home = () => {
                         <div className="card-body text-center">
                             <h5 className="card-title">{deal.name}</h5>
                             <p className="card-text"><span><s>$ {deal.oldPrice}</s></span> $ {deal.newPrice}</p>
-                            <Link to={"/cart/"+deal.id} className="btn btn-secondary ">Buy</Link>
+                            <Link to={"/item/"+deal.id} className="btn btn-secondary ">Buy</Link>
                         </div>
                     </div>
 
