@@ -63,18 +63,12 @@ const Checkout = () => {
 
     return (<div className="checkout bg-light">
 
-        
-        
-        {/* <div className="container text-center mt-3">
-            <div className="container-progressbar">
-                <ul className="progressbar">
-                    <li className="active">step 1</li>
-                    <li className="firstStep">step 2</li>
-                    <li >step 3</li>
-                    <li >step 4</li>
-                </ul>
+<div className="progress mt-4 bar">
+                <div className="progress-bar" role="progressbar" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100" style={{width:"50%"}}>
+                    step 2 of 4
+                </div>
             </div>
-        </div> */}
 
         <div className="container my-4 p-0 pb-4">
             <div className="container text-center"><h2 className="text-center mb-4">Shipping Information</h2></div>
