@@ -807,7 +807,7 @@
             "description": "test",
             "image": "/images/basketball/shoes/pg.jpg",
             "size": [
-               
+                "6","11","12"
             ],
             "brand": "Nike"
         },
@@ -819,7 +819,7 @@
             "description": "test",
             "image": "/images/basketball/shoes/kyrie.jpg",
             "size": [
-                
+                "6","7","8","9","10"
             ],
             "brand": "Nike"
         },
@@ -831,7 +831,8 @@
             "description": "test",
             "image": "/images/basketball/shoes/kd.jpg",
             "size": [
-             
+                "6","11","12"
+
             ],
             "brand": "Nike"
         },
@@ -843,7 +844,7 @@
             "description": "test",
             "image": "/images/basketball/shoes/harden.jpg",
             "size": [
-                
+                "8","9","10","11","12"
             ],
             "brand": "Adidas"
         },
@@ -855,7 +856,7 @@
             "description": "test",
             "image": "/images/basketball/shoes/dame.jpg",
             "size": [
-              
+                "6","7","8","9","10"
             ],
             "brand": "Adidas"
         },
@@ -867,7 +868,7 @@
             "description": "test",
             "image": "/images/basketball/shoes/clyde.jpg",
             "size": [
-              
+                "6","7","8","9","10","11","12"
             ],
             "brand": "Puma"
         }],
