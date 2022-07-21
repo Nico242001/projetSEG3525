@@ -10,8 +10,7 @@ const Payment = () => {
     const handleClick = (e) => {
         let num = number;
         num = num.replace(/ /g, "");
-
-        var regName = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
+        const numberReg = /[0-9]/;
         var elements = document.getElementsByClassName("red");
         for (let i = 0; i < elements.length; i++) {
             elements[i].innerHTML = " *";
@@ -20,7 +19,7 @@ const Payment = () => {
         if(name.length == 0){
             document.getElementById("name").innerHTML = " *please enter a first name";
             document.getElementById("name").classList.add("red");
-        } else if((regName.test(name))){
+        } else if(numberReg.test(name)){
             document.getElementById("name").innerHTML = " *invalid first name";
             document.getElementById("name").classList.add("red");
         } else if(lastName.length == 0){
