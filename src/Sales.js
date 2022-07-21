@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 const Sales = () => {
     const [deals, setDeals] = useState([
         { name: "Super Tracker", oldPrice: "100.00", newPrice: "80.00", sport: "soccer", item: "cleats", img: "/images/index/ccmSuperTracker.jpg", id: "1" },
