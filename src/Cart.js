@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
-import "react-step-progress-bar/styles.css";
-import { ProgressBar, Step } from "react-step-progress-bar";
+
 
 const Cart = () => {
 
@@ -38,79 +37,45 @@ const Cart = () => {
 
     return (<div className="cart bg-light">
         {(empty) ? (
-
-    <div id="alert" className="alert alert-danger mb-0 card-static">
-    <strong>Your cart is empty!</strong>
-    <span className='p-1 float-end x' onClick={(e) => { removeAlert(e) }}>X</span>
-  </div>
-
-
-        ): ""}
-
-        {(!empty) ? (
-         <ProgressBar
-         percent={75}
-         filledBackground="linear-gradient(to right, #fefb72, #f0bb31)"
-       >
-         <Step transition="scale">
-           {({ accomplished }) => (
-             <img
-               style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
-               width="30"
-               src="https://vignette.wikia.nocookie.net/pkmnshuffle/images/9/9d/Pichu.png/revision/latest?cb=20170407222851"
-             />
-           )}
-         </Step>
-         <Step transition="scale">
-           {({ accomplished }) => (
-             <img
-               style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
-               width="30"
-               src="https://vignette.wikia.nocookie.net/pkmnshuffle/images/9/97/Pikachu_%28Smiling%29.png/revision/latest?cb=20170410234508"
-             />
-           )}
-         </Step>
-         <Step transition="scale">
-           {({ accomplished }) => (
-             <img
-               style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
-               width="30"
-               src="https://orig00.deviantart.net/493a/f/2017/095/5/4/raichu_icon_by_pokemonshuffle_icons-db4ryym.png"
-             />
-           )}
-         </Step>
-       </ProgressBar>
-      
+            <div id="alert" className="alert alert-danger mb-0 card-static">
+                <strong>Your cart is empty!</strong>
+                <span className='p-1 float-end x' onClick={(e) => { removeAlert(e) }}>X</span>
+            </div>
         ) : ""}
+        {/* 
+        {(!empty) ? (
+ 
+      
+        ) : ""} */}
 
         <div className="container my-4 p-0 pb-4">
             <div className="container text-center"><h1 className="mx-auto text=center">Cart</h1></div>
 
-    
-                <div className="container border-bottom border-3 border-dark">
-                    <div className="row mx-auto p-0">
-                        <div className="col-2 text-center">
-                        </div>
-                        <div className="col-2 text-center">
-                            <h4 className="mx-auto">Product</h4>
-                        </div>
-                        <div className="col-1 text-center">
-                            <h4 className="mx-auto">Size</h4>
-                        </div>
-                        <div className="col-2 text-center">
-                            <h4 className="mx-auto">Price</h4>
-                        </div>
-                        <div className="col-2 text-center">
-                            <h4 className="mx-auto">Quantity</h4>
-                        </div>
-                        <div className="col-2 text-center">
-                            <h4 className="mx-auto">Total</h4>
-                        </div>
-                        <div className="col-1 text-center">
 
-                        </div>
+            <div className="container border-bottom border-3 border-dark">
+                <div className="row mx-auto p-0">
+                    <div className="col-2 text-center">
+                    </div>
+                    <div className="col-2 text-center">
+                        <h4 className="mx-auto">Product</h4>
+                    </div>
+                    <div className="col-1 text-center">
+                        <h4 className="mx-auto">Size</h4>
+                    </div>
+                    <div className="col-2 text-center">
+                        <h4 className="mx-auto">Price</h4>
+                    </div>
+                    <div className="col-2 text-center">
+                        <h4 className="mx-auto">Quantity</h4>
+                    </div>
+                    <div className="col-2 text-center">
+                        <h4 className="mx-auto">Total</h4>
+                    </div>
+                    <div className="col-1 text-center">
+
                     </div>
                 </div>
+            </div>
 
 
             <div className="container p-0" id="cartItems">

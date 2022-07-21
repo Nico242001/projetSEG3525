@@ -519,7 +519,91 @@
             ],
             "brand": "Warrior"
         }],
-        "skates": [],
+        "skates": [{
+            "id": "47",
+            "name": "Bauer GSX",
+            "param": "Bauer GSX",
+            "price": "150.00",
+            "description": "test",
+            "image": "/images/hockey/skates/gsx.jpg",
+            "size": [
+                "7","9","10","11","12"
+            ],
+            "brand": "Bauer"
+        },
+        {
+            "id": "48",
+            "name": "CCM Jetspeed",
+            "param": "CCM Jetspeed",
+            "price": "95.00",
+            "description": "test",
+            "image": "/images/hockey/skates/jetspeed.jpg",
+            "size": [
+                "6","7","8","9"
+            ],
+            "brand": "CCM"
+        },
+        {
+            "id": "49",
+            "name": "CCM Ribcor",
+            "param": "CCM Ribcor",
+            "price": "115.00.00",
+            "description": "test",
+            "image": "/images/hockey/skates/ribcor.jpg",
+            "size": [
+                "7","8","9"
+            ],
+            "brand": "CCM"
+        },
+        {
+            "id": "50",
+            "name": "Bauer Supreme",
+            "param": "Bauer Supreme",
+            "price": "77.00",
+            "description": "test",
+            "image": "/images/hockey/skates/supreme.jpg",
+            "size": [
+                "10","11","12"
+            ],
+            "brand": "Bauer"
+        },
+        {
+            "id": "51",
+            "name": "Warrior True",
+            "param": "Warrior True",
+            "price": "70.00",
+            "description": "test",
+            "image": "/images/hockey/skates/true.jpg",
+            "size": [
+                "9","10"
+            ],
+            "brand": "Warrior"
+        },
+        {
+            "id": "52",
+            "name": "Bauer Vapor",
+            "param": "Bauer Vapor",
+            "price": "133.00",
+            "description": "test",
+            "image": "/images/hockey/skates/vapor.jpg",
+            "size": [
+                "6","7","8","9","10","11","12"
+            ],
+            "brand": "Bauer"
+        },
+        {
+            "id": "53",
+            "name": "Warrior X-Treme",
+            "param": "Warrior X-Treme",
+            "price": "90.00",
+            "description": "test",
+            "image": "/images/hockey/skates/xtreme.jpg",
+            "size": [
+                "6","7","8","9","10"
+            ],
+            "brand": "Warrior"
+        }
+       ],
         "helmets": [],
         "basketballs": [],
         "shoes": [],
