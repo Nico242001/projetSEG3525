@@ -42,15 +42,14 @@ const Cart = () => {
                 <span className='p-1 float-end x' onClick={(e) => { removeAlert(e) }}>X</span>
             </div>
         ) : ""}
-        
+
         {(!empty) ? (
- <div class="progress">
- <div class="progress-bar" role="progressbar" aria-valuenow="70"
- aria-valuemin="0" aria-valuemax="100" style="width:25%">
-   step 1 of 4
- </div>
-</div>
-      
+            <div className="progress">
+                <div className="progress-bar" role="progressbar" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                    step 1 of 4
+                </div>
+            </div>
         ) : ""}
 
         <div className="container my-4 p-0 pb-4">
