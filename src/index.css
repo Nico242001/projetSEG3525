@@ -234,7 +234,12 @@ max-height:150px;
 }
 
 
-
+.bar{
+  margin-left:150px;
+  margin-right: 150px;
+  font-size: large;
+  height: 25px;
+}
 
 .margin-right{
   margin-right: 50px;

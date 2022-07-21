@@ -37,16 +37,16 @@ const Cart = () => {
 
     return (<div className="cart bg-light">
         {(empty) ? (
-            <div id="alert" className="alert alert-danger mb-0 card-static">
+            <div id="alert" className="alert alert-danger mt-3 mb-0 card-static">
                 <strong>Your cart is empty!</strong>
                 <span className='p-1 float-end x' onClick={(e) => { removeAlert(e) }}>X</span>
             </div>
         ) : ""}
 
         {(!empty) ? (
-            <div className="progress">
+            <div className="progress mt-4 bar">
                 <div className="progress-bar" role="progressbar" aria-valuenow="70"
-                    aria-valuemin="0" aria-valuemax="100" style={{width:"25%"}}>
+                    aria-valuemin="0" aria-valuemax="100">
                     step 1 of 4
                 </div>
             </div>
@@ -123,7 +123,7 @@ const Cart = () => {
                                 <h4 id="totalPrice" className="mx-auto">$ {afterTaxes}</h4>
                             </div>
                             <div className="col-1 text-center">
-                                <Link className="btn btn-primary" to="/checkout">CheckOut</Link>
+                                <Link className="btn btn-primary btn-color" to="/checkout">CheckOut</Link>
                             </div>
                         </div>
                     </div>
