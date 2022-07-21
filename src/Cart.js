@@ -46,7 +46,7 @@ const Cart = () => {
         {(!empty) ? (
             <div className="progress">
                 <div className="progress-bar" role="progressbar" aria-valuenow="70"
-                    aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                    aria-valuemin="0" aria-valuemax="100" style={{width:"25%"}}>
                     step 1 of 4
                 </div>
             </div>
