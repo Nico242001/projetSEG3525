@@ -1,22 +1,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
-import StepProgressBar from "custom-react-step-progress-bar";
-import 'react-step-progress/dist/index.css';
+import "react-step-progress-bar/styles.css";
+import { ProgressBar } from "react-step-progress-bar";
 
 const Cart = () => {
-    const step1Content = <h1>fgfgghgjh</h1>;
-    const step2Content = <h1>dgfdg</h1>;
-    const step3Content = <h1>dgdfgfdgdfg</h1>;
-  
-    // setup step validators, will be called before proceeding to the next step
-    function step2Validator() {
-      return true;
-    }
-  
-    function step3Validator() {
-        return false;
-      // return a boolean
-    }
+
     const removeAlert = (e) => {
         document.getElementById("alert").remove();
     }
@@ -60,33 +48,38 @@ const Cart = () => {
         ): ""}
 
         {(!empty) ? (
-          <StepProgressBar
-          startingStep={0}
-          previousBtnName="Geri"
-          steps={[
-            {
-              label: "Briefing",
-              name: "Briefing",
-              content: step1Content
-            },
-            {
-              label: "Image-Acquisition",
-              name: "Image-Acquisition",
-              content: step2Content
-            },
-            {
-              label: "Image-processing",
-              name: "Image Processing",
-              content: step3Content
-              // validator: step2Validator
-            },
-            {
-              label: "Finish",
-              name: "Finish",
-              content: step3Content
-            }
-          ]}
-        />
+         <ProgressBar
+         percent={75}
+         filledBackground="linear-gradient(to right, #fefb72, #f0bb31)"
+       >
+         <Step transition="scale">
+           {({ accomplished }) => (
+             <img
+               style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
+               width="30"
+               src="https://vignette.wikia.nocookie.net/pkmnshuffle/images/9/9d/Pichu.png/revision/latest?cb=20170407222851"
+             />
+           )}
+         </Step>
+         <Step transition="scale">
+           {({ accomplished }) => (
+             <img
+               style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
+               width="30"
+               src="https://vignette.wikia.nocookie.net/pkmnshuffle/images/9/97/Pikachu_%28Smiling%29.png/revision/latest?cb=20170410234508"
+             />
+           )}
+         </Step>
+         <Step transition="scale">
+           {({ accomplished }) => (
+             <img
+               style={{ filter: `grayscale(${accomplished ? 0 : 80}%)` }}
+               width="30"
+               src="https://orig00.deviantart.net/493a/f/2017/095/5/4/raichu_icon_by_pokemonshuffle_icons-db4ryym.png"
+             />
+           )}
+         </Step>
+       </ProgressBar>
       
         ) : ""}
 
