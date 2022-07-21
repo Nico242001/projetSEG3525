@@ -798,6 +798,203 @@
             ],
             "brand": "Spalding"
         }],
-        "shoes": [],
-        "shirts": []
+        "shoes": [
+        {
+            "id": "78",
+            "name": "Nike PG",
+            "param": "Nike PG",
+            "price": "170.00",
+            "description": "test",
+            "image": "/images/basketball/shoes/pg.jpg",
+            "size": [
+               
+            ],
+            "brand": "Nike"
+        },
+        {
+            "id": "79",
+            "name": "Nike Kyrie",
+            "param": "Nike Kyrie",
+            "price": "150.00",
+            "description": "test",
+            "image": "/images/basketball/shoes/kyrie.jpg",
+            "size": [
+                
+            ],
+            "brand": "Nike"
+        },
+        {
+            "id": "80",
+            "name": "Nike KD",
+            "param": "Nike KD",
+            "price": "155.00",
+            "description": "test",
+            "image": "/images/basketball/shoes/kd.jpg",
+            "size": [
+             
+            ],
+            "brand": "Nike"
+        },
+        {
+            "id": "81",
+            "name": "Adidas Harden",
+            "param": "Adidas Harden",
+            "price": "109.00",
+            "description": "test",
+            "image": "/images/basketball/shoes/harden.jpg",
+            "size": [
+                
+            ],
+            "brand": "Adidas"
+        },
+        {
+            "id": "82",
+            "name": "Adidas Dame",
+            "param": "Adidas Dame",
+            "price": "99.00",
+            "description": "test",
+            "image": "/images/basketball/shoes/dame.jpg",
+            "size": [
+              
+            ],
+            "brand": "Adidas"
+        },
+        {
+            "id": "83",
+            "name": "Puma Clyde",
+            "param": "Puma Clyde",
+            "price": "85.00",
+            "description": "test",
+            "image": "/images/basketball/shoes/clyde.jpg",
+            "size": [
+              
+            ],
+            "brand": "Puma"
+        }],
+        "shirts": [{
+            "id": "34",
+            "name": "CCM Ribcor",
+            "param": "CCM  Ribcor",
+            "price": "85.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/ribcor.jpg",
+            "size": [
+               "Large"
+            ],
+            "brand": "CCM"
+        },
+        {
+            "id": "35",
+            "name": "CCM Jetspeed",
+            "param": "CCM Jetspeed",
+            "price": "70.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/jetspeed.jpg",
+            "size": [
+                "Medium","Large"
+            ],
+            "brand": "CCM"
+        },
+        {
+            "id": "36",
+            "name": "CCM 252 Wood",
+            "param": "CCM 252 Wood",
+            "price": "35.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/wood.jpg",
+            "size": [
+                "Small","Medium","Large"
+            ],
+            "brand": "CCM"
+        },
+        {
+            "id": "37",
+            "name": "Bauer Nexus",
+            "param": "Bauer Nexus",
+            "price": "65.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/nexus.jpg",
+            "size": [
+                "Small",
+                "Medium",
+                "Large"
+            ],
+            "brand": "Bauer"
+        },
+        {
+            "id": "38",
+            "name": "Bauer Supreme",
+            "param": "Bauer Supreme",
+            "price": "70.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/supreme.jpg",
+            "size": [
+                "Small",
+                "Medium"
+            ],
+            "brand": "Bauer"
+        },
+        {
+            "id": "39",
+            "name": "Bauer Vapor",
+            "param": "Bauer Vapor",
+            "price": "50.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/vapor.jpg",
+            "size": [
+                "Large"
+            ],
+            "brand": "Bauer"
+        },
+        {
+            "id": "40",
+            "name": "Warrior Covert",
+            "param": "Warrior Covert",
+            "price": "55.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/covert.jpg",
+            "size": [
+                "Small",
+                "Large"
+            ],
+            "brand": "Warrior"
+        },
+        {
+            "id": "41",
+            "name": "Warrior Alpha",
+            "param": "Warrior Alpha",
+            "price": "39.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/alpha.jpg",
+            "size": [
+                "Small"
+            ],
+            "brand": "Warrior"
+        },
+        {
+            "id": "42",
+            "name": "Warrior Alpha DX",
+            "param": "Warrior Alpha DX",
+            "price": "89.00",
+            "description": "test",
+            "image": "/images/soccer/balls/alphadx.jpg",
+            "size": [
+                "Medium", "Large"
+            ],
+            "brand": "Warrior"
+        },
+        {
+            "id": "43",
+            "name": "Warrior Covert QRE",
+            "param": "Warrior Covert QRE",
+            "price": "75.00",
+            "description": "test",
+            "image": "/images/hockey/sticks/covertqre.jpg",
+            "size": [
+                "Small",
+                "Medium",
+                "Large"
+            ],
+            "brand": "Warrior"
+        }]
     }
