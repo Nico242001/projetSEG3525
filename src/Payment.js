@@ -25,10 +25,12 @@ const Payment = () => {
         } else if(lastName.length == 0){
             document.getElementById("last").innerHTML = " *please enter a last name";
             document.getElementById("last").classList.add("red");
-        }else if(!(regName.test(lastName))){
-            document.getElementById("last").innerHTML = " *invalid first name";
-            document.getElementById("last").classList.add("red");
-        }else if(number.length == 0){
+        }
+        // else if(!(regName.test(lastName))){
+        //     document.getElementById("last").innerHTML = " *invalid first name";
+        //     document.getElementById("last").classList.add("red");
+        // }
+        else if(number.length == 0){
             document.getElementById("number").innerHTML = " *please enter a card number";
             document.getElementById("number").classList.add("red");
         }
