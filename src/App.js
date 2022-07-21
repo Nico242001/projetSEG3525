@@ -11,6 +11,7 @@ import Checkout from './Checkout';
 import Payment from './Payment';
 import Faq from './Faq';
 import Board from './Board';
+import Sales from './Sales';
 
 
 function App() {
@@ -49,6 +50,9 @@ function App() {
           </Route>
           <Route exact path="/board">
             <Board/>
+          </Route>
+          <Route exact path="/sales">
+            <Sales/>
           </Route>
         </Switch>
       </div>

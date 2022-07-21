@@ -20,9 +20,7 @@ const Home = () => {
         { name: "Starlancer", oldPrice: "50.00", newPrice: "30.00", sport: "hockey", item: "sticks", img: "/images/index/starlancer.jpg", id: "2" },
         { name: "Pheonix", oldPrice: "70.00", newPrice: "55.00", sport: "basketball", item: "shirts", img: "/images/index/pheonix.jpg", id: "3" }
     ])
-    // const clickArg = (name, e) => {
-    //     console.log(name, e);
-    // }
+
     return (
         <div className="home bg-light">
               {showAlert ? (
@@ -39,7 +37,6 @@ const Home = () => {
                         <br />
                         <h4 className='fit mx-auto'>The all new Speed of Light Adidas X boots are finally out! Dont wait, get them now before we are all sold out!</h4>
                         <br />
-                        {/* <button onClick={(e) => { clickArg("hey", e) }} className="btn btn-secondary mx-auto">Buy Now!</button> */}
                         <Link to="/item/14" className="btn btn-secondary mx-auto">Buy Now!</Link>
                         </div>
                 </div>

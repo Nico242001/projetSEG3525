@@ -19,7 +19,7 @@ const Shop = () => {
             <div className="col bg-dark ml-auto d-flex align-items-center mt-md-0 padding " min-width="50%" max-width="50%">
                 <div className="container text-center text-white">
                     <h2 className='fit mx-auto'>Shop Big Sales Now!</h2>
-                    <Link className="btn btn-secondary" to="/">Shop Now</Link>
+                    <Link className="btn btn-secondary" to="/sales">Shop Now</Link>
                 </div>
             </div>
         </div>
