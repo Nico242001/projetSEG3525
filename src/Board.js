@@ -32,7 +32,7 @@ const Board = () => {
                 ))
                 }
             </div>
-            <div id="error" className="red"></div>
+            <div id="error" width="400px" className="red mx-auto"></div>
             <div className="mx-auto rev mt-2">
                 <input type="text" autocomplete="false"
                 id="input"
