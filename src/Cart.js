@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import "react-step-progress-bar/styles.css";
-import { ProgressBar } from "react-step-progress-bar";
+import { ProgressBar, Step } from "react-step-progress-bar";
 
 const Cart = () => {
 
