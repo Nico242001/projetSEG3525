@@ -17,7 +17,7 @@ const Sales = () => {
                     <div className="card-body text-center">
                         <h5 className="card-title">{deal.name}</h5>
                         <p className="card-text"><span><s>$ {deal.oldPrice}</s></span> $ {deal.newPrice}</p>
-                        <Link to={"/item/" + deal.id} className="btn btn-secondary ">Buy</Link>
+                        <Link to={"/item/1"} className="btn btn-secondary ">Buy</Link>
                     </div>
                 </div>
 
