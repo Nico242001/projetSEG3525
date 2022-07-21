@@ -872,130 +872,81 @@
             ],
             "brand": "Puma"
         }],
-        "shirts": [{
-            "id": "34",
-            "name": "CCM Ribcor",
-            "param": "CCM  Ribcor",
-            "price": "85.00",
-            "description": "test",
-            "image": "/images/hockey/sticks/ribcor.jpg",
-            "size": [
-               "Large"
-            ],
-            "brand": "CCM"
-        },
+        "shirts": [
         {
-            "id": "35",
-            "name": "CCM Jetspeed",
-            "param": "CCM Jetspeed",
+            "id": "84",
+            "name": "Raptors",
+            "param": "Raptors",
             "price": "70.00",
             "description": "test",
-            "image": "/images/hockey/sticks/jetspeed.jpg",
-            "size": [
-                "Medium","Large"
-            ],
-            "brand": "CCM"
-        },
-        {
-            "id": "36",
-            "name": "CCM 252 Wood",
-            "param": "CCM 252 Wood",
-            "price": "35.00",
-            "description": "test",
-            "image": "/images/hockey/sticks/wood.jpg",
-            "size": [
-                "Small","Medium","Large"
-            ],
-            "brand": "CCM"
-        },
-        {
-            "id": "37",
-            "name": "Bauer Nexus",
-            "param": "Bauer Nexus",
-            "price": "65.00",
-            "description": "test",
-            "image": "/images/hockey/sticks/nexus.jpg",
-            "size": [
-                "Small",
-                "Medium",
-                "Large"
-            ],
-            "brand": "Bauer"
-        },
-        {
-            "id": "38",
-            "name": "Bauer Supreme",
-            "param": "Bauer Supreme",
-            "price": "70.00",
-            "description": "test",
-            "image": "/images/hockey/sticks/supreme.jpg",
+            "image": "/images/basketball/shirts/toronto.jpg",
             "size": [
                 "Small",
                 "Medium"
             ],
-            "brand": "Bauer"
+            "brand": ""
         },
         {
-            "id": "39",
-            "name": "Bauer Vapor",
-            "param": "Bauer Vapor",
-            "price": "50.00",
+            "id": "85",
+            "name": "Knicks",
+            "param": "Knicks",
+            "price": "70.00",
             "description": "test",
-            "image": "/images/hockey/sticks/vapor.jpg",
+            "image": "/images/basketball/shirts/new.jpg",
             "size": [
                 "Large"
             ],
-            "brand": "Bauer"
+            "brand": ""
         },
         {
-            "id": "40",
-            "name": "Warrior Covert",
-            "param": "Warrior Covert",
-            "price": "55.00",
+            "id": "86",
+            "name": "Nets",
+            "param": "Nets",
+            "price": "70.00",
             "description": "test",
-            "image": "/images/hockey/sticks/covert.jpg",
+            "image": "/images/basketball/shirts/nets.jpg",
             "size": [
                 "Small",
                 "Large"
             ],
-            "brand": "Warrior"
+            "brand": ""
         },
         {
-            "id": "41",
-            "name": "Warrior Alpha",
-            "param": "Warrior Alpha",
-            "price": "39.00",
+            "id": "87",
+            "name": "Lakers",
+            "param": "Lakers",
+            "price": "70.00",
             "description": "test",
-            "image": "/images/hockey/sticks/alpha.jpg",
+            "image": "/images/basketball/shirts/lakers.jpg",
             "size": [
                 "Small"
             ],
-            "brand": "Warrior"
+            "brand": ""
         },
         {
-            "id": "42",
-            "name": "Warrior Alpha DX",
-            "param": "Warrior Alpha DX",
-            "price": "89.00",
+            "id": "88",
+            "name": "Clippers",
+            "param": "Clippers",
+            "price": "70.00",
             "description": "test",
-            "image": "/images/soccer/balls/alphadx.jpg",
+            "image": "/images/basketball/shirts/clippers.jpg",
             "size": [
                 "Medium", "Large"
             ],
-            "brand": "Warrior"
+            "brand": ""
         },
         {
-            "id": "43",
-            "name": "Warrior Covert QRE",
-            "param": "Warrior Covert QRE",
-            "price": "75.00",
+            "id": "89",
+            "name": "Celtics",
+            "param": "Celtics",
+            "price": "70.00",
             "description": "test",
-            "image": "/images/hockey/sticks/covertqre.jpg",
+            "image": "/images/basketball/shirts/boston.jpg",
             "size": [
                 "Small",
                 "Medium",
                 "Large"
             ],
-            "brand": "Warrior"
+            "brand": ""
         }]
     }
