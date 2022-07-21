@@ -48,7 +48,6 @@ const Home = () => {
 
             <div className="row my-4" min-width="100%">
                 {deals.map((deal) => (<div className='p-2 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12' key={deal.id}>
-
                     <div className="card card-home bg-dark text-white mx-auto">
                         <img src={deal.img} className="card-img-top img" alt="" />
                         <div className="card-body text-center">

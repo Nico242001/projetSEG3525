@@ -31,12 +31,15 @@ const Item = () => {
         if(idInt == 1){
             sport ="Soccer";
             item = "Balls";
+            itemLink = "SoccerBalls";
         }if(idInt == 2){
             sport = "Hockey";
             item = "Skates"
+            itemLink = "Skates";
         } if(idInt == 3){
             sport = "Basketball";
             item = "Shirts";
+            itemLink = "Shirts";
         }
         list = ListItems.sale
         obj = findObject(id);
