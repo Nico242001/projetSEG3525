@@ -12,6 +12,7 @@ import Payment from './Payment';
 import Faq from './Faq';
 import Board from './Board';
 import Sales from './Sales';
+import Confirmed from './Confirmed';
 
 
 function App() {
@@ -53,6 +54,9 @@ function App() {
           </Route>
           <Route exact path="/sales">
             <Sales/>
+          </Route>
+          <Route exact path="/confirmed">
+            <Confirmed/>
           </Route>
         </Switch>
       </div>

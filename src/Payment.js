@@ -9,8 +9,14 @@ const Payment = () => {
     const history = useHistory();
     const handleClick = (e) => {
         let num = number;
+        let sec = security;
+        sec = sec.replace(/ /g, "");
+        sec = sec.replace(/-/g, "");
         num = num.replace(/ /g, "");
+        num = num.replace(/-/g, '');
         const numberReg = /[0-9]/;
+        const onlyNum = /^[0-9]+$/;
+        
         var elements = document.getElementsByClassName("red");
         for (let i = 0; i < elements.length; i++) {
             elements[i].innerHTML = " *";
@@ -26,13 +32,27 @@ const Payment = () => {
             document.getElementById("last").innerHTML = " *please enter a last name";
             document.getElementById("last").classList.add("red");
         }
-        // else if(!(regName.test(lastName))){
-        //     document.getElementById("last").innerHTML = " *invalid first name";
-        //     document.getElementById("last").classList.add("red");
-        // }
+        else if(numberReg.test(lastName)){
+            document.getElementById("last").innerHTML = " *invalid first name";
+            document.getElementById("last").classList.add("red");
+        }
         else if(number.length == 0){
             document.getElementById("number").innerHTML = " *please enter a card number";
             document.getElementById("number").classList.add("red");
+        }else if(number.length >= 16){
+            document.getElementById("number").innerHTML = " *invalid card number ";
+            document.getElementById("number").classList.add("red");
+        } else if(onlyNum.test(number)){
+            document.getElementById("number").innerHTML = " *invalid card number ";
+            document.getElementById("number").classList.add("red");
+        }else if(sec.length == 0){
+            document.getElementById("security").innerHTML = " *enter a security number";
+            document.getElementById("security").classList.add("red");
+        } else if((!(sec.length == 3)&&!(sec.length == 4)) || onlyNum.test(sec)){
+            document.getElementById("security").innerHTML = " *invalid a security number";
+            document.getElementById("security").classList.add("red");
+        } else{
+            history.push("/confirmed");
         }
     }
 
