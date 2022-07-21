@@ -1,9 +1,9 @@
-import{Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const Confirmed = () => {
-    sessionStorage.setItem(0,0);
+    sessionStorage.setItem(0, 0);
     let keys = Object.keys(sessionStorage);
-    for(let i; i<keys.length;i++){
-        if((keys[i]==0) || (keys[i]==200)){
+    for (let i; i < keys.length; i++) {
+        if ((keys[i] == 0) || (keys[i] == 200)) {
             sessionStorage.removeItem(keys[i])
         }
     }
@@ -18,13 +18,13 @@ const Confirmed = () => {
         </div>
 
         <div className="container">
-            <h1 className="fit mx-auto mt-5 mb-0">Your purchase as been completed!</h1><br/>
+            <h1 className="fit mx-auto mt-5 mb-0">Your purchase as been completed!</h1><br />
             <h1 className="fit mx-auto">And your Items will be shipped shortly.</h1>
         </div>
         <div className="fit mt-5 mx-auto">
-        <Link to="/" className="btn btn-primary btn-color">Home</Link>
+            <Link to="/" className="btn btn-primary btn-color">Home</Link>
         </div>
-        
+
 
     </div>);
 }
