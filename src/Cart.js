@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
-import StepProgressBar from "react-step-progress";
+import StepProgressBar from "custom-react-step-progress-bar";
 
 const Cart = () => {
     const step1Content = <h1>fgfgghgjh</h1>;
