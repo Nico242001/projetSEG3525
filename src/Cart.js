@@ -47,7 +47,7 @@ const Cart = () => {
             <div className="progress mt-4 bar">
                 <div className="progress-bar" role="progressbar" aria-valuenow="70"
                     aria-valuemin="0" aria-valuemax="100" style={{width:"25%"}}>
-                    step 1 of 4
+                    Step 1 of 4
                 </div>
             </div>
         ) : ""}

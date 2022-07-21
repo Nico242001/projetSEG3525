@@ -66,7 +66,7 @@ const Checkout = () => {
 <div className="progress mt-4 bar">
                 <div className="progress-bar" role="progressbar" aria-valuenow="70"
                     aria-valuemin="0" aria-valuemax="100" style={{width:"50%"}}>
-                    step 2 of 4
+                    Step 2 of 4
                 </div>
             </div>
 

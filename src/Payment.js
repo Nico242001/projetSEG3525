@@ -38,16 +38,10 @@ const Payment = () => {
 
     return (<div className="payment bg-light">
 
-        <div className="container text-center mt-3">
-            <div className="container-progressbar">
-                <ul className="progressbar">
-                    <li className="active">step 1</li>
-                    <li className="firstStep">step 2</li>
-                    <li >step 3</li>
-                    <li >step 4</li>
-                </ul>
-            </div>
-        </div>
+<div className="progress-bar" role="progressbar" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100" style={{width:"75%"}}>
+                    Step 3 of 4
+                </div>
 
         <div className="container my-4 p-0 pb-4">
             <div className="container text-center"><h2 className="text-center mb-4">Payment Information</h2></div>
