@@ -237,18 +237,7 @@
             ],
             "brand": "Nike"
         },
-        {
-            "id": "21",
-            "name": "Puma Ultra",
-            "param": "Ultra",
-            "price": "95.00",
-            "description": "test",
-            "image": "/images/soccer/cleats/ultra.jpg",
-            "size": [
-                "8","9","10","11","12"
-            ],
-            "brand": "Puma"
-        },
+       
         {
             "id": "22",
             "name": "Puma Neymar",
@@ -333,18 +322,7 @@
             ],
             "brand": "Nike"
         },
-        {
-            "id": "29",
-            "name": "Nike J",
-            "param": "J",
-            "price": "30.00",
-            "description": "test",
-            "image": "/images/soccer/shin/j.jpg",
-            "size": [
-               "Medium","Large"
-            ],
-            "brand": "Nike"
-        },
+     
         {
             "id": "30",
             "name": "Nike Mercurial Light",
@@ -493,18 +471,7 @@
             ],
             "brand": "Warrior"
         },
-        {
-            "id": "42",
-            "name": "Warrior Alpha DX",
-            "param": "Warrior Alpha DX",
-            "price": "89.00",
-            "description": "test",
-            "image": "/images/soccer/balls/alphadx.jpg",
-            "size": [
-                "Medium", "Large"
-            ],
-            "brand": "Warrior"
-        },
+        
         {
             "id": "43",
             "name": "Warrior Covert QRE",
@@ -688,19 +655,8 @@
               "Small"
             ],
             "brand": "CCM"
-        },
-        {
-            "id": "63",
-            "name": "CCM Tacks",
-            "param": "CCM Tacks",
-            "price": "90.00",
-            "description": "test",
-            "image": "/images/hockey/helmets/tacks",
-            "size": [
-               "Medium"
-            ],
-            "brand": "CCM"
-        }],
+        }
+        ],
         "basketballs": [
         {
             "id": "66",
