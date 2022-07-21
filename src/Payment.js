@@ -36,13 +36,13 @@ const Payment = () => {
             document.getElementById("last").innerHTML = " *invalid first name";
             document.getElementById("last").classList.add("red");
         }
-        else if(number.length == 0){
+        else if(num.length == 0){
             document.getElementById("number").innerHTML = " *please enter a card number";
             document.getElementById("number").classList.add("red");
-        }else if(number.length != 16){
+        }else if(num.length != 16){
             document.getElementById("number").innerHTML = " *invalid card number ";
             document.getElementById("number").classList.add("red");
-        } else if(!(onlyNum.test(number))){
+        } else if(!(onlyNum.test(num))){
             document.getElementById("number").innerHTML = " *invalid card number ";
             document.getElementById("number").classList.add("red");
         }else if(sec.length == 0){
