@@ -18,7 +18,7 @@ const Home = () => {
   const [deals, setDeals] = useState([
         { name: "Super Tracker", oldPrice: "100.00", newPrice: "80.00", sport: "soccer", item: "cleats", img: "/images/index/ccmSuperTracker.jpg", id: "1" },
         { name: "Starlancer", oldPrice: "50.00", newPrice: "30.00", sport: "hockey", item: "sticks", img: "/images/index/starlancer.jpg", id: "2" },
-        { name: "item3", oldPrice: "70.00", newPrice: "55.00", sport: "basketball", item: "shirts", img: "/images/index/pheonix.jpg", id: "3" }
+        { name: "Pheonix", oldPrice: "70.00", newPrice: "55.00", sport: "basketball", item: "shirts", img: "/images/index/pheonix.jpg", id: "3" }
     ])
     // const clickArg = (name, e) => {
     //     console.log(name, e);
