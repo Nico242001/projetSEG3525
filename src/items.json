@@ -613,7 +613,7 @@
                 "description": "test",
                 "image": "/images/hockey/helmets/alpha.jpg",
                 "size": [
-                   
+                   "Small", "Medium"
                 ],
                 "brand": "Warrior"
             },
@@ -625,7 +625,7 @@
             "description": "test",
             "image": "/images/hockey/helmets/covert.jpg",
             "size": [
-               
+               "Medium","Large"
             ],
             "brand": "Warrior"
         },
@@ -637,7 +637,7 @@
             "description": "test",
             "image": "/images/hockey/helmets/Fitlite.jpg",
             "size": [
-               
+               "Large","Small"
             ],
             "brand": "CCM"
         },
@@ -649,7 +649,7 @@
             "description": "test",
             "image": "/images/hockey/helmets/hyperlite.jpg",
             "size": [
-               
+               "Small", "Medium", "Large"
             ],
             "brand": "Bauer"
         },
@@ -661,7 +661,7 @@
             "description": "test",
             "image": "/images/hockey/helmets/prodigy.jpg",
             "size": [
-               
+               "Small", "Medium", "Large"
             ],
             "brand": "Bauer"
         },
@@ -673,7 +673,7 @@
             "description": "test",
             "image": "/images/hockey/helmets/super.jpg",
             "size": [
-               
+               "Large"
             ],
             "brand": "CCM"
         },
@@ -685,7 +685,7 @@
             "description": "test",
             "image": "/images/hockey/helmets/t120.jpg",
             "size": [
-              
+              "Small"
             ],
             "brand": "CCM"
         },
@@ -697,11 +697,107 @@
             "description": "test",
             "image": "/images/hockey/helmets/tacks",
             "size": [
-               
+               "Medium"
             ],
             "brand": "CCM"
         }],
-        "basketballs": [],
+        "basketballs": [
+        {
+            "id": "66",
+            "name": "Nike Elite",
+            "param": "Nike Elite",
+            "price": "35.00",
+            "description": "test",
+            "image": "/images/basketball/balls/elite.jpg",
+            "size": [
+                "27.5","28.5","29.5"
+            ],
+            "brand": "Nike"
+        },
+        {
+            "id": "67",
+            "name": "Wilson Evolution",
+            "param": "Wilson Evolution",
+            "price": "65.00",
+            "description": "test",
+            "image": "/images/basketball/balls/evolution.jpg",
+            "size": [
+                "27.5","28.5"
+            ],
+            "brand": "Wilson"
+        },
+        {
+            "id": "68",
+            "name": "Nike Hyperlite",
+            "param": "Nike Hyperlite",
+            "price": "70.00",
+            "description": "test",
+            "image": "/images/basketball/balls/hyperlite.jpg",
+            "size": [
+                "27.5","29.5"
+            ],
+            "brand": "Nike"
+        },
+        {
+            "id": "69",
+            "name": "Wilson Luminous",
+            "param": "Wilson Luminous",
+            "price": "50.00",
+            "description": "test",
+            "image": "/images/basketball/balls/luminous.jpg",
+            "size": [
+                "27.5","28.5"
+            ],
+            "brand": "Wilson"
+        },
+        {
+            "id": "70",
+            "name": "Spalding Precision",
+            "param": "Spalding Precision",
+            "price": "55.00",
+            "description": "test",
+            "image": "/images/basketball/balls/precision.jpg",
+            "size": [
+                "28.5","29.5"
+            ],
+            "brand": "Spalding"
+        },
+        {
+            "id": "71",
+            "name": "Nike Revival",
+            "param": "Nike Revival",
+            "price": "39.00",
+            "description": "test",
+            "image": "/images/basketball/balls/revival.jpg",
+            "size": [
+                "27.5","28.5","29.5"
+            ],
+            "brand": "Nike"
+        },
+        {
+            "id": "72",
+            "name": "Spalding Silver",
+            "param": "Spalding Silver",
+            "price": "49.00",
+            "description": "test",
+            "image": "/images/basketball/balls/silver.jpg",
+            "size": [
+                "29.5"
+            ],
+            "brand": "Spalding"
+        },
+        {
+            "id": "73",
+            "name": "Spalding TF-250",
+            "param": "Spalding TF-250",
+            "price": "75.00",
+            "description": "test",
+            "image": "/images/basketball/balls/tf-250.jpg",
+            "size": [
+                "27.5","28.5"
+            ],
+            "brand": "Spalding"
+        }],
         "shoes": [],
         "shirts": []
     }
