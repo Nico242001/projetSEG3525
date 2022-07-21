@@ -45,14 +45,24 @@ const Cart = () => {
         ): ""}
 
         {(!empty) ? (
-            <div className='progress-container'>
-                 <ul class="progressbar">
-                    <li >Step 1</li>
-                    <li>Step 2</li>
-                    <li>Step 3</li>
-                    <li>Step 4</li>
-                </ul>
-            </div>
+           <div class="stepper-wrapper">
+           <div class="stepper-item completed">
+             <div class="step-counter">1</div>
+             <div class="step-name">Cart</div>
+           </div>
+           <div class="stepper-item completed">
+             <div class="step-counter">2</div>
+             <div class="step-name">Shipping</div>
+           </div>
+           <div class="stepper-item active">
+             <div class="step-counter">3</div>
+             <div class="step-name">Payment</div>
+           </div>
+           <div class="stepper-item">
+             <div class="step-counter">4</div>
+             <div class="step-name">Finished</div>
+           </div>
+         </div>
             // <div className="container text-center mt-3">
             //     <div className="container-progressbar">
             //         <ul className="progressbar">
