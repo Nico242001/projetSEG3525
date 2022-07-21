@@ -229,7 +229,7 @@ max-height:150px;
     height: 275px;
   }
 }
-
+/* 
 .container-progressbar{
   width:100%;
 }
@@ -257,8 +257,8 @@ max-height:150px;
   border-radius: 50%;
   background-color: #5680E9;
   /* border:black ; */
-}
-.progressbar li:after {
+/* } */
+/* .progressbar li:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -267,25 +267,37 @@ max-height:150px;
   top: 15px;
   left: -50%;
   /* z-index: -1; */
-}
-.firstStep{
+/* }  */
+/* .firstStep{
   color: black;
   border-color: #5680E9;
   z-index: 1;
-}
-.progressbar li:first-child:after {
+} */
+/* .progressbar li:first-child:after {
   content: none;
-}
-.progressbar li.active {
+} */
+/* .progressbar li.active {
   color: black;
-}
+} */
 /* .progressbar li:before {
   border-color: green;
 } */
-.progressbar li.active + li:after {
+/* .progressbar li.active + li:after {
   background-color: black;
-}
+} */ */
 
+
+.progress-container{
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.progressbar li{
+  float: left;
+  width: 20%;
+  position: relative;
+  text-align: center;
+}
 
 .margin-right{
   margin-right: 50px;

@@ -45,17 +45,24 @@ const Cart = () => {
         ): ""}
 
         {(!empty) ? (
-            <div className="container text-center mt-3">
-                <div className="container-progressbar">
-                    <ul className="progressbar">
-                        <li className="firstStep">step 1</li>
-                        <li >step 2</li>
-                        <li >step 3</li>
-                        <li >step 4</li>
-                    </ul>
-                </div>
-
+            <div className='progress-container'>
+                 <ul class="progressbar">
+                    <li >Step 1</li>
+                    <li>Step 2</li>
+                    <li>Step 3</li>
+                    <li>Step 4</li>
+                </ul>
             </div>
+            // <div className="container text-center mt-3">
+            //     <div className="container-progressbar">
+            //         <ul className="progressbar">
+            //             <li className="firstStep">step 1</li>
+            //             <li >step 2</li>
+            //             <li >step 3</li>
+            //             <li >step 4</li>
+            //         </ul>
+            //     </div>
+            // </div>
         ) : ""}
 
         <div className="container my-4 p-0 pb-4">

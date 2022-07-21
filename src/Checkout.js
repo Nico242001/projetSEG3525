@@ -62,8 +62,10 @@ const Checkout = () => {
  
 
     return (<div className="checkout bg-light">
+
         
-        <div className="container text-center mt-3">
+        
+        {/* <div className="container text-center mt-3">
             <div className="container-progressbar">
                 <ul className="progressbar">
                     <li className="active">step 1</li>
@@ -72,7 +74,7 @@ const Checkout = () => {
                     <li >step 4</li>
                 </ul>
             </div>
-        </div>
+        </div> */}
 
         <div className="container my-4 p-0 pb-4">
             <div className="container text-center"><h2 className="text-center mb-4">Shipping Information</h2></div>
